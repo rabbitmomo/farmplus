@@ -16,7 +16,7 @@ class logIn extends StatelessWidget {
       width: double.infinity,
       child: Container(
         // loginpagehaoohH (68:177)
-        padding: EdgeInsets.fromLTRB(27*fem, 16*fem, 27*fem, 33*fem),
+        padding: EdgeInsets.fromLTRB(27*fem, 29*fem, 27*fem, 33*fem),//top bar
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xffffffff),
@@ -27,7 +27,7 @@ class logIn extends StatelessWidget {
             children: [
               Container(
                 // autogroupxqf3yEP (Muu8fvdY2K4mGiEi1QxqF3)
-                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 86*fem),
+                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 10*fem),//log in button margin
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
