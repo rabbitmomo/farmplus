@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/page-1/login-page-hao.dart';
 import 'package:myapp/utils.dart';
 // import 'package:myapp/page-1/rectangle-17409.dart';
 // import 'package:myapp/page-1/consultation-page-kx.dart';
@@ -29,21 +30,21 @@ import 'package:myapp/page-1/splash-page-kx.dart';
 // import 'package:myapp/page-1/calendar-add-event-page-kx.dart';
 // import 'package:myapp/page-1/notification-page-kx.dart';
 // import 'package:myapp/page-1/notification-manage-page-kx.dart';
-import 'package:myapp/page-1/homepage.dart';
+// import 'package:myapp/page-1/homepage.dart';
 // import 'package:myapp/page-1/billing.dart';
 // import 'package:myapp/page-1/your-address.dart';
 // import 'package:myapp/page-1/about-item.dart';
 // import 'package:myapp/page-1/carrot-information-from-qr-code.dart';
 // import 'package:myapp/page-1/information-page.dart';
-import 'package:myapp/page-1/home-page.dart';
+// import 'package:myapp/page-1/home-page.dart';
 // import 'package:myapp/page-1/select-crop-field-page.dart';
-import 'package:myapp/page-1/crop-management-page.dart';
+// import 'package:myapp/page-1/crop-management-page.dart';
 // import 'package:myapp/page-1/add-new-field-page.dart';
 // import 'package:myapp/page-1/color-palette.dart';
 // import 'package:myapp/page-1/sample.dart';
 // import 'package:myapp/page-1/persona.dart';
 // import 'package:myapp/page-1/login-page-.dart';
-// import 'package:myapp/page-1/level-up-farmer-tutorial-page-step-by-step-page-hao.dart';
+import 'package:myapp/page-1/level-up-farmer-tutorial-page-step-by-step-page-hao.dart';
 // import 'package:myapp/page-1/level-up-farmer-tutorial-page-step-by-step-page-hao-JbR.dart';
 // import 'package:myapp/page-1/guidance-page-hao.dart';
 // import 'package:myapp/page-1/gallery-page-hao.dart';
@@ -107,8 +108,19 @@ import 'package:myapp/page-1/login-page-hao.dart';
 // import 'package:myapp/page-1/crops-suggestion-zXR.dart';
 // import 'package:myapp/page-1/supply-chain.dart';
 // import 'package:myapp/page-1/iphone-14-15-pro-max-1.dart';
+import 'package:flutter/services.dart';
 
-void main() => runApp(MyApp());
+void main() {
+	WidgetsFlutterBinding.ensureInitialized();
+	SystemChrome.setEnabledSystemUIMode(
+		SystemUiMode.immersiveSticky,
+		overlays: SystemUiOverlay.values,
+	);
+	SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+		statusBarColor: Colors.transparent, // Set status bar color to transparent
+	));
+	runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
 	@override
@@ -141,7 +153,7 @@ class _SplashScreenState extends State<SplashScreen> {
 		await Future.delayed(Duration(seconds: 3));
 		Navigator.pushReplacement(
 			context,
-			MaterialPageRoute(builder: (context) => logIn()),
+			MaterialPageRoute(builder: (context) => levelUp()),
 		);
 	}
 
