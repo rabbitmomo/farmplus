@@ -109,16 +109,15 @@ import 'package:myapp/page-1/login-page-hao.dart';
 // import 'package:myapp/page-1/supply-chain.dart';
 // import 'package:myapp/page-1/iphone-14-15-pro-max-1.dart';
 import 'package:flutter/services.dart';
+import 'package:myapp/page-1/tutorialHomePage.dart';
+import 'package:myapp/page-1/tutorialWheat.dart';
 
 void main() {
 	WidgetsFlutterBinding.ensureInitialized();
 	SystemChrome.setEnabledSystemUIMode(
-		SystemUiMode.immersiveSticky,
+		SystemUiMode.manual,
 		overlays: SystemUiOverlay.values,
 	);
-	SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-		statusBarColor: Colors.transparent, // Set status bar color to transparent
-	));
 	runApp(MyApp());
 }
 
@@ -153,7 +152,7 @@ class _SplashScreenState extends State<SplashScreen> {
 		await Future.delayed(Duration(seconds: 3));
 		Navigator.pushReplacement(
 			context,
-			MaterialPageRoute(builder: (context) => levelUp()),
+			MaterialPageRoute(builder: (context) => logIn()),
 		);
 	}
 
