@@ -292,7 +292,7 @@ class tutorialHome extends StatelessWidget {
                       ),
                       Container(
                         // autogroupzmacviY (85iDLCjKTCs5FQFvv9ZmAC)
-                        margin: EdgeInsets.fromLTRB(13*fem, 0*fem, 19*fem, 6*fem),
+                        margin: EdgeInsets.fromLTRB(13*fem, 0*fem, 19*fem, 12*fem),
                         width: double.infinity,
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.end,

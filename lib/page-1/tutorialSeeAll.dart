@@ -4,6 +4,14 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/page-1/tutorialHomePage.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/page-1/tutorialChili.dart';
+import 'package:myapp/page-1/tutorialWheat.dart';
+import 'package:myapp/page-1/tutorialCorn.dart';
+import 'package:myapp/page-1/tutorialCabbage.dart';
+import 'package:myapp/page-1/tutorialCarrot.dart';
+import 'package:myapp/page-1/tutorialTomato.dart';
+import 'package:myapp/page-1/tutorialOnion.dart';
+import 'package:myapp/page-1/tutorialPotato.dart';
 
 class seeAll extends StatelessWidget {
   @override
@@ -111,37 +119,58 @@ class seeAll extends StatelessWidget {
                 ),
                 Container(
                   // autogroupwdscMhE (85iFpP65fXojJ3YBw1WdSc)
-                  margin: EdgeInsets.fromLTRB(18*fem, 0*fem, 0*fem, 12*fem),
+                  margin: EdgeInsets.fromLTRB(22*fem, 0*fem, 0*fem, 12*fem),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Container(
-                        // grain1HKz (490:353)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 46*fem, 0*fem),
-                        width: 55*fem,
-                        height: 55*fem,
-                        child: Image.asset(
-                          'assets/page-1/images/grain-1-o7S.png',
-                          fit: BoxFit.cover,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => tutorialWheat()),
+                          );
+                        },
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 46*fem, 0*fem),
+                          width: 55*fem,
+                          height: 55*fem,
+                          child: Image.asset(
+                            'assets/page-1/images/grain-1-o7S.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
-                      Container(
-                        // chili1QfW (490:360)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 48*fem, 0*fem),
-                        width: 55*fem,
-                        height: 55*fem,
-                        child: Image.asset(
-                          'assets/page-1/images/chili-1.png',
-                          fit: BoxFit.cover,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => tutorialChili()),
+                          );
+                        },
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 48*fem, 0*fem),
+                          width: 55*fem,
+                          height: 55*fem,
+                          child: Image.asset(
+                            'assets/page-1/images/chili-1.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
-                      Container(
-                        // corn1LZA (490:379)
-                        width: 55*fem,
-                        height: 55*fem,
-                        child: Image.asset(
-                          'assets/page-1/images/corn-1-qet.png',
-                          fit: BoxFit.cover,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => tutorialCorn()),
+                          );
+                        },
+                        child: Container(
+                          width: 55 * fem,
+                          height: 55 * fem,
+                          child: Image.asset(
+                            'assets/page-1/images/corn-1-qet.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ],
@@ -149,14 +178,14 @@ class seeAll extends StatelessWidget {
                 ),
                 Container(
                   // autogroup3jkyUQU (85iFxxg7toB3QZuJ243jkY)
-                  margin: EdgeInsets.fromLTRB(28*fem, 0*fem, 21*fem, 37*fem),
+                  margin: EdgeInsets.fromLTRB(26*fem, 0*fem, 16*fem, 37*fem),
                   width: double.infinity,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
                         // wheatBZn (490:358)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 61*fem, 0*fem),
+                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 63*fem, 0*fem),
                         child: Text(
                           'wheat',
                           textAlign: TextAlign.center,
@@ -171,7 +200,7 @@ class seeAll extends StatelessWidget {
                       ),
                       Container(
                         // chiliV4g (490:356)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 70*fem, 0*fem),
+                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 68*fem, 0*fem),
                         child: Text(
                           'chili',
                           textAlign: TextAlign.center,
@@ -184,16 +213,19 @@ class seeAll extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Text(
-                        // cornPQx (490:380)
-                        'corn',
-                        textAlign: TextAlign.center,
-                        style: SafeGoogleFont (
-                          'Rozha One',
-                          fontSize: 15*ffem,
-                          fontWeight: FontWeight.w400,
-                          height: 1.42*ffem/fem,
-                          color: Color(0xff000000),
+                      Container(
+                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 0*fem),
+                        child: Text(
+                          // cornPQx (490:380)
+                          'corn',
+                          textAlign: TextAlign.center,
+                          style: SafeGoogleFont (
+                            'Rozha One',
+                            fontSize: 15*ffem,
+                            fontWeight: FontWeight.w400,
+                            height: 1.42*ffem/fem,
+                            color: Color(0xff000000),
+                          ),
                         ),
                       ),
                     ],
@@ -206,33 +238,54 @@ class seeAll extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      Container(
-                        // cabbage1ERa (490:359)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 50*fem, 0*fem),
-                        width: 55*fem,
-                        height: 55*fem,
-                        child: Image.asset(
-                          'assets/page-1/images/cabbage-1-JMJ.png',
-                          fit: BoxFit.cover,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => tutorialCabbage()),
+                          );
+                        },
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 50 * fem, 0 * fem),
+                          width: 55 * fem,
+                          height: 55 * fem,
+                          child: Image.asset(
+                            'assets/page-1/images/cabbage-1-JMJ.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
-                      Container(
-                        // carrot1YBN (490:378)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 45*fem, 0*fem),
-                        width: 55*fem,
-                        height: 55*fem,
-                        child: Image.asset(
-                          'assets/page-1/images/carrot-1.png',
-                          fit: BoxFit.cover,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => tutorialCarrot()),
+                          );
+                        },
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 45 * fem, 0 * fem),
+                          width: 55 * fem,
+                          height: 55 * fem,
+                          child: Image.asset(
+                            'assets/page-1/images/carrot-1.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
-                      Container(
-                        // smiley13tp (490:361)
-                        width: 50*fem,
-                        height: 50*fem,
-                        child: Image.asset(
-                          'assets/page-1/images/smiley-1.png',
-                          fit: BoxFit.cover,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => tutorialTomato()),
+                          );
+                        },
+                        child: Container(
+                          width: 50 * fem,
+                          height: 50 * fem,
+                          child: Image.asset(
+                            'assets/page-1/images/smiley-1.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ],
@@ -247,7 +300,7 @@ class seeAll extends StatelessWidget {
                     children: [
                       Container(
                         // cabbageuRE (490:357)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 50*fem, 0*fem),
+                        margin: EdgeInsets.fromLTRB(0*fem, 6*fem, 50*fem, 0*fem),
                         child: Text(
                           'cabbage',
                           textAlign: TextAlign.center,
@@ -300,23 +353,37 @@ class seeAll extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        // onion1x28 (492:390)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 45*fem, 0*fem),
-                        width: 60*fem,
-                        height: 60*fem,
-                        child: Image.asset(
-                          'assets/page-1/images/onion-1.png',
-                          fit: BoxFit.cover,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => tutorialOnion()),
+                          );
+                        },
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 45 * fem, 0 * fem),
+                          width: 60 * fem,
+                          height: 60 * fem,
+                          child: Image.asset(
+                            'assets/page-1/images/onion-1.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
-                      Container(
-                        // potato1G2p (492:392)
-                        width: 55*fem,
-                        height: 55*fem,
-                        child: Image.asset(
-                          'assets/page-1/images/potato-1.png',
-                          fit: BoxFit.cover,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => tutorialPotato()),
+                          );
+                        },
+                        child: Container(
+                          width: 55 * fem,
+                          height: 55 * fem,
+                          child: Image.asset(
+                            'assets/page-1/images/potato-1.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ],
@@ -331,7 +398,7 @@ class seeAll extends StatelessWidget {
                     children: [
                       Container(
                         // onionU8t (492:386)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 59*fem, 0*fem),
+                        margin: EdgeInsets.fromLTRB(0*fem, 6*fem, 59*fem, 0*fem),
                         child: Text(
                           'onion',
                           textAlign: TextAlign.center,
