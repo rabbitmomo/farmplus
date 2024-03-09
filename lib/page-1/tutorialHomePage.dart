@@ -1,8 +1,16 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/page-1/tutorialChili.dart';
+import 'package:myapp/page-1/tutorialWheat.dart';
+import 'package:myapp/page-1/tutorialCorn.dart';
+import 'package:myapp/page-1/tutorialCabbage.dart';
+import 'package:myapp/page-1/tutorialCarrot.dart';
+import 'package:myapp/page-1/tutorialTomato.dart';
+import 'package:myapp/page-1/tutorialSeeAll.dart';
 
 class tutorialHome extends StatelessWidget {
   @override
@@ -142,18 +150,26 @@ class tutorialHome extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Text(
-                              // seeallzPe (484:186)
-                              'see all',
-                              textAlign: TextAlign.center,
-                              style: SafeGoogleFont (
-                                'Rozha One',
-                                fontSize: 15*ffem,
-                                fontWeight: FontWeight.w400,
-                                height: 1.42*ffem/fem,
-                                decoration: TextDecoration.underline,
-                                color: Color(0xff2b892f),
-                                decorationColor: Color(0xff2b892f),
+                            InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => seeAll()),
+                                );
+                              },
+                              child: Text(
+                                // seeallzPe (484:186)
+                                'see all',
+                                textAlign: TextAlign.center,
+                                style: SafeGoogleFont (
+                                  'Rozha One',
+                                  fontSize: 15*ffem,
+                                  fontWeight: FontWeight.w400,
+                                  height: 1.42*ffem/fem,
+                                  decoration: TextDecoration.underline,
+                                  color: Color(0xff2b892f),
+                                  decorationColor: Color(0xff2b892f),
+                                ),
                               ),
                             ),
                           ],
@@ -166,33 +182,57 @@ class tutorialHome extends StatelessWidget {
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Container(
-                              // grain1Eon (485:203)
-                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 46*fem, 0*fem),
-                              width: 55*fem,
-                              height: 55*fem,
-                              child: Image.asset(
-                                'assets/page-1/images/grain-1.png',
-                                fit: BoxFit.cover,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => tutorialWheat()),
+                                );
+                              },
+                              child: Container(
+                                // grain1Eon (485:203)
+                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 46*fem, 0*fem),
+                                width: 55*fem,
+                                height: 55*fem,
+                                child: Image.asset(
+                                  'assets/page-1/images/grain-1.png',
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
-                            Container(
-                              // chili1Zr4 (485:210)
-                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 48*fem, 0*fem),
-                              width: 55*fem,
-                              height: 55*fem,
-                              child: Image.asset(
-                                'assets/page-1/images/chili-1-3Ta.png',
-                                fit: BoxFit.cover,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => tutorialChili()),
+                                );
+                              },
+                              child: Container(
+                                // chili1Zr4 (485:210)
+                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 48*fem, 0*fem),
+                                width: 55*fem,
+                                height: 55*fem,
+                                child: Image.asset(
+                                  'assets/page-1/images/chili-1-3Ta.png',
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
-                            Container(
-                              // corn1ttL (485:202)
-                              width: 55*fem,
-                              height: 55*fem,
-                              child: Image.asset(
-                                'assets/page-1/images/corn-1.png',
-                                fit: BoxFit.cover,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => tutorialCorn()),
+                                );
+                              },
+                              child: Container(
+                                // corn1ttL (485:202)
+                                width: 55*fem,
+                                height: 55*fem,
+                                child: Image.asset(
+                                  'assets/page-1/images/corn-1.png',
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                           ],
@@ -257,33 +297,57 @@ class tutorialHome extends StatelessWidget {
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
-                            Container(
-                              // cabbage1fRE (485:207)
-                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 50*fem, 0*fem),
-                              width: 55*fem,
-                              height: 55*fem,
-                              child: Image.asset(
-                                'assets/page-1/images/cabbage-1.png',
-                                fit: BoxFit.cover,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => tutorialCabbage()),
+                                );
+                              },
+                              child: Container(
+                                // cabbage1fRE (485:207)
+                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 50*fem, 0*fem),
+                                width: 55*fem,
+                                height: 55*fem,
+                                child: Image.asset(
+                                  'assets/page-1/images/cabbage-1.png',
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
-                            Container(
-                              // carrot1CAG (485:230)
-                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 45*fem, 0*fem),
-                              width: 55*fem,
-                              height: 55*fem,
-                              child: Image.asset(
-                                'assets/page-1/images/carrot-1-p3E.png',
-                                fit: BoxFit.cover,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => tutorialCarrot()),
+                                );
+                              },
+                              child: Container(
+                                // carrot1CAG (485:230)
+                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 45*fem, 0*fem),
+                                width: 55*fem,
+                                height: 55*fem,
+                                child: Image.asset(
+                                  'assets/page-1/images/carrot-1-p3E.png',
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
-                            Container(
-                              // smiley17Y8 (485:211)
-                              width: 50*fem,
-                              height: 50*fem,
-                              child: Image.asset(
-                                'assets/page-1/images/smiley-1-pXe.png',
-                                fit: BoxFit.cover,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => tutorialTomato()),
+                                );
+                              },
+                              child: Container(
+                                // smiley17Y8 (485:211)
+                                width: 50*fem,
+                                height: 50*fem,
+                                child: Image.asset(
+                                  'assets/page-1/images/smiley-1-pXe.png',
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                           ],
