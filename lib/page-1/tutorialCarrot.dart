@@ -3,6 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/page-1/tutorialHomePage.dart';
 
 class tutorialCarrot extends StatelessWidget {
   @override
@@ -425,13 +426,18 @@ class tutorialCarrot extends StatelessWidget {
                 left: 23*fem,
                 top: 51*fem,
                 child: Align(
-                  child: SizedBox(
-                    width: 18*fem,
-                    height: 23.3*fem,
-                    child: Image.asset(
-                      'assets/page-1/images/top-sun.png',
-                      width: 18*fem,
-                      height: 23.3*fem,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: Container(//wrapped with sizebox to make button bigger but not looked bigger , easily be tapped
+                      width: 21 * fem,
+                      height: 26.3 * fem,
+                      child: Image.asset(
+                        'assets/page-1/images/top-gyi.png',
+                        width: 18 * fem,
+                        height: 23.3 * fem,
+                      ),
                     ),
                   ),
                 ),
