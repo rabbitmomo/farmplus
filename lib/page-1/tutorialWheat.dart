@@ -255,10 +255,10 @@ class tutorialWheat extends StatelessWidget {
                       Container(
                         // aretakentoharvestingthewheat71 (492:430)
                         constraints: BoxConstraints (
-                          maxWidth: 121*fem,
+                          maxWidth: 150*fem,
                         ),
                         child: Text(
-                          'are taken to\nharvesting the wheat',
+                          'are taken to\nharvest the wheat',
                           textAlign: TextAlign.center,
                           style: SafeGoogleFont (
                             'Karma',

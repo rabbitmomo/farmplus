@@ -224,7 +224,7 @@ class tutorialCabbage extends StatelessWidget {
                     children: [
                       Container(
                         // partialshadeB8p (492:448)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 58*fem, 0*fem),
+                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 57*fem, 0*fem),
                         child: Text(
                           'Partial shade',
                           textAlign: TextAlign.center,
@@ -240,10 +240,10 @@ class tutorialCabbage extends StatelessWidget {
                       Container(
                         // aretakentoharvestingthewheattZ (492:452)
                         constraints: BoxConstraints (
-                          maxWidth: 121*fem,
+                          maxWidth: 150*fem,
                         ),
                         child: Text(
-                          'are taken to\nharvesting the wheat',
+                          'are taken to\nharvest the wheat',
                           textAlign: TextAlign.center,
                           style: SafeGoogleFont (
                             'Karma',

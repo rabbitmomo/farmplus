@@ -254,10 +254,10 @@ class tutorialPotato extends StatelessWidget {
                     Container(
                       // aretakentoharvestingthewheatHL (492:518)
                       constraints: BoxConstraints (
-                        maxWidth: 121*fem,
+                        maxWidth: 150*fem,
                       ),
                       child: Text(
-                        'are taken to\nharvesting the wheat',
+                        'are taken to\nharvest the wheat',
                         textAlign: TextAlign.center,
                         style: SafeGoogleFont (
                           'Karma',

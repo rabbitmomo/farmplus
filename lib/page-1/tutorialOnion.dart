@@ -240,10 +240,10 @@ class tutorialOnion extends StatelessWidget {
                       Container(
                         // aretakentoharvestingthewheatE7 (492:496)
                         constraints: BoxConstraints (
-                          maxWidth: 121*fem,
+                          maxWidth: 150*fem,
                         ),
                         child: Text(
-                          'are taken to\nharvesting the wheat',
+                          'are taken to\nharvest the wheat',
                           textAlign: TextAlign.center,
                           style: SafeGoogleFont (
                             'Karma',
