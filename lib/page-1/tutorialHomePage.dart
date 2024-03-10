@@ -11,6 +11,8 @@ import 'package:myapp/page-1/tutorialCabbage.dart';
 import 'package:myapp/page-1/tutorialCarrot.dart';
 import 'package:myapp/page-1/tutorialTomato.dart';
 import 'package:myapp/page-1/tutorialSeeAll.dart';
+import 'package:myapp/page-1/tutorialLevelUp.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class tutorialHome extends StatelessWidget {
   @override
@@ -408,185 +410,490 @@ class tutorialHome extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Container(
-                        // autogroupkn5j97S (85iDdXZnUeq4fGsnwKkn5J)
-                        margin: EdgeInsets.fromLTRB(5*fem, 0*fem, 0*fem, 16.26*fem),
-                        width: 282*fem,
-                        height: 276.53*fem,
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              // unionf5n (485:217)
-                              left: 4.2857231503*fem,
-                              top: 0*fem,
-                              child: Align(
-                                child: SizedBox(
-                                  width: 274.76*fem,
-                                  height: 276.53*fem,
-                                  child: Image.asset(
-                                    'assets/page-1/images/union-PR6.png',
-                                    width: 274.76*fem,
-                                    height: 276.53*fem,
+                      CarouselSlider(
+                        options: CarouselOptions(
+                          height: 608.6*fem,
+                          aspectRatio: 16 / 9,
+                          viewportFraction: 0.8,
+                          initialPage: 0,
+                          enableInfiniteScroll: true,
+                          reverse: false,
+                          autoPlay: false,
+                          autoPlayInterval: Duration(seconds: 2),
+                          autoPlayAnimationDuration: Duration(milliseconds: 800),
+                          autoPlayCurve: Curves.fastOutSlowIn,
+                          enlargeCenterPage: true,
+                          scrollDirection: Axis.horizontal,
+                        ), // Closing bracket for CarouselOptions
+                        items: [
+                          Container(
+                            child: Column(
+                              children: [
+                                Container(
+                                  // autogroupkn5j97S (85iDdXZnUeq4fGsnwKkn5J)
+                                  margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 0*fem),
+                                  width: 282*fem,
+                                  height: 249*fem,
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        // unionf5n (485:217)
+                                        left: 0*fem,
+                                        top: 0*fem,
+                                        child: Align(
+                                          child: SizedBox(
+                                            width: 240.76*fem,
+                                            height: 240.53*fem,
+                                            child: Image.asset(
+                                              'assets/page-1/images/union-PR6.png',
+                                              width: 240.76*fem,
+                                              height: 240.53*fem,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned(
+                                        // image14c9S (485:229)
+                                        left: 44*fem,
+                                        top: 56.7866210938*fem,
+                                        child: Align(
+                                          child: SizedBox(
+                                            width: 168*fem,
+                                            height: 168*fem,
+                                            child: Image.asset(
+                                              'assets/page-1/images/image-14.png',
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
-                              ),
-                            ),
-                            Positioned(
-                              // vectormPi (485:227)
-                              left: 264*fem,
-                              top: 123.7866210938*fem,
-                              child: Align(
-                                child: SizedBox(
-                                  width: 18*fem,
-                                  height: 27*fem,
-                                  child: Image.asset(
-                                    'assets/page-1/images/vector-Nqz.png',
-                                    width: 18*fem,
-                                    height: 27*fem,
+                                Container(
+                                  // dotsXGQ (485:221)
+                                  margin: EdgeInsets.fromLTRB(85*fem, 10*fem, 0*fem, 22*fem),
+                                  width: double.infinity,
+                                  child: Row(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        // f7i (485:222)
+                                        width: 9*fem,
+                                        height: 9*fem,
+                                        decoration: BoxDecoration (
+                                          borderRadius: BorderRadius.circular(4.5*fem),
+                                          color: Color(0xff51806f),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 12*fem,
+                                      ),
+                                      Container(
+                                        // PZW (485:223)
+                                        width: 9*fem,
+                                        height: 9*fem,
+                                        decoration: BoxDecoration (
+                                          borderRadius: BorderRadius.circular(4.5*fem),
+                                          color: Color(0x7fc4c4c4),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 12*fem,
+                                      ),
+                                      Container(
+                                        // LDr (485:224)
+                                        width: 9*fem,
+                                        height: 9*fem,
+                                        decoration: BoxDecoration (
+                                          borderRadius: BorderRadius.circular(4.5*fem),
+                                          color: Color(0x7fc4c4c4),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
-                              ),
-                            ),
-                            Positioned(
-                              // vectorHcx (485:228)
-                              left: 0*fem,
-                              top: 123.7866210938*fem,
-                              child: Align(
-                                child: SizedBox(
-                                  width: 18*fem,
-                                  height: 27*fem,
-                                  child: Image.asset(
-                                    'assets/page-1/images/vector-dSU.png',
-                                    width: 18*fem,
-                                    height: 27*fem,
+                                Container(
+                                  // beginner5SL (485:225)
+                                  margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 3*fem, 7*fem),
+                                  child: Text(
+                                    'Beginner',
+                                    style: SafeGoogleFont (
+                                      'Poppins',
+                                      fontSize: 32*ffem,
+                                      fontWeight: FontWeight.w500,
+                                      height: 1.5*ffem/fem,
+                                      color: Color(0xff0a4b33),
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ),
-                            Positioned(
-                              // image14c9S (485:229)
-                              left: 73*fem,
-                              top: 56.7866210938*fem,
-                              child: Align(
-                                child: SizedBox(
-                                  width: 168*fem,
-                                  height: 168*fem,
-                                  child: Image.asset(
-                                    'assets/page-1/images/image-14.png',
-                                    fit: BoxFit.cover,
+                                Container(
+                                  // thisisavideotutorialforbeginne (485:226)
+                                  margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 15*fem),
+                                  constraints: BoxConstraints (
+                                    maxWidth: 263*fem,
+                                  ),
+                                  child: Text(
+                                    'This is a video tutorial for beginner....It consists of  various video explaining the uses of fertilizer, water, and the types of crops',
+                                    textAlign: TextAlign.center,
+                                    style: SafeGoogleFont (
+                                      'Roboto Flex',
+                                      fontSize: 15*ffem,
+                                      fontWeight: FontWeight.w400,
+                                      height: 1.4666666667*ffem/fem,
+                                      color: Color(0xff8f8f8f),
+                                    ),
                                   ),
                                 ),
-                              ),
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => levelUp()),
+                                    );
+                                  },
+                                  child: Container(
+                                    margin: EdgeInsets.fromLTRB(2 * fem, 0 * fem, 5 * fem, 0 * fem),
+                                    width: double.infinity,
+                                    height: 50 * fem,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xff0b6236),
+                                      borderRadius: BorderRadius.circular(30 * fem),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Color(0x19000000),
+                                          offset: Offset(0 * fem, 0 * fem),
+                                          blurRadius: 5 * fem,
+                                        ),
+                                      ],
+                                    ),
+                                    child: Center(
+                                      child: Text(
+                                        'Get Started',
+                                        textAlign: TextAlign.center,
+                                        style: SafeGoogleFont(
+                                          'Poppins',
+                                          fontSize: 15 * ffem,
+                                          fontWeight: FontWeight.w400,
+                                          height: 1.5 * ffem / fem,
+                                          color: Color(0xffffffff),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        // dotsXGQ (485:221)
-                        margin: EdgeInsets.fromLTRB(116*fem, 0*fem, 120*fem, 22*fem),
-                        width: double.infinity,
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                              // f7i (485:222)
-                              width: 9*fem,
-                              height: 9*fem,
-                              decoration: BoxDecoration (
-                                borderRadius: BorderRadius.circular(4.5*fem),
-                                color: Color(0xff51806f),
-                              ),
+                          ), // Closing bracket for first container
+                          Container(
+                            child: Column(
+                              children: [
+                                Container(
+                                  // autogroupkn5j97S (85iDdXZnUeq4fGsnwKkn5J)
+                                  margin: EdgeInsets.fromLTRB(5*fem, 0*fem, 0*fem, 0*fem),
+                                  width: 282*fem,
+                                  height: 249*fem,
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        // unionf5n (485:217)
+                                        left: 0*fem,
+                                        top: 0*fem,
+                                        child: Align(
+                                          child: SizedBox(
+                                            width: 240.76*fem,
+                                            height: 240.53*fem,
+                                            child: Image.asset(
+                                              'assets/page-1/images/union-PR6.png',
+                                              width: 240.76*fem,
+                                              height: 240.53*fem,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned(
+                                        // image14c9S (485:229)
+                                        left: 35*fem,
+                                        top: 56.7866210938*fem,
+                                        child: Align(
+                                          child: SizedBox(
+                                            width: 168*fem,
+                                            height: 168*fem,
+                                            child: Image.asset(
+                                              'assets/page-1/images/image-15.png',
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  // dotsXGQ (485:221)
+                                  margin: EdgeInsets.fromLTRB(85*fem, 10*fem, 0*fem, 22*fem),
+                                  width: double.infinity,
+                                  child: Row(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        // f7i (485:222)
+                                        width: 9*fem,
+                                        height: 9*fem,
+                                        decoration: BoxDecoration (
+                                          borderRadius: BorderRadius.circular(4.5*fem),
+                                          color: Color(0x7fc4c4c4),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 12*fem,
+                                      ),
+                                      Container(
+                                        // PZW (485:223)
+                                        width: 9*fem,
+                                        height: 9*fem,
+                                        decoration: BoxDecoration (
+                                          borderRadius: BorderRadius.circular(4.5*fem),
+                                          color: Color(0xff51806f),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 12*fem,
+                                      ),
+                                      Container(
+                                        // LDr (485:224)
+                                        width: 9*fem,
+                                        height: 9*fem,
+                                        decoration: BoxDecoration (
+                                          borderRadius: BorderRadius.circular(4.5*fem),
+                                          color: Color(0x7fc4c4c4),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  // beginner5SL (485:225)
+                                  margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 3*fem, 7*fem),
+                                  child: Text(
+                                    'Intermediate',
+                                    style: SafeGoogleFont (
+                                      'Poppins',
+                                      fontSize: 32*ffem,
+                                      fontWeight: FontWeight.w500,
+                                      height: 1.5*ffem/fem,
+                                      color: Color(0xff0a4b33),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  // thisisavideotutorialforbeginne (485:226)
+                                  margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 15*fem),
+                                  constraints: BoxConstraints (
+                                    maxWidth: 263*fem,
+                                  ),
+                                  child: Text(
+                                    'This is a video tutorial for beginner....It consists of  various video explaining the uses of fertilizer, water, and the types of crops',
+                                    textAlign: TextAlign.center,
+                                    style: SafeGoogleFont (
+                                      'Roboto Flex',
+                                      fontSize: 15*ffem,
+                                      fontWeight: FontWeight.w400,
+                                      height: 1.4666666667*ffem/fem,
+                                      color: Color(0xff8f8f8f),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  // group35TBz (485:214)
+                                  margin: EdgeInsets.fromLTRB(2*fem, 0*fem, 5*fem, 0*fem),
+                                  width: double.infinity,
+                                  height: 50*fem,
+                                  decoration: BoxDecoration (
+                                    color: Color(0xffc5c5c5),
+                                    borderRadius: BorderRadius.circular(30*fem),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Color(0x19000000),
+                                        offset: Offset(0*fem, 0*fem),
+                                        blurRadius: 5*fem,
+                                      ),
+                                    ],
+                                  ),
+                                  child: Center(
+                                    child: Center(
+                                      child: Text(
+                                        'Get Started',
+                                        textAlign: TextAlign.center,
+                                        style: SafeGoogleFont (
+                                          'Poppins',
+                                          fontSize: 15*ffem,
+                                          fontWeight: FontWeight.w400,
+                                          height: 1.5*ffem/fem,
+                                          color: Color(0xff000000),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                              width: 12*fem,
+                          ),  // Closing bracket for second container
+                          Container(
+                            child: Column(
+                              children: [
+                                Container(
+                                  // autogroupkn5j97S (85iDdXZnUeq4fGsnwKkn5J)
+                                  margin: EdgeInsets.fromLTRB(5*fem, 0*fem, 0*fem, 0*fem),
+                                  width: 282*fem,
+                                  height: 249*fem,
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        // unionf5n (485:217)
+                                        left: 4.2857231503*fem,
+                                        top: 0*fem,
+                                        child: Align(
+                                          child: SizedBox(
+                                            width: 230.76*fem,
+                                            height: 230.53*fem,
+                                            child: Image.asset(
+                                              'assets/page-1/images/union-PR6.png',
+                                              width: 230.76*fem,
+                                              height: 230.53*fem,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned(
+                                        // image14c9S (485:229)
+                                        left: 23*fem,
+                                        top: 56.7866210938*fem,
+                                        child: Align(
+                                          child: SizedBox(
+                                            width: 168*fem,
+                                            height: 168*fem,
+                                            child: Image.asset(
+                                              'assets/page-1/images/image-16.png',
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  // dotsXGQ (485:221)
+                                  margin: EdgeInsets.fromLTRB(85*fem, 10*fem, 0*fem, 22*fem),
+                                  width: double.infinity,
+                                  child: Row(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        // f7i (485:222)
+                                        width: 9*fem,
+                                        height: 9*fem,
+                                        decoration: BoxDecoration (
+                                          borderRadius: BorderRadius.circular(4.5*fem),
+                                          color: Color(0x7fc4c4c4),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 12*fem,
+                                      ),
+                                      Container(
+                                        // PZW (485:223)
+                                        width: 9*fem,
+                                        height: 9*fem,
+                                        decoration: BoxDecoration (
+                                          borderRadius: BorderRadius.circular(4.5*fem),
+                                          color: Color(0x7fc4c4c4),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 12*fem,
+                                      ),
+                                      Container(
+                                        // LDr (485:224)
+                                        width: 9*fem,
+                                        height: 9*fem,
+                                        decoration: BoxDecoration (
+                                          borderRadius: BorderRadius.circular(4.5*fem),
+                                          color: Color(0xff51806f),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  // beginner5SL (485:225)
+                                  margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 3*fem, 7*fem),
+                                  child: Text(
+                                    'Expert',
+                                    style: SafeGoogleFont (
+                                      'Poppins',
+                                      fontSize: 32*ffem,
+                                      fontWeight: FontWeight.w500,
+                                      height: 1.5*ffem/fem,
+                                      color: Color(0xff0a4b33),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  // thisisavideotutorialforbeginne (485:226)
+                                  margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 15*fem),
+                                  constraints: BoxConstraints (
+                                    maxWidth: 263*fem,
+                                  ),
+                                  child: Text(
+                                    'This is a video tutorial for beginner....It consists of  various video explaining the uses of fertilizer, water, and the types of crops',
+                                    textAlign: TextAlign.center,
+                                    style: SafeGoogleFont (
+                                      'Roboto Flex',
+                                      fontSize: 15*ffem,
+                                      fontWeight: FontWeight.w400,
+                                      height: 1.4666666667*ffem/fem,
+                                      color: Color(0xff8f8f8f),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  // group35TBz (485:214)
+                                  margin: EdgeInsets.fromLTRB(2*fem, 0*fem, 5*fem, 0*fem),
+                                  width: double.infinity,
+                                  height: 50*fem,
+                                  decoration: BoxDecoration (
+                                    color: Color(0xffc5c5c5),
+                                    borderRadius: BorderRadius.circular(30*fem),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Color(0x19000000),
+                                        offset: Offset(0*fem, 0*fem),
+                                        blurRadius: 5*fem,
+                                      ),
+                                    ],
+                                  ),
+                                  child: Center(
+                                    child: Center(
+                                      child: Text(
+                                        'Get Started',
+                                        textAlign: TextAlign.center,
+                                        style: SafeGoogleFont (
+                                          'Poppins',
+                                          fontSize: 15*ffem,
+                                          fontWeight: FontWeight.w400,
+                                          height: 1.5*ffem/fem,
+                                          color: Color(0xff000000),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
-                            Container(
-                              // PZW (485:223)
-                              width: 9*fem,
-                              height: 9*fem,
-                              decoration: BoxDecoration (
-                                borderRadius: BorderRadius.circular(4.5*fem),
-                                color: Color(0x7fc4c4c4),
-                              ),
-                            ),
-                            SizedBox(
-                              width: 12*fem,
-                            ),
-                            Container(
-                              // LDr (485:224)
-                              width: 9*fem,
-                              height: 9*fem,
-                              decoration: BoxDecoration (
-                                borderRadius: BorderRadius.circular(4.5*fem),
-                                color: Color(0x7fc4c4c4),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        // beginner5SL (485:225)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 3*fem, 7*fem),
-                        child: Text(
-                          'Beginner',
-                          style: SafeGoogleFont (
-                            'Poppins',
-                            fontSize: 32*ffem,
-                            fontWeight: FontWeight.w500,
-                            height: 1.5*ffem/fem,
-                            color: Color(0xff0a4b33),
-                          ),
-                        ),
-                      ),
-                      Container(
-                        // thisisavideotutorialforbeginne (485:226)
-                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 51*fem),
-                        constraints: BoxConstraints (
-                          maxWidth: 263*fem,
-                        ),
-                        child: Text(
-                          'This is a video tutorial for beginner....It consists of  various video explaining the uses of fertilizer, water, and the types of crops',
-                          textAlign: TextAlign.center,
-                          style: SafeGoogleFont (
-                            'Roboto Flex',
-                            fontSize: 15*ffem,
-                            fontWeight: FontWeight.w400,
-                            height: 1.4666666667*ffem/fem,
-                            color: Color(0xff8f8f8f),
-                          ),
-                        ),
-                      ),
-                      Container(
-                        // group35TBz (485:214)
-                        margin: EdgeInsets.fromLTRB(2*fem, 0*fem, 5*fem, 35*fem),
-                        width: double.infinity,
-                        height: 50*fem,
-                        decoration: BoxDecoration (
-                          color: Color(0xff0b6236),
-                          borderRadius: BorderRadius.circular(30*fem),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Color(0x19000000),
-                              offset: Offset(0*fem, 0*fem),
-                              blurRadius: 5*fem,
-                            ),
-                          ],
-                        ),
-                        child: Center(
-                          child: Center(
-                            child: Text(
-                              'Get Started',
-                              textAlign: TextAlign.center,
-                              style: SafeGoogleFont (
-                                'Poppins',
-                                fontSize: 15*ffem,
-                                fontWeight: FontWeight.w400,
-                                height: 1.5*ffem/fem,
-                                color: Color(0xffffffff),
-                              ),
-                            ),
-                          ),
-                        ),
+                          ), // Closing bracket for third container
+                        ], // Closing bracket for items list
                       ),
                     ],
                   ),

@@ -46,15 +46,19 @@ class levelUp extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Container(
-                        // vectorxKy (271:121)
-                        margin: EdgeInsets.fromLTRB(0*fem, 2.13*fem, 65*fem, 0*fem),
-                        width: 18*fem,
-                        height: 23.3*fem,
-                        child: Image.asset(
-                          'assets/page-1/images/vector-vo9.png',
-                          width: 18*fem,
-                          height: 23.3*fem,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(0 * fem, 2.13 * fem, 65 * fem, 0 * fem),
+                          width: 18 * fem,
+                          height: 23.3 * fem,
+                          child: Image.asset(
+                            'assets/page-1/images/vector-vo9.png',
+                            width: 18 * fem,
+                            height: 23.3 * fem,
+                          ),
                         ),
                       ),
                       Container(
