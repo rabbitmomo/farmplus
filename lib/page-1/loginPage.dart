@@ -35,28 +35,15 @@ class logIn extends StatelessWidget {
                       Container(
                         // designer11sKm (68:224)
                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 10*fem, 0*fem),
-                        width: 28*fem,
+                        width: 158*fem,
                         height: 32*fem,
                         child: Image.asset(
-                          'assets/page-1/images/designer-1-1-vCo.png',
-                        ),
-                      ),
-                      Container(
-                        // farmplusxc7 (68:223)
-                        margin: EdgeInsets.fromLTRB(0*fem, 2*fem, 118*fem, 0*fem),
-                        child: Text(
-                          'FarmPlus+',
-                          style: SafeGoogleFont (
-                            'Poppins',
-                            fontSize: 20*ffem,
-                            fontWeight: FontWeight.w700,
-                            height: 1.5*ffem/fem,
-                          ),
+                          'assets/page-1/images/HomePageLogo.png',
                         ),
                       ),
                       Container(
                         // skipjmH (124:60)
-                        margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 0*fem),
+                        margin: EdgeInsets.fromLTRB(95*fem, 1*fem, 0*fem, 0*fem),
                         child: Text(
                           'Skip',
                           style: SafeGoogleFont (
