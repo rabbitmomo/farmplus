@@ -35,7 +35,7 @@ import 'package:myapp/page-1/splash-page-kx.dart';
 // import 'package:myapp/page-1/about-item.dart';
 // import 'package:myapp/page-1/carrot-information-from-qr-code.dart';
 // import 'package:myapp/page-1/information-page.dart';
-// import 'package:myapp/page-1/home-page.dart';
+import 'package:myapp/page-1/home-page.dart';
 // import 'package:myapp/page-1/select-crop-field-page.dart';
 // import 'package:myapp/page-1/crop-management-page.dart';
 // import 'package:myapp/page-1/add-new-field-page.dart';
@@ -117,52 +117,54 @@ import 'package:myapp/page-1/tutorialWheat.dart';
 */
 
 void main() {
-	WidgetsFlutterBinding.ensureInitialized();
-	SystemChrome.setEnabledSystemUIMode(
-		SystemUiMode.manual,
-		overlays: SystemUiOverlay.values,
-	);
-	runApp(MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(
+    SystemUiMode.manual,
+    overlays: SystemUiOverlay.values,
+  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-	@override
-	Widget build(BuildContext context) {
-		return MaterialApp(
-			title: 'Flutter',
-			debugShowCheckedModeBanner: false,
-			scrollBehavior: MyCustomScrollBehavior(),
-			theme: ThemeData(
-				primarySwatch: Colors.blue,
-			),
-			home: SplashScreen(), // Set SplashScreen as the home widget
-		);
-	}
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter',
+      debugShowCheckedModeBanner: false,
+      scrollBehavior: MyCustomScrollBehavior(),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: SplashScreen(), // Set SplashScreen as the home widget
+      routes: {
+        '/home': (context) => homePage(),
+      },
+    );
+  }
 }
 
 class SplashScreen extends StatefulWidget {
-	@override
-	_SplashScreenState createState() => _SplashScreenState();
+  @override
+  _SplashScreenState createState() => _SplashScreenState();
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-	@override
-	void initState() {
-		super.initState();
-		navigateToLogin();
-	}
+  @override
+  void initState() {
+    super.initState();
+    navigateToLogin();
+  }
 
-	Future<void> navigateToLogin() async {
-		await Future.delayed(Duration(seconds: 3));
-		Navigator.pushReplacement(
-			context,
-			MaterialPageRoute(builder: (context) => logIn()),
-		);
-	}
+  Future<void> navigateToLogin() async {
+    await Future.delayed(Duration(seconds: 3));
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => logIn()),
+    );
+  }
 
-	@override
-	Widget build(BuildContext context) {
-		return Scene(); // Your existing splash screen widget
-	}
+  @override
+  Widget build(BuildContext context) {
+    return Scene(); // Your existing splash screen widget
+  }
 }
-
