@@ -17,7 +17,7 @@ class logIn extends StatelessWidget {
         width: double.infinity,
         child: Container(
           // loginpagehaoohH (68:177)
-          padding: EdgeInsets.fromLTRB(27*fem, 29*fem, 27*fem, 33*fem),//top bar
+          padding: EdgeInsets.fromLTRB(20*fem, 29*fem, 20*fem, 13*fem),//top bar
           width: double.infinity,
           decoration: BoxDecoration (
             color: Color(0xffffffff),
@@ -242,7 +242,7 @@ class logIn extends StatelessWidget {
                 ),
                 Container(
                   // loginzrs (68:178)
-                  margin: EdgeInsets.fromLTRB(93*fem, 0*fem, 93*fem, 130*fem),
+                  margin: EdgeInsets.fromLTRB(93*fem, 0*fem, 93*fem, 100*fem),
                   width: double.infinity,
                   height: 38*fem,
                   decoration: BoxDecoration (
@@ -367,9 +367,10 @@ class logIn extends StatelessWidget {
                       Expanded(
                         child: Container(
                           // donthaveanaccountGoh (68:198)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 0*fem),
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 0*fem),
                           child: Text(
                             'Don’t have an account. ',
+                            overflow: TextOverflow.clip,
                             style: SafeGoogleFont (
                               'Roboto',
                               fontSize: 12*ffem,
