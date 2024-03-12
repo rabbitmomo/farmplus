@@ -29,7 +29,7 @@ class Scene extends StatelessWidget {
               Container(
                 // autogroupp4pp5u1 (MusHcLMc7fLKhwhFWdp4PP)
                 padding: EdgeInsets.fromLTRB(
-                    92.5 * fem, 164 * fem, 91.5 * fem, 66.5 * fem),
+                    92.5 * fem, 149 * fem, 92.5 * fem, 0 * fem),
                 width: double.infinity,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -37,7 +37,7 @@ class Scene extends StatelessWidget {
                     Container(
                       // designer11ctw (68:169)
                       margin: EdgeInsets.fromLTRB(
-                          0 * fem, 0 * fem, 0 * fem, 17.5 * fem),
+                          0 * fem, 0 * fem, 0 * fem, 4.5 * fem),
                       width: 180 * fem,
                       height: 200 * fem,
                       child: Image.asset(
@@ -48,9 +48,10 @@ class Scene extends StatelessWidget {
                 ),
               ),
               Container(
+                alignment: FractionalOffset.bottomCenter,
                 // document1TPm (181:1129)
                 width: 384 * fem,
-                height: 384 * fem,
+                height: 364 * fem,
                 child: Image.asset(
                   'assets/page-1/images/document-1.png',
                   fit: BoxFit.cover,
