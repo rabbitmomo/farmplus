@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:myapp/page-1/login-page-hao.dart';
 import 'package:myapp/utils.dart';
 // import 'package:myapp/page-1/rectangle-17409.dart';
 // import 'package:myapp/page-1/consultation-page-kx.dart';
@@ -44,7 +43,7 @@ import 'package:myapp/page-1/splash-page-kx.dart';
 // import 'package:myapp/page-1/sample.dart';
 // import 'package:myapp/page-1/persona.dart';
 // import 'package:myapp/page-1/login-page-.dart';
-import 'package:myapp/page-1/level-up-farmer-tutorial-page-step-by-step-page-hao.dart';
+// import 'package:myapp/page-1/level-up-farmer-tutorial-page-step-by-step-page-hao.dart';
 // import 'package:myapp/page-1/level-up-farmer-tutorial-page-step-by-step-page-hao-JbR.dart';
 // import 'package:myapp/page-1/guidance-page-hao.dart';
 // import 'package:myapp/page-1/gallery-page-hao.dart';
@@ -57,7 +56,7 @@ import 'package:myapp/page-1/level-up-farmer-tutorial-page-step-by-step-page-hao
 // import 'package:myapp/page-1/forgot-password-page-2-hao.dart';
 // import 'package:myapp/page-1/forgot-password-verification-page-phone-numberhao.dart';
 // import 'package:myapp/page-1/forgot-password-page-1-hao.dart';
-import 'package:myapp/page-1/login-page-hao.dart';
+import 'package:myapp/page-1/loginPage.dart';
 // import 'package:myapp/page-1/sign-up-page-5-hao.dart';
 // import 'package:myapp/page-1/sign-up-page-4-hao.dart';
 // import 'package:myapp/page-1/sign-up-page-3-hao.dart';
@@ -111,6 +110,11 @@ import 'package:myapp/page-1/login-page-hao.dart';
 import 'package:flutter/services.dart';
 import 'package:myapp/page-1/tutorialHomePage.dart';
 import 'package:myapp/page-1/tutorialWheat.dart';
+
+/* 
+  to remove the flutter default splash screen run the code at terminal 
+  flutter pub remove flutter_native_splash
+*/
 
 void main() {
 	WidgetsFlutterBinding.ensureInitialized();
