@@ -16,7 +16,7 @@ import 'package:myapp/page-1/inventory-page.dart';
 // import 'package:myapp/page-1/location-service-suggestion.dart';
 // import 'package:myapp/page-1/location-service-suggestion-NMm.dart';
 // import 'package:myapp/page-1/analysis-report-page-kx.dart';
-// import 'package:myapp/page-1/profile-page.dart';
+import 'package:myapp/page-1/profile-page.dart';
 // import 'package:myapp/page-1/sign-out-confirmation.dart';
 // import 'package:myapp/page-1/add-farmer-notice.dart';
 // import 'package:myapp/page-1/add-farmer.dart';
@@ -36,7 +36,7 @@ import 'package:myapp/page-1/calendar-page-kx.dart';
 // import 'package:myapp/page-1/carrot-information-from-qr-code.dart';
 // import 'package:myapp/page-1/information-page.dart';
 import 'package:myapp/page-1/homePage.dart';
-// import 'package:myapp/page-1/select-crop-field-page.dart';
+import 'package:myapp/page-1/select-crop-field-page.dart';
 // import 'package:myapp/page-1/crop-management-page.dart';
 // import 'package:myapp/page-1/add-new-field-page.dart';
 // import 'package:myapp/page-1/color-palette.dart';
@@ -140,6 +140,9 @@ class MyApp extends StatelessWidget {
         '/home': (context) => HomePage(),
         '/calendar' : (context) => CalendarPage(),
         '/notification' : (context) => NotificationPage(),
+        // '/order' : (context) => ,
+        '/crop' : (context) => SelectCropPage(),
+        'profile' : (context) => ProfilePage(),
         // '/tutorial' : (context) => TutorialPage(),
         // '/supplychain' : (context) => ,
         // '/commnunity' : (context) =>,
