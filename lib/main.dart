@@ -8,7 +8,7 @@ import 'package:myapp/utils.dart';
 // import 'package:myapp/page-1/consultation-page-kx.dart';
 // import 'package:myapp/page-1/consultation-live-chat-page-kx.dart';
 // import 'package:myapp/page-1/analysis-report-find-area-page-kx.dart';
-// import 'package:myapp/page-1/inventory-page.dart';
+import 'package:myapp/page-1/inventory-page.dart';
 // import 'package:myapp/page-1/level-up-farmer-page.dart';
 // import 'package:myapp/page-1/level-up-farmer-page-EnK.dart';
 // import 'package:myapp/page-1/level-up-farmer-page-KVZ.dart';
@@ -24,10 +24,10 @@ import 'package:myapp/utils.dart';
 // import 'package:myapp/page-1/inventory-detail-.dart';
 // import 'package:myapp/page-1/new-inventory-item.dart';
 import 'package:myapp/page-1/splash-page-kx.dart';
-// import 'package:myapp/page-1/calendar-page-kx.dart';
+import 'package:myapp/page-1/calendar-page-kx.dart';
 // import 'package:myapp/page-1/circle-check-box.dart';
 // import 'package:myapp/page-1/calendar-add-event-page-kx.dart';
-// import 'package:myapp/page-1/notification-page-kx.dart';
+ import 'package:myapp/page-1/notification-page-kx.dart';
 // import 'package:myapp/page-1/notification-manage-page-kx.dart';
 // import 'package:myapp/page-1/homepage.dart';
 // import 'package:myapp/page-1/billing.dart';
@@ -35,7 +35,7 @@ import 'package:myapp/page-1/splash-page-kx.dart';
 // import 'package:myapp/page-1/about-item.dart';
 // import 'package:myapp/page-1/carrot-information-from-qr-code.dart';
 // import 'package:myapp/page-1/information-page.dart';
-import 'package:myapp/page-1/home-page.dart';
+import 'package:myapp/page-1/homePage.dart';
 // import 'package:myapp/page-1/select-crop-field-page.dart';
 // import 'package:myapp/page-1/crop-management-page.dart';
 // import 'package:myapp/page-1/add-new-field-page.dart';
@@ -137,7 +137,13 @@ class MyApp extends StatelessWidget {
       ),
       home: SplashScreen(), // Set SplashScreen as the home widget
       routes: {
-        '/home': (context) => homePage(),
+        '/home': (context) => HomePage(),
+        '/calendar' : (context) => CalendarPage(),
+        '/notification' : (context) => NotificationPage(),
+        // '/tutorial' : (context) => TutorialPage(),
+        // '/supplychain' : (context) => ,
+        // '/commnunity' : (context) =>,
+        '/inventory' : (context) => InventoryPage(),
       },
     );
   }

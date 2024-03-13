@@ -15,7 +15,7 @@ class homePage extends StatelessWidget {
       child: Container(
         // homepagecK9 (7:8)
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: BoxDecoration(
           color: Color(0xffffffff),
         ),
         child: Column(
@@ -23,70 +23,64 @@ class homePage extends StatelessWidget {
           children: [
             Container(
               // autogroupdvxjn79 (Mut5vvLkEwBzQQiKW2dVXj)
-              padding: EdgeInsets.fromLTRB(21*fem, 21*fem, 19*fem, 19.74*fem),
+              padding: EdgeInsets.fromLTRB(
+                  15 * fem, 21 * fem, 15 * fem, 19.74 * fem),
               width: double.infinity,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
                     // topdtT (224:1552)
-                    margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 4*fem, 20*fem),
+                    margin: EdgeInsets.fromLTRB(
+                        3 * fem, 0 * fem, 2 * fem, 20 * fem),
                     width: double.infinity,
-                    height: 32*fem,
+                    height: 32 * fem,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
                           // logouqy (222:1447)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 94*fem, 0*fem),
+                          margin: EdgeInsets.fromLTRB(
+                              0 * fem, 0 * fem, 74 * fem, 0 * fem),
                           height: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Container(
                                 // designer11BYb (222:1446)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 10*fem, 0*fem),
-                                width: 28*fem,
-                                height: 32*fem,
+                                margin: EdgeInsets.fromLTRB(
+                                    0 * fem, 0 * fem, 5 * fem, 0 * fem),
+                                width: 128 * fem,
+                                height: 32 * fem,
                                 child: Image.asset(
-                                  'assets/page-1/images/designer-1-1-BuR.png',
+                                  'assets/page-1/images/HomePageLogo.png',
                                 ),
-                              ),
-                              Text(
-                                // farmplusCyV (222:1445)
-                                'FarmPlus+',
-                                style: SafeGoogleFont (
-                                  'Poppins',
-                                  fontSize: 20*ffem,
-                                  fontWeight: FontWeight.w700,
-                                  height: 1.5*ffem/fem,
-                                ),
-                              ),
+                              )
                             ],
                           ),
                         ),
                         Container(
                           // frame96sZq (224:1549)
-                          margin: EdgeInsets.fromLTRB(0*fem, 5.25*fem, 0*fem, 5.25*fem),
+                          margin: EdgeInsets.fromLTRB(
+                              0 * fem, 0 * fem, 0 * fem, 5.25 * fem),
                           height: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
                                 // vectorAYw (224:1544)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 31*fem, 0*fem),
+                                margin: EdgeInsets.fromLTRB(
+                                    0 * fem, 0 * fem, 0 * fem, 0 * fem),
                                 child: TextButton(
                                   onPressed: () {},
-                                  style: TextButton.styleFrom (
+                                  style: TextButton.styleFrom(
                                     padding: EdgeInsets.zero,
                                   ),
                                   child: Container(
-                                    width: 20*fem,
-                                    height: 20*fem,
                                     child: Image.asset(
                                       'assets/page-1/images/vector-if9.png',
-                                      width: 20*fem,
-                                      height: 20*fem,
+                                      width: 20 * fem,
+                                      height: 20 * fem,
                                     ),
                                   ),
                                 ),
@@ -94,16 +88,14 @@ class homePage extends StatelessWidget {
                               TextButton(
                                 // group96UT9 (224:1551)
                                 onPressed: () {},
-                                style: TextButton.styleFrom (
+                                style: TextButton.styleFrom(
                                   padding: EdgeInsets.zero,
                                 ),
                                 child: Container(
-                                  width: 20*fem,
-                                  height: 21.5*fem,
                                   child: Image.asset(
                                     'assets/page-1/images/group-96.png',
-                                    width: 20*fem,
-                                    height: 21.5*fem,
+                                    width: 20 * fem,
+                                    height: 21.5 * fem,
                                   ),
                                 ),
                               ),
@@ -115,38 +107,41 @@ class homePage extends StatelessWidget {
                   ),
                   Container(
                     // group112w5q (417:271)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 193*fem, 126*fem),
-                    padding: EdgeInsets.fromLTRB(3*fem, 3*fem, 2*fem, 2*fem),
-                    decoration: BoxDecoration (
+                    margin: EdgeInsets.fromLTRB(
+                        0 * fem, 0 * fem, 193 * fem, 126 * fem),
+                    padding:
+                        EdgeInsets.fromLTRB(0* fem, 2 * fem, 0 * fem, 2 * fem),
+                    decoration: BoxDecoration(
                       color: Color(0xff2c5a29),
-                      borderRadius: BorderRadius.circular(32.5*fem),
+                      borderRadius: BorderRadius.circular(50 * fem),
                     ),
                     child: Center(
                       // maskgroupaeb (417:273)
                       child: SizedBox(
-                        width: 60*fem,
-                        height: 60*fem,
+                        width: 60 * fem,
+                        height: 60 * fem,
                         child: Image.asset(
                           'assets/page-1/images/mask-group-eud.png',
-                          width: 60*fem,
-                          height: 60*fem,
+                          width: 60 * fem,
+                          height: 60 * fem,
                         ),
                       ),
                     ),
                   ),
                   Container(
                     // group2620BuH (417:270)
-                    padding: EdgeInsets.fromLTRB(26.59*fem, 15.6*fem, 27.54*fem, 15.33*fem),
+                    padding: EdgeInsets.fromLTRB(
+                        26.59 * fem, 15.6 * fem, 27.54 * fem, 15.33 * fem),
                     width: double.infinity,
-                    height: 64.26*fem,
-                    decoration: BoxDecoration (
+                    height: 64.26 * fem,
+                    decoration: BoxDecoration(
                       color: Color(0xffffffff),
-                      borderRadius: BorderRadius.circular(8*fem),
+                      borderRadius: BorderRadius.circular(8 * fem),
                       boxShadow: [
                         BoxShadow(
                           color: Color(0x3f000000),
-                          offset: Offset(0*fem, 0*fem),
-                          blurRadius: 2*fem,
+                          offset: Offset(0 * fem, 0 * fem),
+                          blurRadius: 2 * fem,
                         ),
                       ],
                     ),
@@ -159,46 +154,50 @@ class homePage extends StatelessWidget {
                         children: [
                           Container(
                             // tutorialaK9 (417:266)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 45.29*fem, 0*fem),
-                            width: 30*fem,
-                            height: 33.33*fem,
+                            margin: EdgeInsets.fromLTRB(
+                                0 * fem, 0 * fem, 45.29 * fem, 0 * fem),
+                            width: 30 * fem,
+                            height: 33.33 * fem,
                             child: Image.asset(
                               'assets/page-1/images/tutorial.png',
-                              width: 30*fem,
-                              height: 33.33*fem,
+                              width: 30 * fem,
+                              height: 33.33 * fem,
                             ),
                           ),
                           Container(
                             // qrcodeeK1 (417:267)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 45.29*fem, 0*fem),
-                            width: 32*fem,
-                            height: 32*fem,
+                            margin: EdgeInsets.fromLTRB(
+                                0 * fem, 0 * fem, 45.29 * fem, 0 * fem),
+                            width: 32 * fem,
+                            height: 32 * fem,
                             child: Image.asset(
                               'assets/page-1/images/qr-code.png',
-                              width: 32*fem,
-                              height: 32*fem,
+                              width: 32 * fem,
+                              height: 32 * fem,
                             ),
                           ),
                           Container(
                             // vectoripf (425:179)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 45.29*fem, 0*fem),
-                            width: 35*fem,
-                            height: 29*fem,
+                            margin: EdgeInsets.fromLTRB(
+                                0 * fem, 0 * fem, 45.29 * fem, 0 * fem),
+                            width: 35 * fem,
+                            height: 29 * fem,
                             child: Image.asset(
                               'assets/page-1/images/vector-8xP.png',
-                              width: 35*fem,
-                              height: 29*fem,
+                              width: 35 * fem,
+                              height: 29 * fem,
                             ),
                           ),
                           Container(
                             // vector1Hy (417:268)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 0*fem),
-                            width: 33*fem,
-                            height: 33*fem,
+                            margin: EdgeInsets.fromLTRB(
+                                0 * fem, 0 * fem, 0 * fem, 0 * fem),
+                            width: 33 * fem,
+                            height: 33 * fem,
                             child: Image.asset(
                               'assets/page-1/images/vector-3Bm.png',
-                              width: 33*fem,
-                              height: 33*fem,
+                              width: 33 * fem,
+                              height: 33 * fem,
                             ),
                           ),
                         ],
@@ -210,18 +209,18 @@ class homePage extends StatelessWidget {
             ),
             Container(
               // autogroupktu5coZ (Mut4KJN5H9ghWNDbrSktU5)
-              width: 361*fem,
-              height: 452*fem,
+              width: 361 * fem,
+              height: 452 * fem,
               child: Stack(
                 children: [
                   Positioned(
                     // document1gHd (417:276)
-                    left: 0*fem,
-                    top: 133*fem,
+                    left: 0 * fem,
+                    top: 133 * fem,
                     child: Align(
                       child: SizedBox(
-                        width: 360*fem,
-                        height: 319*fem,
+                        width: 360 * fem,
+                        height: 319 * fem,
                         child: Image.asset(
                           'assets/page-1/images/document-1-nfy.png',
                           fit: BoxFit.cover,
@@ -231,23 +230,24 @@ class homePage extends StatelessWidget {
                   ),
                   Positioned(
                     // navbaruRH (247:206)
-                    left: 1*fem,
-                    top: 387*fem,
+                    left: 1 * fem,
+                    top: 387 * fem,
                     child: Container(
-                      padding: EdgeInsets.fromLTRB(30.5*fem, 13*fem, 29.5*fem, 8.09*fem),
-                      width: 360*fem,
-                      height: 65*fem,
-                      decoration: BoxDecoration (
+                      padding: EdgeInsets.fromLTRB(
+                          30.5 * fem, 13 * fem, 29.5 * fem, 8.09 * fem),
+                      width: 360 * fem,
+                      height: 65 * fem,
+                      decoration: BoxDecoration(
                         color: Color(0xffffffff),
-                        borderRadius: BorderRadius.only (
-                          topLeft: Radius.circular(25*fem),
-                          topRight: Radius.circular(25*fem),
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(25 * fem),
+                          topRight: Radius.circular(25 * fem),
                         ),
                         boxShadow: [
                           BoxShadow(
                             color: Color(0x0c000000),
-                            offset: Offset(0*fem, -4*fem),
-                            blurRadius: 2*fem,
+                            offset: Offset(0 * fem, -4 * fem),
+                            blurRadius: 2 * fem,
                           ),
                         ],
                       ),
@@ -266,13 +266,14 @@ class homePage extends StatelessWidget {
                                 children: [
                                   Container(
                                     // vectorSxw (I247:206;224:1460)
-                                    margin: EdgeInsets.fromLTRB(0.27*fem, 0*fem, 0*fem, 6.48*fem),
-                                    width: 24.14*fem,
-                                    height: 20.43*fem,
+                                    margin: EdgeInsets.fromLTRB(0.27 * fem,
+                                        0 * fem, 0 * fem, 6.48 * fem),
+                                    width: 24.14 * fem,
+                                    height: 20.43 * fem,
                                     child: Image.asset(
                                       'assets/page-1/images/vector-6PH.png',
-                                      width: 24.14*fem,
-                                      height: 20.43*fem,
+                                      width: 24.14 * fem,
+                                      height: 20.43 * fem,
                                     ),
                                   ),
                                   Center(
@@ -280,11 +281,11 @@ class homePage extends StatelessWidget {
                                     child: Text(
                                       'Home',
                                       textAlign: TextAlign.center,
-                                      style: SafeGoogleFont (
+                                      style: SafeGoogleFont(
                                         'Poppins',
-                                        fontSize: 11*ffem,
+                                        fontSize: 11 * ffem,
                                         fontWeight: FontWeight.w500,
-                                        height: 1.5*ffem/fem,
+                                        height: 1.5 * ffem / fem,
                                         color: Color(0xff749a8c),
                                       ),
                                     ),
@@ -294,27 +295,31 @@ class homePage extends StatelessWidget {
                             ),
                             Container(
                               // autogroupmnsym83 (Mut4osNocYhr1yT1W5MnSy)
-                              padding: EdgeInsets.fromLTRB(57*fem, 0.2*fem, 0*fem, 0.2*fem),
+                              padding: EdgeInsets.fromLTRB(
+                                  57 * fem, 0.2 * fem, 0 * fem, 0.2 * fem),
                               height: double.infinity,
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Container(
                                     // group91Szs (I247:206;224:1515)
-                                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 51.5*fem, 0*fem),
+                                    margin: EdgeInsets.fromLTRB(
+                                        0 * fem, 0 * fem, 51.5 * fem, 0 * fem),
                                     height: double.infinity,
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
                                       children: [
                                         Container(
                                           // vector3jm (I247:206;224:1509)
-                                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0.41*fem, 0.89*fem),
-                                          width: 27.59*fem,
-                                          height: 25.61*fem,
+                                          margin: EdgeInsets.fromLTRB(0 * fem,
+                                              0 * fem, 0.41 * fem, 0.89 * fem),
+                                          width: 27.59 * fem,
+                                          height: 25.61 * fem,
                                           child: Image.asset(
                                             'assets/page-1/images/vector-WQw.png',
-                                            width: 27.59*fem,
-                                            height: 25.61*fem,
+                                            width: 27.59 * fem,
+                                            height: 25.61 * fem,
                                           ),
                                         ),
                                         Center(
@@ -322,11 +327,11 @@ class homePage extends StatelessWidget {
                                           child: Text(
                                             'Order',
                                             textAlign: TextAlign.center,
-                                            style: SafeGoogleFont (
+                                            style: SafeGoogleFont(
                                               'Poppins',
-                                              fontSize: 11*ffem,
+                                              fontSize: 11 * ffem,
                                               fontWeight: FontWeight.w300,
-                                              height: 1.5*ffem/fem,
+                                              height: 1.5 * ffem / fem,
                                               color: Color(0xff858585),
                                             ),
                                           ),
@@ -336,27 +341,34 @@ class homePage extends StatelessWidget {
                                   ),
                                   Container(
                                     // group93XoM (I247:206;224:1526)
-                                    margin: EdgeInsets.fromLTRB(0*fem, 0.02*fem, 50.5*fem, 0.02*fem),
+                                    margin: EdgeInsets.fromLTRB(0 * fem,
+                                        0.02 * fem, 50.5 * fem, 0.02 * fem),
                                     child: TextButton(
                                       onPressed: () {},
-                                      style: TextButton.styleFrom (
+                                      style: TextButton.styleFrom(
                                         padding: EdgeInsets.zero,
                                       ),
                                       child: Container(
-                                        padding: EdgeInsets.fromLTRB(8.5*fem, 0*fem, 8.5*fem, 0*fem),
+                                        padding: EdgeInsets.fromLTRB(8.5 * fem,
+                                            0 * fem, 8.5 * fem, 0 * fem),
                                         height: double.infinity,
                                         child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
                                           children: [
                                             Container(
                                               // vectorjPd (I247:206;224:1524)
-                                              margin: EdgeInsets.fromLTRB(0.14*fem, 0*fem, 0*fem, 7.68*fem),
-                                              width: 24.14*fem,
-                                              height: 18.79*fem,
+                                              margin: EdgeInsets.fromLTRB(
+                                                  0.14 * fem,
+                                                  0 * fem,
+                                                  0 * fem,
+                                                  7.68 * fem),
+                                              width: 24.14 * fem,
+                                              height: 18.79 * fem,
                                               child: Image.asset(
                                                 'assets/page-1/images/vector-wRq.png',
-                                                width: 24.14*fem,
-                                                height: 18.79*fem,
+                                                width: 24.14 * fem,
+                                                height: 18.79 * fem,
                                               ),
                                             ),
                                             Center(
@@ -364,11 +376,11 @@ class homePage extends StatelessWidget {
                                               child: Text(
                                                 'Crop',
                                                 textAlign: TextAlign.center,
-                                                style: SafeGoogleFont (
+                                                style: SafeGoogleFont(
                                                   'Poppins',
-                                                  fontSize: 11*ffem,
+                                                  fontSize: 11 * ffem,
                                                   fontWeight: FontWeight.w300,
-                                                  height: 1.5*ffem/fem,
+                                                  height: 1.5 * ffem / fem,
                                                   color: Color(0xff858585),
                                                 ),
                                               ),
@@ -382,17 +394,22 @@ class homePage extends StatelessWidget {
                                     // group92s8T (I247:206;224:1516)
                                     height: double.infinity,
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
                                       children: [
                                         Container(
                                           // vectorono (I247:206;224:1455)
-                                          margin: EdgeInsets.fromLTRB(0.14*fem, 0*fem, 0*fem, 2.36*fem),
-                                          width: 24.14*fem,
-                                          height: 24.14*fem,
+                                          margin: EdgeInsets.fromLTRB(
+                                              0.14 * fem,
+                                              0 * fem,
+                                              0 * fem,
+                                              2.36 * fem),
+                                          width: 24.14 * fem,
+                                          height: 24.14 * fem,
                                           child: Image.asset(
                                             'assets/page-1/images/vector-Y6j.png',
-                                            width: 24.14*fem,
-                                            height: 24.14*fem,
+                                            width: 24.14 * fem,
+                                            height: 24.14 * fem,
                                           ),
                                         ),
                                         Center(
@@ -400,11 +417,11 @@ class homePage extends StatelessWidget {
                                           child: Text(
                                             'Profile',
                                             textAlign: TextAlign.center,
-                                            style: SafeGoogleFont (
+                                            style: SafeGoogleFont(
                                               'Poppins',
-                                              fontSize: 11*ffem,
+                                              fontSize: 11 * ffem,
                                               fontWeight: FontWeight.w300,
-                                              height: 1.5*ffem/fem,
+                                              height: 1.5 * ffem / fem,
                                               color: Color(0xff858585),
                                             ),
                                           ),
@@ -422,14 +439,14 @@ class homePage extends StatelessWidget {
                   ),
                   Positioned(
                     // file1152871Jsy (425:197)
-                    left: 20*fem,
-                    top: 0*fem,
+                    left: 20 * fem,
+                    top: 0 * fem,
                     child: Align(
                       child: SizedBox(
-                        width: 320*fem,
-                        height: 171*fem,
+                        width: 320 * fem,
+                        height: 171 * fem,
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(8*fem),
+                          borderRadius: BorderRadius.circular(8 * fem),
                           child: Image.asset(
                             'assets/page-1/images/file115287-1.png',
                             fit: BoxFit.cover,
@@ -440,14 +457,14 @@ class homePage extends StatelessWidget {
                   ),
                   Positioned(
                     // letterofdonationsample1hfD (425:199)
-                    left: 20*fem,
-                    top: 191*fem,
+                    left: 20 * fem,
+                    top: 191 * fem,
                     child: Align(
                       child: SizedBox(
-                        width: 320*fem,
-                        height: 171*fem,
+                        width: 320 * fem,
+                        height: 171 * fem,
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(8*fem),
+                          borderRadius: BorderRadius.circular(8 * fem),
                           child: Image.asset(
                             'assets/page-1/images/letter-of-donation-sample-1.png',
                             fit: BoxFit.cover,
@@ -462,6 +479,6 @@ class homePage extends StatelessWidget {
           ],
         ),
       ),
-          );
+    );
   }
 }
