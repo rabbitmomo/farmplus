@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class homePagesecond extends StatelessWidget {
+  const homePagesecond({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 414;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // homepagexGX (30:2747)
         width: double.infinity,
         height: 896*fem,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xcc0b4522),
         ),
         child: Stack(
@@ -46,14 +45,14 @@ class homePagesecond extends StatelessWidget {
                 width: 414*fem,
                 height: 546*fem,
                 decoration: BoxDecoration (
-                  color: Color(0xffeeeeee),
+                  color: const Color(0xffeeeeee),
                   borderRadius: BorderRadius.only (
                     topLeft: Radius.circular(50*fem),
                     topRight: Radius.circular(50*fem),
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: Color(0x33000000),
+                      color: const Color(0x33000000),
                       offset: Offset(8*fem, 5*fem),
                       blurRadius: 25*fem,
                     ),
@@ -68,8 +67,8 @@ class homePagesecond extends StatelessWidget {
                       padding: EdgeInsets.fromLTRB(27.43*fem, 25*fem, 28.43*fem, 26*fem),
                       width: double.infinity,
                       decoration: BoxDecoration (
-                        border: Border.all(color: Color(0x30000000)),
-                        color: Color(0xffffffff),
+                        border: Border.all(color: const Color(0x30000000)),
+                        color: const Color(0xffffffff),
                         borderRadius: BorderRadius.circular(45.5*fem),
                       ),
                       child: Center(
@@ -101,7 +100,7 @@ class homePagesecond extends StatelessWidget {
                             fontWeight: FontWeight.w700,
                             height: 1.2058823529*ffem/fem,
                             letterSpacing: 0.4099999964*fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -127,8 +126,8 @@ class homePagesecond extends StatelessWidget {
                                 child: Container(
                                   decoration: BoxDecoration (
                                     borderRadius: BorderRadius.circular(15*fem),
-                                    border: Border.all(color: Color(0x28000000)),
-                                    color: Color(0xff5f9662),
+                                    border: Border.all(color: const Color(0x28000000)),
+                                    color: const Color(0xff5f9662),
                                   ),
                                 ),
                               ),
@@ -152,7 +151,7 @@ class homePagesecond extends StatelessWidget {
                                         fontWeight: FontWeight.w400,
                                         height: 1.5*ffem/fem,
                                         letterSpacing: -0.4099999964*fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                       children: [
                                         TextSpan(
@@ -163,10 +162,10 @@ class homePagesecond extends StatelessWidget {
                                             fontWeight: FontWeight.w400,
                                             height: 1.5*ffem/fem,
                                             letterSpacing: -0.4099999964*fem,
-                                            color: Color(0xffffffff),
+                                            color: const Color(0xffffffff),
                                           ),
                                         ),
-                                        TextSpan(
+                                        const TextSpan(
                                           text: ' ',
                                         ),
                                       ],
@@ -184,8 +183,8 @@ class homePagesecond extends StatelessWidget {
                       width: double.infinity,
                       height: 46*fem,
                       decoration: BoxDecoration (
-                        border: Border.all(color: Color(0x0a000000)),
-                        color: Color(0xfff6f5f5),
+                        border: Border.all(color: const Color(0x0a000000)),
+                        color: const Color(0xfff6f5f5),
                         borderRadius: BorderRadius.circular(15*fem),
                       ),
                       child: Center(
@@ -199,7 +198,7 @@ class homePagesecond extends StatelessWidget {
                               fontWeight: FontWeight.w400,
                               height: 1.5*ffem/fem,
                               letterSpacing: -0.4099999964*fem,
-                              color: Color(0xff000000),
+                              color: const Color(0xff000000),
                             ),
                           ),
                         ),

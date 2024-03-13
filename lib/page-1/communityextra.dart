@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class Scene extends StatelessWidget {
+  const Scene({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // communityextraeT1 (353:154)
         padding: EdgeInsets.fromLTRB(13*fem, 19*fem, 10.5*fem, 400*fem),
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xffffffff),
         ),
         child: Column(
@@ -38,7 +37,7 @@ class Scene extends StatelessWidget {
                         width: 307*fem,
                         height: 114*fem,
                         child: Container(
-                          decoration: BoxDecoration (
+                          decoration: const BoxDecoration (
                             color: Color(0xffd3ecca),
                           ),
                         ),
@@ -61,7 +60,7 @@ class Scene extends StatelessWidget {
                             fontSize: 36*ffem,
                             fontWeight: FontWeight.w500,
                             height: 1.1725*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -82,7 +81,7 @@ class Scene extends StatelessWidget {
                               fontSize: 14*ffem,
                               fontWeight: FontWeight.w500,
                               height: 1.1725*ffem/fem,
-                              color: Color(0xff000000),
+                              color: const Color(0xff000000),
                             ),
                             children: [
                               TextSpan(
@@ -92,10 +91,10 @@ class Scene extends StatelessWidget {
                                   fontSize: 14*ffem,
                                   fontWeight: FontWeight.w800,
                                   height: 1.1725*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: '\nDescription of Project 1\nFunding Needed: \$1000',
                               ),
                             ],
@@ -113,7 +112,7 @@ class Scene extends StatelessWidget {
                         width: 98*fem,
                         height: 27*fem,
                         child: Container(
-                          decoration: BoxDecoration (
+                          decoration: const BoxDecoration (
                             color: Color(0xffd9d9d9),
                           ),
                         ),
@@ -135,7 +134,7 @@ class Scene extends StatelessWidget {
                             fontSize: 14*ffem,
                             fontWeight: FontWeight.w300,
                             height: 1.1725*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -160,7 +159,7 @@ class Scene extends StatelessWidget {
                         width: 309*fem,
                         height: 137*fem,
                         child: Container(
-                          decoration: BoxDecoration (
+                          decoration: const BoxDecoration (
                             color: Color(0xffd2ebca),
                           ),
                         ),
@@ -176,7 +175,7 @@ class Scene extends StatelessWidget {
                         width: 112*fem,
                         height: 31*fem,
                         child: Container(
-                          decoration: BoxDecoration (
+                          decoration: const BoxDecoration (
                             color: Color(0xffd9d9d9),
                           ),
                         ),
@@ -198,7 +197,7 @@ class Scene extends StatelessWidget {
                               fontSize: 14*ffem,
                               fontWeight: FontWeight.w300,
                               height: 1.1725*ffem/fem,
-                              color: Color(0xff000000),
+                              color: const Color(0xff000000),
                             ),
                             children: [
                               TextSpan(
@@ -208,7 +207,7 @@ class Scene extends StatelessWidget {
                                   fontSize: 20*ffem,
                                   fontWeight: FontWeight.w800,
                                   height: 1.1725*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                               TextSpan(
@@ -218,7 +217,7 @@ class Scene extends StatelessWidget {
                                   fontSize: 20*ffem,
                                   fontWeight: FontWeight.w800,
                                   height: 1.1725*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                               TextSpan(
@@ -228,10 +227,10 @@ class Scene extends StatelessWidget {
                                   fontSize: 14*ffem,
                                   fontWeight: FontWeight.w300,
                                   height: 1.1725*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: 'Project name:',
                               ),
                               TextSpan(
@@ -241,10 +240,10 @@ class Scene extends StatelessWidget {
                                   fontSize: 14*ffem,
                                   fontWeight: FontWeight.w300,
                                   height: 1.1725*ffem/fem,
-                                  color: Color(0xffa8a8a8),
+                                  color: const Color(0xffa8a8a8),
                                 ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: 'funding needed:',
                               ),
                               TextSpan(
@@ -254,10 +253,10 @@ class Scene extends StatelessWidget {
                                   fontSize: 14*ffem,
                                   fontWeight: FontWeight.w300,
                                   height: 1.1725*ffem/fem,
-                                  color: Color(0xffa8a8a8),
+                                  color: const Color(0xffa8a8a8),
                                 ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: 'expected return:',
                               ),
                               TextSpan(
@@ -267,10 +266,10 @@ class Scene extends StatelessWidget {
                                   fontSize: 14*ffem,
                                   fontWeight: FontWeight.w300,
                                   height: 1.1725*ffem/fem,
-                                  color: Color(0xffa8a8a8),
+                                  color: const Color(0xffa8a8a8),
                                 ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: '  \ncreate project',
                               ),
                             ],

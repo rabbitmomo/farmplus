@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class Scene extends StatelessWidget {
+  const Scene({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 414;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // reviewyK5 (443:130)
         padding: EdgeInsets.fromLTRB(20*fem, 49.28*fem, 10*fem, 492*fem),
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xffffffff),
         ),
         child: Column(
@@ -38,7 +37,7 @@ class Scene extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(29*fem, 13*fem, 29*fem, 50.08*fem),
               width: double.infinity,
               decoration: BoxDecoration (
-                border: Border.all(color: Color(0x59000000)),
+                border: Border.all(color: const Color(0x59000000)),
                 borderRadius: BorderRadius.circular(10*fem),
               ),
               child: Column(
@@ -58,11 +57,11 @@ class Scene extends StatelessWidget {
                           padding: EdgeInsets.fromLTRB(13*fem, 15*fem, 15.16*fem, 13.04*fem),
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xffffffff),
+                            color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(31.0185184479*fem),
                             boxShadow: [
                               BoxShadow(
-                                color: Color(0x3f000000),
+                                color: const Color(0x3f000000),
                                 offset: Offset(4*fem, 4*fem),
                                 blurRadius: 2*fem,
                               ),
@@ -91,7 +90,7 @@ class Scene extends StatelessWidget {
                               fontSize: 30*ffem,
                               fontWeight: FontWeight.w700,
                               height: 1.2125*ffem/fem,
-                              color: Color(0xff000000),
+                              color: const Color(0xff000000),
                             ),
                           ),
                         ),
@@ -134,7 +133,7 @@ class Scene extends StatelessWidget {
                                   fontSize: 32*ffem,
                                   fontWeight: FontWeight.w600,
                                   height: 1.2125*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                               Container(
@@ -147,7 +146,7 @@ class Scene extends StatelessWidget {
                                     fontSize: 18*ffem,
                                     fontWeight: FontWeight.w300,
                                     height: 1.2125*ffem/fem,
-                                    color: Color(0xfffc0202),
+                                    color: const Color(0xfffc0202),
                                   ),
                                 ),
                               ),
@@ -226,7 +225,7 @@ class Scene extends StatelessWidget {
                                               fontSize: 25*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.2125*ffem/fem,
-                                              color: Color(0xff000000),
+                                              color: const Color(0xff000000),
                                             ),
                                           ),
                                         ),
@@ -247,7 +246,7 @@ class Scene extends StatelessWidget {
                                               fontSize: 25*ffem,
                                               fontWeight: FontWeight.w500,
                                               height: 1.2125*ffem/fem,
-                                              color: Color(0xff000000),
+                                              color: const Color(0xff000000),
                                             ),
                                           ),
                                         ),
@@ -285,7 +284,7 @@ class Scene extends StatelessWidget {
                                         height: 19.02*fem,
                                       ),
                                     ),
-                                    Container(
+                                    SizedBox(
                                       // starrQ7 (443:146)
                                       width: double.infinity,
                                       height: 26.88*fem,

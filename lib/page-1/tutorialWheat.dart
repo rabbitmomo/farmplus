@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/tutorialHomePage.dart';
 
 class tutorialWheat extends StatelessWidget {
+  const tutorialWheat({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         child: Container(
           // guidancepage2scrollhaozwN (492:415)
           width: double.infinity,
           height: 800*fem,
-          decoration: BoxDecoration (
+          decoration: const BoxDecoration (
             color: Color(0xffffffff),
           ),
           child: Stack(
@@ -54,7 +52,7 @@ class tutorialWheat extends StatelessWidget {
                         fontSize: 30*ffem,
                         fontWeight: FontWeight.w400,
                         height: 1.4825*ffem/fem,
-                        color: Color(0xff000000),
+                        color: const Color(0xff000000),
                       ),
                     ),
                   ),
@@ -76,7 +74,7 @@ class tutorialWheat extends StatelessWidget {
                         fontSize: 12*ffem,
                         fontWeight: FontWeight.w400,
                         height: 1.4825*ffem/fem,
-                        color: Color(0xff405d3d),
+                        color: const Color(0xff405d3d),
                       ),
                     ),
                   ),
@@ -86,7 +84,7 @@ class tutorialWheat extends StatelessWidget {
                 // autogrouphr8uqj2 (85jMzsUp5w8SB81USYhr8U)
                 left: 0*fem,
                 top: 369.9998288155*fem,
-                child: Container(
+                child: SizedBox(
                   width: 318*fem,
                   height: 163.01*fem,
                   child: Row(
@@ -97,7 +95,7 @@ class tutorialWheat extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 24.99*fem, 0*fem),
                         width: 163.01*fem,
                         height: double.infinity,
-                        decoration: BoxDecoration (
+                        decoration: const BoxDecoration (
                           image: DecorationImage (
                             fit: BoxFit.cover,
                             image: AssetImage (
@@ -118,8 +116,8 @@ class tutorialWheat extends StatelessWidget {
                                   child: Container(
                                     decoration: BoxDecoration (
                                       borderRadius: BorderRadius.circular(32.5*fem),
-                                      border: Border.all(color: Color(0xff000000)),
-                                      color: Color(0xffffffff),
+                                      border: Border.all(color: const Color(0xff000000)),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                 ),
@@ -141,7 +139,7 @@ class tutorialWheat extends StatelessWidget {
                                       fontSize: 10*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4825*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ),
@@ -155,7 +153,7 @@ class tutorialWheat extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(0*fem, 19*fem, 0*fem, 14.01*fem),
                         width: 130*fem,
                         height: double.infinity,
-                        decoration: BoxDecoration (
+                        decoration: const BoxDecoration (
                           image: DecorationImage (
                             fit: BoxFit.cover,
                             image: AssetImage (
@@ -176,8 +174,8 @@ class tutorialWheat extends StatelessWidget {
                                   child: Container(
                                     decoration: BoxDecoration (
                                       borderRadius: BorderRadius.circular(32.5*fem),
-                                      border: Border.all(color: Color(0xff000000)),
-                                      color: Color(0xffffffff),
+                                      border: Border.all(color: const Color(0xff000000)),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                 ),
@@ -215,7 +213,7 @@ class tutorialWheat extends StatelessWidget {
                                       fontSize: 10*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4825*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ),
@@ -232,7 +230,7 @@ class tutorialWheat extends StatelessWidget {
                 // autogrouppugqUDa (85jPXAH2tMG36k1K1JpugQ)
                 left: 70.5000274181*fem,
                 top: 667*fem,
-                child: Container(
+                child: SizedBox(
                   width: 250.5*fem,
                   height: 38*fem,
                   child: Row(
@@ -249,7 +247,7 @@ class tutorialWheat extends StatelessWidget {
                             fontSize: 16*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.4825*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -266,7 +264,7 @@ class tutorialWheat extends StatelessWidget {
                             fontSize: 13*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.4525*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -278,7 +276,7 @@ class tutorialWheat extends StatelessWidget {
                 // autogroupjk7ncj6 (85jNVSVYRL9agjEt6BJk7N)
                 left: 48.0000274181*fem,
                 top: 565*fem,
-                child: Container(
+                child: SizedBox(
                   width: 294*fem,
                   height: 100*fem,
                   child: Row(
@@ -326,7 +324,7 @@ class tutorialWheat extends StatelessWidget {
                                               fontSize: 12*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.5675*ffem/fem,
-                                              color: Color(0xff000000),
+                                              color: const Color(0xff000000),
                                             ),
                                           ),
                                         ),
@@ -339,7 +337,7 @@ class tutorialWheat extends StatelessWidget {
                                             fontSize: 12*ffem,
                                             fontWeight: FontWeight.w400,
                                             height: 1.5675*ffem/fem,
-                                            color: Color(0xff000000),
+                                            color: const Color(0xff000000),
                                           ),
                                         ),
                                       ],
@@ -352,7 +350,7 @@ class tutorialWheat extends StatelessWidget {
                                     height: 27*fem,
                                     decoration: BoxDecoration (
                                       borderRadius: BorderRadius.circular(12.5*fem),
-                                      gradient: LinearGradient (
+                                      gradient: const LinearGradient (
                                         begin: Alignment(-1, 0),
                                         end: Alignment(1, 0),
                                         colors: <Color>[Color(0xff00ff66), Color(0xffeaff00), Color(0xff0084ff)],
@@ -363,7 +361,7 @@ class tutorialWheat extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Container(
+                            SizedBox(
                               // autogroupbgv2yEC (85jNwRkExW6ZoYAg7wbGV2)
                               width: double.infinity,
                               child: Row(
@@ -380,7 +378,7 @@ class tutorialWheat extends StatelessWidget {
                                         fontSize: 12*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.4825*ffem/fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
                                   ),
@@ -395,7 +393,7 @@ class tutorialWheat extends StatelessWidget {
                                         fontSize: 12*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.4825*ffem/fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
                                   ),
@@ -408,7 +406,7 @@ class tutorialWheat extends StatelessWidget {
                                       fontSize: 12*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4825*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ],
@@ -430,7 +428,7 @@ class tutorialWheat extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Container(//wrapped with sizebox to make button bigger but not looked bigger , easily be tapped
+                    child: SizedBox(//wrapped with sizebox to make button bigger but not looked bigger , easily be tapped
                       width: 21 * fem,
                       height: 26.3 * fem,
                       child: Image.asset(

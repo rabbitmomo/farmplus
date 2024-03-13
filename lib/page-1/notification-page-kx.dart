@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class NotificationPage extends StatelessWidget {
+  const NotificationPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // notificationpagekxDf5 (9:12)
         padding: EdgeInsets.fromLTRB(11*fem, 17*fem, 16*fem, 20*fem),
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xfff7f7f7),
         ),
         child: Column(
@@ -48,7 +47,7 @@ class NotificationPage extends StatelessWidget {
                       fontSize: 20*ffem,
                       fontWeight: FontWeight.w500,
                       height: 1.5*ffem/fem,
-                      color: Color(0xff4c9a2a),
+                      color: const Color(0xff4c9a2a),
                     ),
                   ),
                 ],
@@ -67,7 +66,7 @@ class NotificationPage extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(4*fem, 0*fem, 3*fem, 0*fem),
                     width: double.infinity,
                     height: 22.5*fem,
-                    child: Container(
+                    child: SizedBox(
                       // autogroup9qivc6s (MushK9rp5z838SVXRn9qiV)
                       width: double.infinity,
                       height: 20*fem,
@@ -84,7 +83,7 @@ class NotificationPage extends StatelessWidget {
                                 fontSize: 11*ffem,
                                 fontWeight: FontWeight.w300,
                                 height: 1.5*ffem/fem,
-                                color: Color(0xff5a6245),
+                                color: const Color(0xff5a6245),
                               ),
                             ),
                           ),
@@ -97,14 +96,14 @@ class NotificationPage extends StatelessWidget {
                               fontSize: 13*ffem,
                               fontWeight: FontWeight.w300,
                               height: 1.5*ffem/fem,
-                              color: Color(0xff5a6245),
+                              color: const Color(0xff5a6245),
                             ),
                           ),
                         ],
                       ),
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     // notibox98j (68:287)
                     width: double.infinity,
                     height: 73*fem,
@@ -121,10 +120,10 @@ class NotificationPage extends StatelessWidget {
                               child: Container(
                                 decoration: BoxDecoration (
                                   borderRadius: BorderRadius.circular(8*fem),
-                                  color: Color(0xffffffff),
+                                  color: const Color(0xffffffff),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Color(0x0c000000),
+                                      color: const Color(0x0c000000),
                                       offset: Offset(0*fem, 2*fem),
                                       blurRadius: 4*fem,
                                     ),
@@ -161,7 +160,7 @@ class NotificationPage extends StatelessWidget {
                               child: Container(
                                 decoration: BoxDecoration (
                                   borderRadius: BorderRadius.circular(5*fem),
-                                  color: Color(0xffff8989),
+                                  color: const Color(0xffff8989),
                                 ),
                               ),
                             ),
@@ -182,7 +181,7 @@ class NotificationPage extends StatelessWidget {
                                   fontSize: 13*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.5*ffem/fem,
-                                  color: Color(0xff464646),
+                                  color: const Color(0xff464646),
                                 ),
                               ),
                             ),
@@ -204,7 +203,7 @@ class NotificationPage extends StatelessWidget {
                                   fontSize: 10*ffem,
                                   fontWeight: FontWeight.w300,
                                   height: 1.5*ffem/fem,
-                                  color: Color(0xffcccccc),
+                                  color: const Color(0xffcccccc),
                                 ),
                               ),
                             ),
@@ -225,11 +224,11 @@ class NotificationPage extends StatelessWidget {
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 16.5*fem),
                           padding: EdgeInsets.fromLTRB(13*fem, 12*fem, 7*fem, 6.5*fem),
                           decoration: BoxDecoration (
-                            color: Color(0xffffffff),
+                            color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(8*fem),
                             boxShadow: [
                               BoxShadow(
-                                color: Color(0x0c000000),
+                                color: const Color(0x0c000000),
                                 offset: Offset(0*fem, 2*fem),
                                 blurRadius: 4*fem,
                               ),
@@ -259,7 +258,7 @@ class NotificationPage extends StatelessWidget {
                                     fontSize: 13*ffem,
                                     fontWeight: FontWeight.w400,
                                     height: 1.5*ffem/fem,
-                                    color: Color(0xff464646),
+                                    color: const Color(0xff464646),
                                   ),
                                 ),
                               ),
@@ -274,7 +273,7 @@ class NotificationPage extends StatelessWidget {
                                     fontSize: 10*ffem,
                                     fontWeight: FontWeight.w300,
                                     height: 1.5*ffem/fem,
-                                    color: Color(0xffcccccc),
+                                    color: const Color(0xffcccccc),
                                   ),
                                 ),
                               ),
@@ -287,7 +286,7 @@ class NotificationPage extends StatelessWidget {
                           padding: EdgeInsets.fromLTRB(4*fem, 0*fem, 3*fem, 0*fem),
                           width: double.infinity,
                           height: 22.5*fem,
-                          child: Container(
+                          child: SizedBox(
                             // autogrouphdwdyoD (Musf4U7ZqzqyCgM7y4hdWd)
                             width: double.infinity,
                             height: 20*fem,
@@ -304,7 +303,7 @@ class NotificationPage extends StatelessWidget {
                                       fontSize: 11*ffem,
                                       fontWeight: FontWeight.w300,
                                       height: 1.5*ffem/fem,
-                                      color: Color(0xff5a6245),
+                                      color: const Color(0xff5a6245),
                                     ),
                                   ),
                                 ),
@@ -317,7 +316,7 @@ class NotificationPage extends StatelessWidget {
                                     fontSize: 13*ffem,
                                     fontWeight: FontWeight.w300,
                                     height: 1.5*ffem/fem,
-                                    color: Color(0xff5a6245),
+                                    color: const Color(0xff5a6245),
                                   ),
                                 ),
                               ],
@@ -331,11 +330,11 @@ class NotificationPage extends StatelessWidget {
                           width: double.infinity,
                           height: 72*fem,
                           decoration: BoxDecoration (
-                            color: Color(0xffffffff),
+                            color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(8*fem),
                             boxShadow: [
                               BoxShadow(
-                                color: Color(0x0c000000),
+                                color: const Color(0x0c000000),
                                 offset: Offset(0*fem, 2*fem),
                                 blurRadius: 4*fem,
                               ),
@@ -372,7 +371,7 @@ class NotificationPage extends StatelessWidget {
                                           fontSize: 13*ffem,
                                           fontWeight: FontWeight.w400,
                                           height: 1.5*ffem/fem,
-                                          color: Color(0xff464646),
+                                          color: const Color(0xff464646),
                                         ),
                                       ),
                                     ),
@@ -384,7 +383,7 @@ class NotificationPage extends StatelessWidget {
                                         fontSize: 11*ffem,
                                         fontWeight: FontWeight.w300,
                                         height: 1.5*ffem/fem,
-                                        color: Color(0xff949494),
+                                        color: const Color(0xff949494),
                                       ),
                                     ),
                                   ],
@@ -401,7 +400,7 @@ class NotificationPage extends StatelessWidget {
                                     fontSize: 10*ffem,
                                     fontWeight: FontWeight.w300,
                                     height: 1.5*ffem/fem,
-                                    color: Color(0xffcccccc),
+                                    color: const Color(0xffcccccc),
                                   ),
                                 ),
                               ),
@@ -413,11 +412,11 @@ class NotificationPage extends StatelessWidget {
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
                           padding: EdgeInsets.fromLTRB(14*fem, 12*fem, 7*fem, 6.5*fem),
                           decoration: BoxDecoration (
-                            color: Color(0xffffffff),
+                            color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(8*fem),
                             boxShadow: [
                               BoxShadow(
-                                color: Color(0x0c000000),
+                                color: const Color(0x0c000000),
                                 offset: Offset(0*fem, 2*fem),
                                 blurRadius: 4*fem,
                               ),
@@ -447,7 +446,7 @@ class NotificationPage extends StatelessWidget {
                                     fontSize: 13*ffem,
                                     fontWeight: FontWeight.w400,
                                     height: 1.5*ffem/fem,
-                                    color: Color(0xff464646),
+                                    color: const Color(0xff464646),
                                   ),
                                 ),
                               ),
@@ -462,7 +461,7 @@ class NotificationPage extends StatelessWidget {
                                     fontSize: 10*ffem,
                                     fontWeight: FontWeight.w300,
                                     height: 1.5*ffem/fem,
-                                    color: Color(0xffcccccc),
+                                    color: const Color(0xffcccccc),
                                   ),
                                 ),
                               ),
@@ -487,10 +486,10 @@ class NotificationPage extends StatelessWidget {
                                     child: Container(
                                       decoration: BoxDecoration (
                                         borderRadius: BorderRadius.circular(8*fem),
-                                        color: Color(0xffffffff),
+                                        color: const Color(0xffffffff),
                                         boxShadow: [
                                           BoxShadow(
-                                            color: Color(0x0c000000),
+                                            color: const Color(0x0c000000),
                                             offset: Offset(0*fem, 2*fem),
                                             blurRadius: 4*fem,
                                           ),
@@ -520,7 +519,7 @@ class NotificationPage extends StatelessWidget {
                                 // group33jUB (102:379)
                                 left: 80*fem,
                                 top: 23*fem,
-                                child: Container(
+                                child: SizedBox(
                                   width: 230*fem,
                                   height: 53.5*fem,
                                   child: Column(
@@ -536,7 +535,7 @@ class NotificationPage extends StatelessWidget {
                                             fontSize: 13*ffem,
                                             fontWeight: FontWeight.w400,
                                             height: 1.5*ffem/fem,
-                                            color: Color(0xff464646),
+                                            color: const Color(0xff464646),
                                           ),
                                         ),
                                       ),
@@ -552,7 +551,7 @@ class NotificationPage extends StatelessWidget {
                                             fontSize: 11*ffem,
                                             fontWeight: FontWeight.w300,
                                             height: 1.5*ffem/fem,
-                                            color: Color(0xff949494),
+                                            color: const Color(0xff949494),
                                           ),
                                         ),
                                       ),
@@ -576,7 +575,7 @@ class NotificationPage extends StatelessWidget {
                                         fontSize: 10*ffem,
                                         fontWeight: FontWeight.w300,
                                         height: 1.5*ffem/fem,
-                                        color: Color(0xffcccccc),
+                                        color: const Color(0xffcccccc),
                                       ),
                                     ),
                                   ),
@@ -593,7 +592,7 @@ class NotificationPage extends StatelessWidget {
                                     child: Container(
                                       decoration: BoxDecoration (
                                         borderRadius: BorderRadius.circular(5*fem),
-                                        color: Color(0xffff8989),
+                                        color: const Color(0xffff8989),
                                       ),
                                     ),
                                   ),
@@ -608,7 +607,7 @@ class NotificationPage extends StatelessWidget {
                           padding: EdgeInsets.fromLTRB(4*fem, 0*fem, 3*fem, 0*fem),
                           width: double.infinity,
                           height: 22.5*fem,
-                          child: Container(
+                          child: SizedBox(
                             // autogroupfml98aB (MusfWhrrEYe16j7PmTfML9)
                             width: double.infinity,
                             height: 20*fem,
@@ -625,7 +624,7 @@ class NotificationPage extends StatelessWidget {
                                       fontSize: 11*ffem,
                                       fontWeight: FontWeight.w300,
                                       height: 1.5*ffem/fem,
-                                      color: Color(0xff5a6245),
+                                      color: const Color(0xff5a6245),
                                     ),
                                   ),
                                 ),
@@ -638,7 +637,7 @@ class NotificationPage extends StatelessWidget {
                                     fontSize: 13*ffem,
                                     fontWeight: FontWeight.w300,
                                     height: 1.5*ffem/fem,
-                                    color: Color(0xff5a6245),
+                                    color: const Color(0xff5a6245),
                                   ),
                                 ),
                               ],
@@ -650,11 +649,11 @@ class NotificationPage extends StatelessWidget {
                           padding: EdgeInsets.fromLTRB(13*fem, 12*fem, 6*fem, 5.5*fem),
                           height: 72*fem,
                           decoration: BoxDecoration (
-                            color: Color(0xffffffff),
+                            color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(8*fem),
                             boxShadow: [
                               BoxShadow(
-                                color: Color(0x0c000000),
+                                color: const Color(0x0c000000),
                                 offset: Offset(0*fem, 2*fem),
                                 blurRadius: 4*fem,
                               ),
@@ -691,7 +690,7 @@ class NotificationPage extends StatelessWidget {
                                           fontSize: 13*ffem,
                                           fontWeight: FontWeight.w400,
                                           height: 1.5*ffem/fem,
-                                          color: Color(0xff464646),
+                                          color: const Color(0xff464646),
                                         ),
                                       ),
                                     ),
@@ -703,7 +702,7 @@ class NotificationPage extends StatelessWidget {
                                         fontSize: 11*ffem,
                                         fontWeight: FontWeight.w300,
                                         height: 1.5*ffem/fem,
-                                        color: Color(0xff949494),
+                                        color: const Color(0xff949494),
                                       ),
                                     ),
                                   ],
@@ -720,7 +719,7 @@ class NotificationPage extends StatelessWidget {
                                     fontSize: 10*ffem,
                                     fontWeight: FontWeight.w300,
                                     height: 1.5*ffem/fem,
-                                    color: Color(0xffcccccc),
+                                    color: const Color(0xffcccccc),
                                   ),
                                 ),
                               ),
@@ -739,11 +738,11 @@ class NotificationPage extends StatelessWidget {
               width: double.infinity,
               height: 50*fem,
               decoration: BoxDecoration (
-                color: Color(0xff0b6236),
+                color: const Color(0xff0b6236),
                 borderRadius: BorderRadius.circular(30*fem),
                 boxShadow: [
                   BoxShadow(
-                    color: Color(0x19000000),
+                    color: const Color(0x19000000),
                     offset: Offset(0*fem, 0*fem),
                     blurRadius: 5*fem,
                   ),
@@ -759,7 +758,7 @@ class NotificationPage extends StatelessWidget {
                       fontSize: 13*ffem,
                       fontWeight: FontWeight.w400,
                       height: 1.5*ffem/fem,
-                      color: Color(0xffffffff),
+                      color: const Color(0xffffffff),
                     ),
                   ),
                 ),

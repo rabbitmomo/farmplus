@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:myapp/utils.dart';
 
 class Scene extends StatelessWidget {
+  const Scene({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 2539;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
-      child: Container(
+      child: SizedBox(
         // samplesH1 (11:41)
         width: double.infinity,
         child: Column(
@@ -42,7 +40,7 @@ class Scene extends StatelessWidget {
                             'assets/page-1/images/sample02.png',
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           // sample01sZq (10:27)
                           width: 843*fem,
                           height: 576*fem,
@@ -54,7 +52,7 @@ class Scene extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     // sample03BKd (10:31)
                     width: 881*fem,
                     height: 661*fem,
@@ -91,7 +89,7 @@ class Scene extends StatelessWidget {
                             fit: BoxFit.cover,
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           // sample053uZ (11:38)
                           width: 686*fem,
                           height: 527*fem,
@@ -103,7 +101,7 @@ class Scene extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     // sample06yoD (11:40)
                     width: 830*fem,
                     height: 622*fem,

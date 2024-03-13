@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class CalendarPage extends StatelessWidget {
+  const CalendarPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // calendarpagekxUbh (7:10)
         padding: EdgeInsets.fromLTRB(8*fem, 20*fem, 8*fem, 19*fem),
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xfff7f7f7),
         ),
         child: Column(
@@ -48,7 +47,7 @@ class CalendarPage extends StatelessWidget {
                       fontSize: 20*ffem,
                       fontWeight: FontWeight.w500,
                       height: 1.5*ffem/fem,
-                      color: Color(0xff4c9a2a),
+                      color: const Color(0xff4c9a2a),
                     ),
                   ),
                 ],
@@ -69,7 +68,7 @@ class CalendarPage extends StatelessWidget {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Container(
+                        SizedBox(
                           // frame427319669Rom (125:324)
                           width: 34*fem,
                           height: 34*fem,
@@ -82,7 +81,7 @@ class CalendarPage extends StatelessWidget {
                         SizedBox(
                           width: 87.5*fem,
                         ),
-                        Container(
+                        SizedBox(
                           // group99zf (125:328)
                           height: double.infinity,
                           child: Column(
@@ -98,7 +97,7 @@ class CalendarPage extends StatelessWidget {
                                     fontSize: 16*ffem,
                                     fontWeight: FontWeight.w600,
                                     height: 1*ffem/fem,
-                                    color: Color(0xff222b45),
+                                    color: const Color(0xff222b45),
                                   ),
                                 ),
                               ),
@@ -110,7 +109,7 @@ class CalendarPage extends StatelessWidget {
                                   fontSize: 12*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.3333333333*ffem/fem,
-                                  color: Color(0xff8f9bb3),
+                                  color: const Color(0xff8f9bb3),
                                 ),
                               ),
                             ],
@@ -119,7 +118,7 @@ class CalendarPage extends StatelessWidget {
                         SizedBox(
                           width: 87.5*fem,
                         ),
-                        Container(
+                        SizedBox(
                           // frame427319670iAb (125:331)
                           width: 34*fem,
                           height: 34*fem,
@@ -149,7 +148,7 @@ class CalendarPage extends StatelessWidget {
                               fontSize: 13*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.2307692308*ffem/fem,
-                              color: Color(0xff8fb3aa),
+                              color: const Color(0xff8fb3aa),
                             ),
                           ),
                         ),
@@ -163,7 +162,7 @@ class CalendarPage extends StatelessWidget {
                               fontSize: 13*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.2307692308*ffem/fem,
-                              color: Color(0xff8fb3aa),
+                              color: const Color(0xff8fb3aa),
                             ),
                           ),
                         ),
@@ -177,7 +176,7 @@ class CalendarPage extends StatelessWidget {
                               fontSize: 13*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.2307692308*ffem/fem,
-                              color: Color(0xff8fb3aa),
+                              color: const Color(0xff8fb3aa),
                             ),
                           ),
                         ),
@@ -191,7 +190,7 @@ class CalendarPage extends StatelessWidget {
                               fontSize: 13*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.2307692308*ffem/fem,
-                              color: Color(0xff8fb3aa),
+                              color: const Color(0xff8fb3aa),
                             ),
                           ),
                         ),
@@ -205,7 +204,7 @@ class CalendarPage extends StatelessWidget {
                               fontSize: 13*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.2307692308*ffem/fem,
-                              color: Color(0xff8fb3aa),
+                              color: const Color(0xff8fb3aa),
                             ),
                           ),
                         ),
@@ -219,7 +218,7 @@ class CalendarPage extends StatelessWidget {
                               fontSize: 13*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.2307692308*ffem/fem,
-                              color: Color(0xff8fb3aa),
+                              color: const Color(0xff8fb3aa),
                             ),
                           ),
                         ),
@@ -231,7 +230,7 @@ class CalendarPage extends StatelessWidget {
                             fontSize: 13*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.2307692308*ffem/fem,
-                            color: Color(0xff8fb3aa),
+                            color: const Color(0xff8fb3aa),
                           ),
                         ),
                       ],
@@ -281,7 +280,7 @@ class CalendarPage extends StatelessWidget {
                                                     fontSize: 15*ffem,
                                                     fontWeight: FontWeight.w400,
                                                     height: 1.3333333333*ffem/fem,
-                                                    color: Color(0xff8f9bb3),
+                                                    color: const Color(0xff8f9bb3),
                                                   ),
                                                 ),
                                               ),
@@ -298,7 +297,7 @@ class CalendarPage extends StatelessWidget {
                                                     fontSize: 15*ffem,
                                                     fontWeight: FontWeight.w400,
                                                     height: 1.3333333333*ffem/fem,
-                                                    color: Color(0xff8f9bb3),
+                                                    color: const Color(0xff8f9bb3),
                                                   ),
                                                 ),
                                               ),
@@ -315,7 +314,7 @@ class CalendarPage extends StatelessWidget {
                                                     fontSize: 15*ffem,
                                                     fontWeight: FontWeight.w400,
                                                     height: 1.3333333333*ffem/fem,
-                                                    color: Color(0xff8f9bb3),
+                                                    color: const Color(0xff8f9bb3),
                                                   ),
                                                 ),
                                               ),
@@ -332,7 +331,7 @@ class CalendarPage extends StatelessWidget {
                                                     fontSize: 15*ffem,
                                                     fontWeight: FontWeight.w400,
                                                     height: 1.3333333333*ffem/fem,
-                                                    color: Color(0xff8f9bb3),
+                                                    color: const Color(0xff8f9bb3),
                                                   ),
                                                 ),
                                               ),
@@ -347,7 +346,7 @@ class CalendarPage extends StatelessWidget {
                                                   fontSize: 15*ffem,
                                                   fontWeight: FontWeight.w400,
                                                   height: 1.3333333333*ffem/fem,
-                                                  color: Color(0xff222b45),
+                                                  color: const Color(0xff222b45),
                                                 ),
                                               ),
                                             ),
@@ -360,7 +359,7 @@ class CalendarPage extends StatelessWidget {
                                         width: 30*fem,
                                         height: double.infinity,
                                         decoration: BoxDecoration (
-                                          color: Color(0xff0c6237),
+                                          color: const Color(0xff0c6237),
                                           borderRadius: BorderRadius.circular(10*fem),
                                         ),
                                         child: Center(
@@ -373,7 +372,7 @@ class CalendarPage extends StatelessWidget {
                                                 fontSize: 15*ffem,
                                                 fontWeight: FontWeight.w400,
                                                 height: 1.3333333333*ffem/fem,
-                                                color: Color(0xffffffff),
+                                                color: const Color(0xffffffff),
                                               ),
                                             ),
                                           ),
@@ -389,7 +388,7 @@ class CalendarPage extends StatelessWidget {
                                             fontSize: 15*ffem,
                                             fontWeight: FontWeight.w400,
                                             height: 1.3333333333*ffem/fem,
-                                            color: Color(0xff222b45),
+                                            color: const Color(0xff222b45),
                                           ),
                                         ),
                                       ),
@@ -425,7 +424,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 15*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.3333333333*ffem/fem,
-                                              color: Color(0xff222b45),
+                                              color: const Color(0xff222b45),
                                             ),
                                           ),
                                         ),
@@ -442,7 +441,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 15*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.3333333333*ffem/fem,
-                                              color: Color(0xff222b45),
+                                              color: const Color(0xff222b45),
                                             ),
                                           ),
                                         ),
@@ -459,7 +458,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 15*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.3333333333*ffem/fem,
-                                              color: Color(0xff222b45),
+                                              color: const Color(0xff222b45),
                                             ),
                                           ),
                                         ),
@@ -476,7 +475,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 15*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.3333333333*ffem/fem,
-                                              color: Color(0xff222b45),
+                                              color: const Color(0xff222b45),
                                             ),
                                           ),
                                         ),
@@ -493,7 +492,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 15*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.3333333333*ffem/fem,
-                                              color: Color(0xff222b45),
+                                              color: const Color(0xff222b45),
                                             ),
                                           ),
                                         ),
@@ -510,7 +509,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 15*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.3333333333*ffem/fem,
-                                              color: Color(0xff222b45),
+                                              color: const Color(0xff222b45),
                                             ),
                                           ),
                                         ),
@@ -525,7 +524,7 @@ class CalendarPage extends StatelessWidget {
                                             fontSize: 15*ffem,
                                             fontWeight: FontWeight.w400,
                                             height: 1.3333333333*ffem/fem,
-                                            color: Color(0xff222b45),
+                                            color: const Color(0xff222b45),
                                           ),
                                         ),
                                       ),
@@ -539,7 +538,7 @@ class CalendarPage extends StatelessWidget {
                                   height: 4.16*fem,
                                   decoration: BoxDecoration (
                                     borderRadius: BorderRadius.circular(2.080000639*fem),
-                                    border: Border.all(color: Color(0xff00b383)),
+                                    border: Border.all(color: const Color(0xff00b383)),
                                   ),
                                 ),
                                 Container(
@@ -560,7 +559,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 15*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.3333333333*ffem/fem,
-                                              color: Color(0xff222b45),
+                                              color: const Color(0xff222b45),
                                             ),
                                           ),
                                         ),
@@ -577,7 +576,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 15*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.3333333333*ffem/fem,
-                                              color: Color(0xff222b45),
+                                              color: const Color(0xff222b45),
                                             ),
                                           ),
                                         ),
@@ -594,7 +593,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 15*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.3333333333*ffem/fem,
-                                              color: Color(0xff222b45),
+                                              color: const Color(0xff222b45),
                                             ),
                                           ),
                                         ),
@@ -611,7 +610,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 15*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.3333333333*ffem/fem,
-                                              color: Color(0xff222b45),
+                                              color: const Color(0xff222b45),
                                             ),
                                           ),
                                         ),
@@ -628,7 +627,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 15*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.3333333333*ffem/fem,
-                                              color: Color(0xff222b45),
+                                              color: const Color(0xff222b45),
                                             ),
                                           ),
                                         ),
@@ -645,7 +644,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 15*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.3333333333*ffem/fem,
-                                              color: Color(0xff222b45),
+                                              color: const Color(0xff222b45),
                                             ),
                                           ),
                                         ),
@@ -660,7 +659,7 @@ class CalendarPage extends StatelessWidget {
                                             fontSize: 15*ffem,
                                             fontWeight: FontWeight.w400,
                                             height: 1.3333333333*ffem/fem,
-                                            color: Color(0xff222b45),
+                                            color: const Color(0xff222b45),
                                           ),
                                         ),
                                       ),
@@ -681,7 +680,7 @@ class CalendarPage extends StatelessWidget {
                                         height: 4.16*fem,
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(2.080000639*fem),
-                                          border: Border.all(color: Color(0xff00b383)),
+                                          border: Border.all(color: const Color(0xff00b383)),
                                         ),
                                       ),
                                       Container(
@@ -691,7 +690,7 @@ class CalendarPage extends StatelessWidget {
                                         height: 4.16*fem,
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(2.080000639*fem),
-                                          border: Border.all(color: Color(0xff735bf2)),
+                                          border: Border.all(color: const Color(0xff735bf2)),
                                         ),
                                       ),
                                       Container(
@@ -700,7 +699,7 @@ class CalendarPage extends StatelessWidget {
                                         height: 4.16*fem,
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(2.080000639*fem),
-                                          border: Border.all(color: Color(0xff735bf2)),
+                                          border: Border.all(color: const Color(0xff735bf2)),
                                         ),
                                       ),
                                     ],
@@ -714,7 +713,7 @@ class CalendarPage extends StatelessWidget {
                           // autogroup1na9rAs (MusRBnQ3JjDx68zcBP1na9)
                           left: 0*fem,
                           top: 128*fem,
-                          child: Container(
+                          child: SizedBox(
                             width: 311*fem,
                             height: 20*fem,
                             child: Row(
@@ -732,7 +731,7 @@ class CalendarPage extends StatelessWidget {
                                         fontSize: 15*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.3333333333*ffem/fem,
-                                        color: Color(0xff222b45),
+                                        color: const Color(0xff222b45),
                                       ),
                                     ),
                                   ),
@@ -749,7 +748,7 @@ class CalendarPage extends StatelessWidget {
                                         fontSize: 15*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.3333333333*ffem/fem,
-                                        color: Color(0xff222b45),
+                                        color: const Color(0xff222b45),
                                       ),
                                     ),
                                   ),
@@ -766,7 +765,7 @@ class CalendarPage extends StatelessWidget {
                                         fontSize: 15*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.3333333333*ffem/fem,
-                                        color: Color(0xff222b45),
+                                        color: const Color(0xff222b45),
                                       ),
                                     ),
                                   ),
@@ -783,7 +782,7 @@ class CalendarPage extends StatelessWidget {
                                         fontSize: 15*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.3333333333*ffem/fem,
-                                        color: Color(0xff222b45),
+                                        color: const Color(0xff222b45),
                                       ),
                                     ),
                                   ),
@@ -800,7 +799,7 @@ class CalendarPage extends StatelessWidget {
                                         fontSize: 15*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.3333333333*ffem/fem,
-                                        color: Color(0xff222b45),
+                                        color: const Color(0xff222b45),
                                       ),
                                     ),
                                   ),
@@ -817,7 +816,7 @@ class CalendarPage extends StatelessWidget {
                                         fontSize: 15*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.3333333333*ffem/fem,
-                                        color: Color(0xff222b45),
+                                        color: const Color(0xff222b45),
                                       ),
                                     ),
                                   ),
@@ -832,7 +831,7 @@ class CalendarPage extends StatelessWidget {
                                       fontSize: 15*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.3333333333*ffem/fem,
-                                      color: Color(0xff222b45),
+                                      color: const Color(0xff222b45),
                                     ),
                                   ),
                                 ),
@@ -844,7 +843,7 @@ class CalendarPage extends StatelessWidget {
                           // autogroupmqimCAB (MusSPv3rF7EjfkvKVXMqim)
                           left: 0*fem,
                           top: 169*fem,
-                          child: Container(
+                          child: SizedBox(
                             width: 311*fem,
                             height: 20*fem,
                             child: Row(
@@ -862,7 +861,7 @@ class CalendarPage extends StatelessWidget {
                                         fontSize: 15*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.3333333333*ffem/fem,
-                                        color: Color(0xff222b45),
+                                        color: const Color(0xff222b45),
                                       ),
                                     ),
                                   ),
@@ -879,7 +878,7 @@ class CalendarPage extends StatelessWidget {
                                         fontSize: 15*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.3333333333*ffem/fem,
-                                        color: Color(0xff222b45),
+                                        color: const Color(0xff222b45),
                                       ),
                                     ),
                                   ),
@@ -896,7 +895,7 @@ class CalendarPage extends StatelessWidget {
                                         fontSize: 15*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.3333333333*ffem/fem,
-                                        color: Color(0xff222b45),
+                                        color: const Color(0xff222b45),
                                       ),
                                     ),
                                   ),
@@ -913,7 +912,7 @@ class CalendarPage extends StatelessWidget {
                                         fontSize: 15*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.3333333333*ffem/fem,
-                                        color: Color(0xff222b45),
+                                        color: const Color(0xff222b45),
                                       ),
                                     ),
                                   ),
@@ -930,7 +929,7 @@ class CalendarPage extends StatelessWidget {
                                         fontSize: 15*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.3333333333*ffem/fem,
-                                        color: Color(0xff222b45),
+                                        color: const Color(0xff222b45),
                                       ),
                                     ),
                                   ),
@@ -947,7 +946,7 @@ class CalendarPage extends StatelessWidget {
                                         fontSize: 15*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.3333333333*ffem/fem,
-                                        color: Color(0xff222b45),
+                                        color: const Color(0xff222b45),
                                       ),
                                     ),
                                   ),
@@ -962,7 +961,7 @@ class CalendarPage extends StatelessWidget {
                                       fontSize: 15*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.3333333333*ffem/fem,
-                                      color: Color(0xff222b45),
+                                      color: const Color(0xff222b45),
                                     ),
                                   ),
                                 ),
@@ -974,7 +973,7 @@ class CalendarPage extends StatelessWidget {
                           // autogroupwbkhVKd (MusRqRyya9JWGkG5TKWBkh)
                           left: 4*fem,
                           top: 151*fem,
-                          child: Container(
+                          child: SizedBox(
                             width: 306.64*fem,
                             height: 4.16*fem,
                             child: Row(
@@ -987,7 +986,7 @@ class CalendarPage extends StatelessWidget {
                                   height: 4.16*fem,
                                   decoration: BoxDecoration (
                                     borderRadius: BorderRadius.circular(2.080000639*fem),
-                                    border: Border.all(color: Color(0xff735bf2)),
+                                    border: Border.all(color: const Color(0xff735bf2)),
                                   ),
                                 ),
                                 Container(
@@ -997,7 +996,7 @@ class CalendarPage extends StatelessWidget {
                                   height: 4.16*fem,
                                   decoration: BoxDecoration (
                                     borderRadius: BorderRadius.circular(2.080000639*fem),
-                                    border: Border.all(color: Color(0xff0095ff)),
+                                    border: Border.all(color: const Color(0xff0095ff)),
                                   ),
                                 ),
                                 Container(
@@ -1007,7 +1006,7 @@ class CalendarPage extends StatelessWidget {
                                   height: 4.16*fem,
                                   decoration: BoxDecoration (
                                     borderRadius: BorderRadius.circular(2.080000639*fem),
-                                    border: Border.all(color: Color(0xff0095ff)),
+                                    border: Border.all(color: const Color(0xff0095ff)),
                                   ),
                                 ),
                                 Container(
@@ -1017,7 +1016,7 @@ class CalendarPage extends StatelessWidget {
                                   height: 4.16*fem,
                                   decoration: BoxDecoration (
                                     borderRadius: BorderRadius.circular(2.080000639*fem),
-                                    border: Border.all(color: Color(0xff00b383)),
+                                    border: Border.all(color: const Color(0xff00b383)),
                                   ),
                                 ),
                                 Container(
@@ -1027,7 +1026,7 @@ class CalendarPage extends StatelessWidget {
                                   height: 4.16*fem,
                                   decoration: BoxDecoration (
                                     borderRadius: BorderRadius.circular(2.080000639*fem),
-                                    border: Border.all(color: Color(0xff735bf2)),
+                                    border: Border.all(color: const Color(0xff735bf2)),
                                   ),
                                 ),
                                 Container(
@@ -1036,7 +1035,7 @@ class CalendarPage extends StatelessWidget {
                                   height: 4.16*fem,
                                   decoration: BoxDecoration (
                                     borderRadius: BorderRadius.circular(2.080000639*fem),
-                                    border: Border.all(color: Color(0xff0095ff)),
+                                    border: Border.all(color: const Color(0xff0095ff)),
                                   ),
                                 ),
                               ],
@@ -1084,7 +1083,7 @@ class CalendarPage extends StatelessWidget {
                         fontSize: 14*ffem,
                         fontWeight: FontWeight.w500,
                         height: 1.5999999728*ffem/fem,
-                        color: Color(0xff456b62),
+                        color: const Color(0xff456b62),
                       ),
                     ),
                   ),
@@ -1095,7 +1094,7 @@ class CalendarPage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Container(
+                        SizedBox(
                           // task1mbu (125:520)
                           width: double.infinity,
                           height: 54*fem,
@@ -1109,7 +1108,7 @@ class CalendarPage extends StatelessWidget {
                                 height: 9*fem,
                                 decoration: BoxDecoration (
                                   borderRadius: BorderRadius.circular(4.5*fem),
-                                  border: Border.all(color: Color(0xff0095ff)),
+                                  border: Border.all(color: const Color(0xff0095ff)),
                                 ),
                               ),
                               Container(
@@ -1117,11 +1116,11 @@ class CalendarPage extends StatelessWidget {
                                 padding: EdgeInsets.fromLTRB(10*fem, 7*fem, 13*fem, 9*fem),
                                 height: double.infinity,
                                 decoration: BoxDecoration (
-                                  color: Color(0xffffffff),
+                                  color: const Color(0xffffffff),
                                   borderRadius: BorderRadius.circular(8*fem),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Color(0x0c000000),
+                                      color: const Color(0x0c000000),
                                       offset: Offset(0*fem, 2*fem),
                                       blurRadius: 4*fem,
                                     ),
@@ -1147,7 +1146,7 @@ class CalendarPage extends StatelessWidget {
                                                 fontSize: 10*ffem,
                                                 fontWeight: FontWeight.w300,
                                                 height: 1.5*ffem/fem,
-                                                color: Color(0xffaaaaaa),
+                                                color: const Color(0xffaaaaaa),
                                               ),
                                             ),
                                           ),
@@ -1159,7 +1158,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 14*ffem,
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
-                                              color: Color(0xff22312c),
+                                              color: const Color(0xff22312c),
                                             ),
                                           ),
                                         ],
@@ -1173,7 +1172,7 @@ class CalendarPage extends StatelessWidget {
                                         style: TextButton.styleFrom (
                                           padding: EdgeInsets.zero,
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 22*fem,
                                           height: 22*fem,
                                           child: Image.asset(
@@ -1193,7 +1192,7 @@ class CalendarPage extends StatelessWidget {
                         SizedBox(
                           height: 10*fem,
                         ),
-                        Container(
+                        SizedBox(
                           // task2jcb (125:521)
                           width: double.infinity,
                           height: 54*fem,
@@ -1207,7 +1206,7 @@ class CalendarPage extends StatelessWidget {
                                 height: 9*fem,
                                 decoration: BoxDecoration (
                                   borderRadius: BorderRadius.circular(4.5*fem),
-                                  border: Border.all(color: Color(0xff735bf2)),
+                                  border: Border.all(color: const Color(0xff735bf2)),
                                 ),
                               ),
                               Container(
@@ -1215,11 +1214,11 @@ class CalendarPage extends StatelessWidget {
                                 padding: EdgeInsets.fromLTRB(10*fem, 7*fem, 13*fem, 9*fem),
                                 height: double.infinity,
                                 decoration: BoxDecoration (
-                                  color: Color(0xffffffff),
+                                  color: const Color(0xffffffff),
                                   borderRadius: BorderRadius.circular(8*fem),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Color(0x0c000000),
+                                      color: const Color(0x0c000000),
                                       offset: Offset(0*fem, 2*fem),
                                       blurRadius: 4*fem,
                                     ),
@@ -1245,7 +1244,7 @@ class CalendarPage extends StatelessWidget {
                                                 fontSize: 10*ffem,
                                                 fontWeight: FontWeight.w300,
                                                 height: 1.5*ffem/fem,
-                                                color: Color(0xffaaaaaa),
+                                                color: const Color(0xffaaaaaa),
                                               ),
                                             ),
                                           ),
@@ -1257,7 +1256,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 14*ffem,
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
-                                              color: Color(0xff22312c),
+                                              color: const Color(0xff22312c),
                                             ),
                                           ),
                                         ],
@@ -1271,7 +1270,7 @@ class CalendarPage extends StatelessWidget {
                                         style: TextButton.styleFrom (
                                           padding: EdgeInsets.zero,
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 22*fem,
                                           height: 22*fem,
                                           child: Image.asset(
@@ -1291,7 +1290,7 @@ class CalendarPage extends StatelessWidget {
                         SizedBox(
                           height: 10*fem,
                         ),
-                        Container(
+                        SizedBox(
                           // task39y9 (125:535)
                           width: double.infinity,
                           height: 54*fem,
@@ -1305,7 +1304,7 @@ class CalendarPage extends StatelessWidget {
                                 height: 9*fem,
                                 decoration: BoxDecoration (
                                   borderRadius: BorderRadius.circular(4.5*fem),
-                                  border: Border.all(color: Color(0xff10b78b)),
+                                  border: Border.all(color: const Color(0xff10b78b)),
                                 ),
                               ),
                               Container(
@@ -1313,11 +1312,11 @@ class CalendarPage extends StatelessWidget {
                                 padding: EdgeInsets.fromLTRB(10*fem, 7*fem, 13*fem, 9*fem),
                                 height: double.infinity,
                                 decoration: BoxDecoration (
-                                  color: Color(0xffffffff),
+                                  color: const Color(0xffffffff),
                                   borderRadius: BorderRadius.circular(8*fem),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Color(0x0c000000),
+                                      color: const Color(0x0c000000),
                                       offset: Offset(0*fem, 2*fem),
                                       blurRadius: 4*fem,
                                     ),
@@ -1343,7 +1342,7 @@ class CalendarPage extends StatelessWidget {
                                                 fontSize: 10*ffem,
                                                 fontWeight: FontWeight.w300,
                                                 height: 1.5*ffem/fem,
-                                                color: Color(0xffaaaaaa),
+                                                color: const Color(0xffaaaaaa),
                                               ),
                                             ),
                                           ),
@@ -1355,7 +1354,7 @@ class CalendarPage extends StatelessWidget {
                                               fontSize: 14*ffem,
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
-                                              color: Color(0xff22312c),
+                                              color: const Color(0xff22312c),
                                             ),
                                           ),
                                         ],
@@ -1369,7 +1368,7 @@ class CalendarPage extends StatelessWidget {
                                         style: TextButton.styleFrom (
                                           padding: EdgeInsets.zero,
                                         ),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: 22*fem,
                                           height: 22*fem,
                                           child: Image.asset(
@@ -1403,11 +1402,11 @@ class CalendarPage extends StatelessWidget {
                 child: Container(
                   padding: EdgeInsets.fromLTRB(18*fem, 18*fem, 18*fem, 18*fem),
                   decoration: BoxDecoration (
-                    color: Color(0xff1a7749),
+                    color: const Color(0xff1a7749),
                     borderRadius: BorderRadius.circular(20*fem),
                     boxShadow: [
                       BoxShadow(
-                        color: Color(0x632f5134),
+                        color: const Color(0x632f5134),
                         offset: Offset(2*fem, 2*fem),
                         blurRadius: 3*fem,
                       ),

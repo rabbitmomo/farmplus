@@ -1,25 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class Scene extends StatelessWidget {
+  const Scene({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 414;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // aboutitemUmm (257:496)
         width: double.infinity,
         height: 896*fem,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xfff0eeee),
         ),
-        child: Container(
+        child: SizedBox(
           // aboutbostonlettuceWTZ (257:497)
           width: double.infinity,
           height: double.infinity,
@@ -49,7 +48,7 @@ class Scene extends StatelessWidget {
                     width: 414*fem,
                     height: 257*fem,
                     child: Container(
-                      decoration: BoxDecoration (
+                      decoration: const BoxDecoration (
                         gradient: LinearGradient (
                           begin: Alignment(0, -1),
                           end: Alignment(0, 1),
@@ -65,7 +64,7 @@ class Scene extends StatelessWidget {
                 // group108QKy (257:596)
                 left: 20*fem,
                 top: 337*fem,
-                child: Container(
+                child: SizedBox(
                   width: 210*fem,
                   height: 63*fem,
                   child: Column(
@@ -80,7 +79,7 @@ class Scene extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                           height: 1.3666666667*ffem/fem,
                           letterSpacing: 0.4099999964*fem,
-                          color: Color(0xffffffff),
+                          color: const Color(0xffffffff),
                         ),
                       ),
                       Text(
@@ -92,7 +91,7 @@ class Scene extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                           height: 1.1*ffem/fem,
                           letterSpacing: -0.4099999964*fem,
-                          color: Color(0xffc4c4c4),
+                          color: const Color(0xffc4c4c4),
                         ),
                       ),
                     ],
@@ -109,7 +108,7 @@ class Scene extends StatelessWidget {
                     height: 450*fem,
                     child: Container(
                       decoration: BoxDecoration (
-                        color: Color(0xffffffff),
+                        color: const Color(0xffffffff),
                         borderRadius: BorderRadius.only (
                           topLeft: Radius.circular(30*fem),
                           topRight: Radius.circular(30*fem),
@@ -135,7 +134,7 @@ class Scene extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                         height: 0.9166666667*ffem/fem,
                         letterSpacing: -0.4099999964*fem,
-                        color: Color(0xff3d3d3d),
+                        color: const Color(0xff3d3d3d),
                       ),
                     ),
                   ),
@@ -157,7 +156,7 @@ class Scene extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                         height: 1.5*ffem/fem,
                         letterSpacing: -0.4099999964*fem,
-                        color: Color(0xe5565656),
+                        color: const Color(0xe5565656),
                       ),
                     ),
                   ),
@@ -204,17 +203,17 @@ class Scene extends StatelessWidget {
                   width: 332*fem,
                   height: 50*fem,
                   decoration: BoxDecoration (
-                    color: Color(0xff0b6236),
+                    color: const Color(0xff0b6236),
                     borderRadius: BorderRadius.circular(15*fem),
                     boxShadow: [
                       BoxShadow(
-                        color: Color(0x19000000),
+                        color: const Color(0x19000000),
                         offset: Offset(0*fem, 0*fem),
                         blurRadius: 5*fem,
                       ),
                     ],
                   ),
-                  child: Container(
+                  child: SizedBox(
                     // frame99izB (257:519)
                     width: 161*fem,
                     height: double.infinity,
@@ -242,7 +241,7 @@ class Scene extends StatelessWidget {
                               fontSize: 14*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.5*ffem/fem,
-                              color: Color(0xffffffff),
+                              color: const Color(0xffffffff),
                             ),
                           ),
                         ),
@@ -255,13 +254,13 @@ class Scene extends StatelessWidget {
                 // group107BFV (257:595)
                 left: 250*fem,
                 top: 477*fem,
-                child: Container(
+                child: SizedBox(
                   width: 128*fem,
                   height: 40*fem,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Container(
+                      SizedBox(
                         // group110onf (257:606)
                         width: 40*fem,
                         height: 40*fem,
@@ -283,13 +282,13 @@ class Scene extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                           height: 0.9166666667*ffem/fem,
                           letterSpacing: -0.4099999964*fem,
-                          color: Color(0xff3d3d3d),
+                          color: const Color(0xff3d3d3d),
                         ),
                       ),
                       SizedBox(
                         width: 17*fem,
                       ),
-                      Container(
+                      SizedBox(
                         // group109xoy (257:605)
                         width: 40*fem,
                         height: 40*fem,

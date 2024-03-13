@@ -1,12 +1,8 @@
-import 'dart:ffi';
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/widgets.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:myapp/utils.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
@@ -86,7 +82,7 @@ class HomePage extends StatelessWidget {
           padding: EdgeInsets.fromLTRB(26 * fem, 20 * fem, 26 * fem, 20 * fem),
           width: double.infinity,
           decoration: BoxDecoration(
-            color: Color.fromRGBO(255, 255, 255, 1),
+            color: const Color.fromRGBO(255, 255, 255, 1),
             borderRadius: BorderRadius.circular(8),
             boxShadow: const [
               BoxShadow(

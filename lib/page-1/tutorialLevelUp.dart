@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class levelUp extends StatelessWidget {
+  const levelUp({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         child: SingleChildScrollView(
           child: Container(
             // levelupfarmertutorialpagestepb (241:408)
             width: double.infinity,
-            decoration: BoxDecoration (
+            decoration: const BoxDecoration (
               color: Color(0xffffffff),
             ),
             child: Column(
@@ -30,14 +29,14 @@ class levelUp extends StatelessWidget {
                   width: double.infinity,
                   height: 126*fem,
                   decoration: BoxDecoration (
-                    color: Color(0xff0a4b33),
+                    color: const Color(0xff0a4b33),
                     borderRadius: BorderRadius.only (
                       bottomRight: Radius.circular(24*fem),
                       bottomLeft: Radius.circular(24*fem),
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Color(0x3f000000),
+                        color: const Color(0x3f000000),
                         offset: Offset(0*fem, 2*fem),
                         blurRadius: 4*fem,
                       ),
@@ -61,7 +60,7 @@ class levelUp extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         // group111oLb (271:118)
                         width: 135*fem,
                         height: double.infinity,
@@ -84,7 +83,7 @@ class levelUp extends StatelessWidget {
                                         fontSize: 36*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.5*ffem/fem,
-                                        color: Color(0xffffffff),
+                                        color: const Color(0xffffffff),
                                       ),
                                     ),
                                   ),
@@ -106,7 +105,7 @@ class levelUp extends StatelessWidget {
                                       fontSize: 16*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.1725*ffem/fem,
-                                      color: Color(0xff99b3a0),
+                                      color: const Color(0xff99b3a0),
                                     ),
                                   ),
                                 ),
@@ -130,11 +129,11 @@ class levelUp extends StatelessWidget {
                         width: 310*fem,
                         height: 29*fem,
                         decoration: BoxDecoration (
-                          color: Color(0xff0a4b33),
+                          color: const Color(0xff0a4b33),
                           borderRadius: BorderRadius.circular(11*fem),
                           boxShadow: [
                             BoxShadow(
-                              color: Color(0x3f000000),
+                              color: const Color(0x3f000000),
                               offset: Offset(0*fem, 4*fem),
                               blurRadius: 2*fem,
                             ),
@@ -149,7 +148,7 @@ class levelUp extends StatelessWidget {
                               fontSize: 12*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.2425*ffem/fem,
-                              color: Color(0xffffffff),
+                              color: const Color(0xffffffff),
                             ),
                           ),
                         ),
@@ -171,7 +170,7 @@ class levelUp extends StatelessWidget {
                                   fontSize: 26*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.2425*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -180,7 +179,7 @@ class levelUp extends StatelessWidget {
                               margin: EdgeInsets.fromLTRB(0.04*fem, 0*fem, 0*fem, 10.62*fem),
                               width: double.infinity,
                               height: 1*fem,
-                              decoration: BoxDecoration (
+                              decoration: const BoxDecoration (
                                 color: Color(0xff000000),
                               ),
                             ),
@@ -197,7 +196,7 @@ class levelUp extends StatelessWidget {
                                   fontSize: 16*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.2425*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -215,11 +214,11 @@ class levelUp extends StatelessWidget {
                                     width: 134*fem,
                                     height: double.infinity,
                                     decoration: BoxDecoration (
-                                      color: Color(0xff0b6236),
+                                      color: const Color(0xff0b6236),
                                       borderRadius: BorderRadius.circular(30*fem),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Color(0x3f000000),
+                                          color: const Color(0x3f000000),
                                           offset: Offset(0*fem, 4*fem),
                                           blurRadius: 2*fem,
                                         ),
@@ -235,7 +234,7 @@ class levelUp extends StatelessWidget {
                                             fontSize: 16*ffem,
                                             fontWeight: FontWeight.w400,
                                             height: 1.5*ffem/fem,
-                                            color: Color(0xffffffff),
+                                            color: const Color(0xffffffff),
                                           ),
                                         ),
                                       ),
@@ -260,7 +259,7 @@ class levelUp extends StatelessWidget {
                                       fontSize: 13*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.2425*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ],
@@ -286,7 +285,7 @@ class levelUp extends StatelessWidget {
                                   fontSize: 26*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.2425*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -295,7 +294,7 @@ class levelUp extends StatelessWidget {
                               margin: EdgeInsets.fromLTRB(0.04*fem, 0*fem, 0*fem, 8.33*fem),
                               width: double.infinity,
                               height: 1*fem,
-                              decoration: BoxDecoration (
+                              decoration: const BoxDecoration (
                                 color: Color(0xff000000),
                               ),
                             ),
@@ -312,7 +311,7 @@ class levelUp extends StatelessWidget {
                                   fontSize: 16*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.2425*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -330,11 +329,11 @@ class levelUp extends StatelessWidget {
                                     width: 134*fem,
                                     height: double.infinity,
                                     decoration: BoxDecoration (
-                                      color: Color(0xff0b6236),
+                                      color: const Color(0xff0b6236),
                                       borderRadius: BorderRadius.circular(30*fem),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Color(0x3f000000),
+                                          color: const Color(0x3f000000),
                                           offset: Offset(0*fem, 4*fem),
                                           blurRadius: 2*fem,
                                         ),
@@ -350,7 +349,7 @@ class levelUp extends StatelessWidget {
                                             fontSize: 16*ffem,
                                             fontWeight: FontWeight.w400,
                                             height: 1.5*ffem/fem,
-                                            color: Color(0xffffffff),
+                                            color: const Color(0xffffffff),
                                           ),
                                         ),
                                       ),
@@ -375,7 +374,7 @@ class levelUp extends StatelessWidget {
                                       fontSize: 13*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.2425*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ],
@@ -401,7 +400,7 @@ class levelUp extends StatelessWidget {
                                   fontSize: 26*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.2425*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -410,7 +409,7 @@ class levelUp extends StatelessWidget {
                               margin: EdgeInsets.fromLTRB(0.04*fem, 0*fem, 0*fem, 5.33*fem),
                               width: double.infinity,
                               height: 1*fem,
-                              decoration: BoxDecoration (
+                              decoration: const BoxDecoration (
                                 color: Color(0xff000000),
                               ),
                             ),
@@ -424,7 +423,7 @@ class levelUp extends StatelessWidget {
                                   fontSize: 16*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.2425*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -442,8 +441,8 @@ class levelUp extends StatelessWidget {
                                     width: 210*fem,
                                     height: double.infinity,
                                     decoration: BoxDecoration (
-                                      border: Border.all(color: Color(0xff000000)),
-                                      color: Color(0xffffffff),
+                                      border: Border.all(color: const Color(0xff000000)),
+                                      color: const Color(0xffffffff),
                                       borderRadius: BorderRadius.circular(4*fem),
                                     ),
                                     child: Center(
@@ -454,7 +453,7 @@ class levelUp extends StatelessWidget {
                                         child: Container(
                                           decoration: BoxDecoration (
                                             borderRadius: BorderRadius.circular(2*fem),
-                                            color: Color(0xffd9d9d9),
+                                            color: const Color(0xffd9d9d9),
                                           ),
                                         ),
                                       ),
@@ -481,7 +480,7 @@ class levelUp extends StatelessWidget {
                                         fontSize: 13*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.2425*ffem/fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
                                   ),
@@ -507,7 +506,7 @@ class levelUp extends StatelessWidget {
                                   fontSize: 26*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.2425*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -516,7 +515,7 @@ class levelUp extends StatelessWidget {
                               margin: EdgeInsets.fromLTRB(0.04*fem, 0*fem, 0*fem, 5.33*fem),
                               width: 294.96*fem,
                               height: 1*fem,
-                              decoration: BoxDecoration (
+                              decoration: const BoxDecoration (
                                 color: Color(0xff000000),
                               ),
                             ),
@@ -533,7 +532,7 @@ class levelUp extends StatelessWidget {
                                   fontSize: 16*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.2425*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -551,8 +550,8 @@ class levelUp extends StatelessWidget {
                                     width: 210*fem,
                                     height: double.infinity,
                                     decoration: BoxDecoration (
-                                      border: Border.all(color: Color(0xff000000)),
-                                      color: Color(0xffffffff),
+                                      border: Border.all(color: const Color(0xff000000)),
+                                      color: const Color(0xffffffff),
                                       borderRadius: BorderRadius.circular(4*fem),
                                     ),
                                     child: Align(
@@ -564,7 +563,7 @@ class levelUp extends StatelessWidget {
                                         child: Container(
                                           decoration: BoxDecoration (
                                             borderRadius: BorderRadius.circular(2*fem),
-                                            color: Color(0xffd9d9d9),
+                                            color: const Color(0xffd9d9d9),
                                           ),
                                         ),
                                       ),
@@ -591,7 +590,7 @@ class levelUp extends StatelessWidget {
                                         fontSize: 13*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.2425*ffem/fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
                                   ),
@@ -617,7 +616,7 @@ class levelUp extends StatelessWidget {
                                   fontSize: 26*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.2425*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -631,7 +630,7 @@ class levelUp extends StatelessWidget {
                                   fontSize: 16*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.2425*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -648,11 +647,11 @@ class levelUp extends StatelessWidget {
                                     width: 134*fem,
                                     height: double.infinity,
                                     decoration: BoxDecoration (
-                                      color: Color(0xff0b6236),
+                                      color: const Color(0xff0b6236),
                                       borderRadius: BorderRadius.circular(30*fem),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Color(0x3f000000),
+                                          color: const Color(0x3f000000),
                                           offset: Offset(0*fem, 4*fem),
                                           blurRadius: 2*fem,
                                         ),
@@ -668,7 +667,7 @@ class levelUp extends StatelessWidget {
                                             fontSize: 16*ffem,
                                             fontWeight: FontWeight.w400,
                                             height: 1.5*ffem/fem,
-                                            color: Color(0xffffffff),
+                                            color: const Color(0xffffffff),
                                           ),
                                         ),
                                       ),
@@ -693,7 +692,7 @@ class levelUp extends StatelessWidget {
                                       fontSize: 13*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.2425*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ],

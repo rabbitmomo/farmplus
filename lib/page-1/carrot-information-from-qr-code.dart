@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class Scene extends StatelessWidget {
+  const Scene({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // carrotinformationfromqrcodecnb (169:192)
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xffeaf8e7),
         ),
         child: Column(
@@ -26,7 +25,7 @@ class Scene extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(29*fem, 21.5*fem, 29*fem, 37.5*fem),
               width: 367*fem,
               height: 103*fem,
-              decoration: BoxDecoration (
+              decoration: const BoxDecoration (
                 color: Color(0xffffffff),
               ),
               child: Center(
@@ -44,7 +43,7 @@ class Scene extends StatelessWidget {
                         fontWeight: FontWeight.w700,
                         height: 1.4666666667*ffem/fem,
                         letterSpacing: -0.4099999964*fem,
-                        color: Color(0xff000000),
+                        color: const Color(0xff000000),
                       ),
                     ),
                   ),
@@ -74,7 +73,7 @@ class Scene extends StatelessWidget {
                               width: 310*fem,
                               height: 575*fem,
                               child: Container(
-                                decoration: BoxDecoration (
+                                decoration: const BoxDecoration (
                                   color: Color(0x96d9d95f),
                                 ),
                               ),
@@ -85,7 +84,7 @@ class Scene extends StatelessWidget {
                           // carrotinformationfromqrcodeqKu (169:276)
                           left: 225*fem,
                           top: 37*fem,
-                          child: Container(
+                          child: SizedBox(
                             width: 41.4*fem,
                             height: 92*fem,
                           ),
@@ -99,7 +98,7 @@ class Scene extends StatelessWidget {
                               width: 297*fem,
                               height: 21*fem,
                               child: Container(
-                                decoration: BoxDecoration (
+                                decoration: const BoxDecoration (
                                   color: Color(0xffffffff),
                                 ),
                               ),
@@ -115,7 +114,7 @@ class Scene extends StatelessWidget {
                               width: 297*fem,
                               height: 21*fem,
                               child: Container(
-                                decoration: BoxDecoration (
+                                decoration: const BoxDecoration (
                                   color: Color(0xffffffff),
                                 ),
                               ),
@@ -131,7 +130,7 @@ class Scene extends StatelessWidget {
                               width: 297*fem,
                               height: 25*fem,
                               child: Container(
-                                decoration: BoxDecoration (
+                                decoration: const BoxDecoration (
                                   color: Color(0xffffffff),
                                 ),
                               ),
@@ -170,7 +169,7 @@ class Scene extends StatelessWidget {
                                   fontWeight: FontWeight.w700,
                                   height: 1.4666666667*ffem/fem,
                                   letterSpacing: -0.4099999964*fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -193,7 +192,7 @@ class Scene extends StatelessWidget {
                                     height: 2.2*ffem/fem,
                                     letterSpacing: -0.4099999964*fem,
                                     fontStyle: FontStyle.italic,
-                                    color: Color(0xff000000),
+                                    color: const Color(0xff000000),
                                   ),
                                   children: [
                                     TextSpan(
@@ -205,10 +204,10 @@ class Scene extends StatelessWidget {
                                         height: 2.2*ffem/fem,
                                         letterSpacing: -0.4099999964*fem,
                                         fontStyle: FontStyle.italic,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
-                                    TextSpan(
+                                    const TextSpan(
                                       text: '\nLocation: XYZ Farm, Anytown, USA\nFarming Practices: Organic farming methods are employed, avoiding synthetic pesticides and fertilizers. Crop rotation and cover cropping are utilized to enhance soil health and biodiversity.\nCertifications: USDA Certified Organic, Non-GMO Project Verified\n',
                                     ),
                                     TextSpan(
@@ -220,10 +219,10 @@ class Scene extends StatelessWidget {
                                         height: 2.2*ffem/fem,
                                         letterSpacing: -0.4099999964*fem,
                                         fontStyle: FontStyle.italic,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
-                                    TextSpan(
+                                    const TextSpan(
                                       text: '\nHarvest Method: Carrots are hand-picked by experienced workers to ensure careful handling and minimal damage.\nProcessing: Immediately after harvest, carrots are transported to a nearby processing facility where they undergo thorough washing and are carefully packaged to maintain freshness.\n',
                                     ),
                                     TextSpan(
@@ -235,10 +234,10 @@ class Scene extends StatelessWidget {
                                         height: 2.2*ffem/fem,
                                         letterSpacing: -0.4099999964*fem,
                                         fontStyle: FontStyle.italic,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
-                                    TextSpan(
+                                    const TextSpan(
                                       text: ':\nJourney Overview: Carrots are transported from the processing facility to the distribution center in refrigerated trucks to preserve quality and prevent spoilage.\nDistribution Center: Located in Anytown, USA, the distribution center ensures efficient delivery to grocery stores within the region.',
                                     ),
                                   ],
@@ -273,7 +272,7 @@ class Scene extends StatelessWidget {
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 5*fem),
                           width: 169*fem,
                           height: 43*fem,
-                          decoration: BoxDecoration (
+                          decoration: const BoxDecoration (
                             color: Color(0xff5f9662),
                           ),
                           child: Center(
@@ -285,7 +284,7 @@ class Scene extends StatelessWidget {
                                 fontWeight: FontWeight.w600,
                                 height: 2.2*ffem/fem,
                                 letterSpacing: -0.4099999964*fem,
-                                color: Color(0xff000000),
+                                color: const Color(0xff000000),
                               ),
                             ),
                           ),

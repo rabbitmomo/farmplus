@@ -1,8 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 // import 'package:myapp/page-1/rectangle-17409.dart';
 // import 'package:myapp/page-1/consultation-page-kx.dart';
@@ -108,8 +105,6 @@ import 'package:myapp/page-1/loginPage.dart';
 // import 'package:myapp/page-1/supply-chain.dart';
 // import 'package:myapp/page-1/iphone-14-15-pro-max-1.dart';
 import 'package:flutter/services.dart';
-import 'package:myapp/page-1/tutorialHomePage.dart';
-import 'package:myapp/page-1/tutorialWheat.dart';
 
 /* 
   to remove the flutter default splash screen run the code at terminal 
@@ -122,10 +117,12 @@ void main() {
     SystemUiMode.manual,
     overlays: SystemUiOverlay.values,
   );
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -135,21 +132,23 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SplashScreen(), // Set SplashScreen as the home widget
+      home: const SplashScreen(), // Set SplashScreen as the home widget
       routes: {
         '/home': (context) => HomePage(),
-        '/calendar' : (context) => CalendarPage(),
-        '/notification' : (context) => NotificationPage(),
+        '/calendar' : (context) => const CalendarPage(),
+        '/notification' : (context) => const NotificationPage(),
         // '/tutorial' : (context) => TutorialPage(),
         // '/supplychain' : (context) => ,
         // '/commnunity' : (context) =>,
-        '/inventory' : (context) => InventoryPage(),
+        '/inventory' : (context) => const InventoryPage(),
       },
     );
   }
 }
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -162,15 +161,15 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> navigateToLogin() async {
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 3));
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => logIn()),
+      MaterialPageRoute(builder: (context) => const logIn()),
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scene(); // Your existing splash screen widget
+    return const Scene(); // Your existing splash screen widget
   }
 }

@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class InventoryPage extends StatelessWidget {
+  const InventoryPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // inventorypagea1D (210:1443)
         padding: EdgeInsets.fromLTRB(16*fem, 20*fem, 16*fem, 33*fem),
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xffffffff),
         ),
         child: Column(
@@ -48,7 +47,7 @@ class InventoryPage extends StatelessWidget {
                       fontSize: 20*ffem,
                       fontWeight: FontWeight.w500,
                       height: 1.5*ffem/fem,
-                      color: Color(0xff4c9a2a),
+                      color: const Color(0xff4c9a2a),
                     ),
                   ),
                 ],
@@ -68,7 +67,7 @@ class InventoryPage extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(15*fem, 8*fem, 128*fem, 8*fem),
                     height: double.infinity,
                     decoration: BoxDecoration (
-                      color: Color(0xfff1f1f1),
+                      color: const Color(0xfff1f1f1),
                       borderRadius: BorderRadius.circular(18*fem),
                     ),
                     child: Row(
@@ -98,7 +97,7 @@ class InventoryPage extends StatelessWidget {
                                 fontWeight: FontWeight.w400,
                                 height: 1.5*ffem/fem,
                                 letterSpacing: -0.4099999964*fem,
-                                color: Color(0xffadadad),
+                                color: const Color(0xffadadad),
                               ),
                             ),
                           ),
@@ -106,7 +105,7 @@ class InventoryPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     // vectorcXZ (314:119)
                     width: 18*fem,
                     height: 12*fem,
@@ -119,7 +118,7 @@ class InventoryPage extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               // autogroupifadm9Z (MurhZPvgZ5uANs9m89ifAD)
               width: double.infinity,
               height: 640*fem,
@@ -129,13 +128,13 @@ class InventoryPage extends StatelessWidget {
                     // frame427319677JQP (331:165)
                     left: 0*fem,
                     top: 0*fem,
-                    child: Container(
+                    child: SizedBox(
                       width: 328*fem,
                       height: 630*fem,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
+                          SizedBox(
                             // autogroupvfzxEJ3 (MurhsZ56R81yisDtNmVfZX)
                             width: double.infinity,
                             height: 200*fem,
@@ -155,11 +154,11 @@ class InventoryPage extends StatelessWidget {
                                       width: 155*fem,
                                       height: double.infinity,
                                       decoration: BoxDecoration (
-                                        color: Color(0xffffffff),
+                                        color: const Color(0xffffffff),
                                         borderRadius: BorderRadius.circular(8*fem),
                                         boxShadow: [
                                           BoxShadow(
-                                            color: Color(0x19194837),
+                                            color: const Color(0x19194837),
                                             offset: Offset(0*fem, 0*fem),
                                             blurRadius: 6*fem,
                                           ),
@@ -204,7 +203,7 @@ class InventoryPage extends StatelessWidget {
                                                       child: Container(
                                                         decoration: BoxDecoration (
                                                           borderRadius: BorderRadius.circular(43.5*fem),
-                                                          gradient: LinearGradient (
+                                                          gradient: const LinearGradient (
                                                             begin: Alignment(0.011, -0.931),
                                                             end: Alignment(-0, 1),
                                                             colors: <Color>[Color(0x00ffffff), Color(0x87959b8f), Color(0xff343c2c)],
@@ -264,7 +263,7 @@ class InventoryPage extends StatelessWidget {
                                                             fontSize: 20*ffem,
                                                             fontWeight: FontWeight.w500,
                                                             height: 1.5*ffem/fem,
-                                                            color: Color(0xffffffff),
+                                                            color: const Color(0xffffffff),
                                                           ),
                                                         ),
                                                       ),
@@ -286,7 +285,7 @@ class InventoryPage extends StatelessWidget {
                                                   fontSize: 14*ffem,
                                                   fontWeight: FontWeight.w400,
                                                   height: 1.2125*ffem/fem,
-                                                  color: Color(0xff47665a),
+                                                  color: const Color(0xff47665a),
                                                 ),
                                               ),
                                             ),
@@ -303,7 +302,7 @@ class InventoryPage extends StatelessWidget {
                                                   fontSize: 11*ffem,
                                                   fontWeight: FontWeight.w400,
                                                   height: 1.1725*ffem/fem,
-                                                  color: Color(0xff6a6a6a),
+                                                  color: const Color(0xff6a6a6a),
                                                 ),
                                               ),
                                             ),
@@ -318,7 +317,7 @@ class InventoryPage extends StatelessWidget {
                                                 fontSize: 10*ffem,
                                                 fontWeight: FontWeight.w200,
                                                 height: 1.1725*ffem/fem,
-                                                color: Color(0xff919191),
+                                                color: const Color(0xff919191),
                                               ),
                                             ),
                                           ),
@@ -338,11 +337,11 @@ class InventoryPage extends StatelessWidget {
                                     width: 155*fem,
                                     height: double.infinity,
                                     decoration: BoxDecoration (
-                                      color: Color(0xffffffff),
+                                      color: const Color(0xffffffff),
                                       borderRadius: BorderRadius.circular(8*fem),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Color(0x19194837),
+                                          color: const Color(0x19194837),
                                           offset: Offset(0*fem, 0*fem),
                                           blurRadius: 6*fem,
                                         ),
@@ -394,7 +393,7 @@ class InventoryPage extends StatelessWidget {
                                                           child: Container(
                                                             decoration: BoxDecoration (
                                                               borderRadius: BorderRadius.circular(43.5*fem),
-                                                              gradient: LinearGradient (
+                                                              gradient: const LinearGradient (
                                                                 begin: Alignment(0.011, -1),
                                                                 end: Alignment(-0, 1),
                                                                 colors: <Color>[Color(0x00ffffff), Color(0xffc96464)],
@@ -454,7 +453,7 @@ class InventoryPage extends StatelessWidget {
                                                                 fontSize: 20*ffem,
                                                                 fontWeight: FontWeight.w500,
                                                                 height: 1.5*ffem/fem,
-                                                                color: Color(0xffffffff),
+                                                                color: const Color(0xffffffff),
                                                               ),
                                                             ),
                                                           ),
@@ -464,7 +463,7 @@ class InventoryPage extends StatelessWidget {
                                                   ],
                                                 ),
                                               ),
-                                              Container(
+                                              SizedBox(
                                                 // warningoctagonstreamlinecoreyZ (334:136)
                                                 width: 17.07*fem,
                                                 height: 17.07*fem,
@@ -489,7 +488,7 @@ class InventoryPage extends StatelessWidget {
                                                 fontSize: 14*ffem,
                                                 fontWeight: FontWeight.w400,
                                                 height: 1.2125*ffem/fem,
-                                                color: Color(0xffe0603f),
+                                                color: const Color(0xffe0603f),
                                               ),
                                             ),
                                           ),
@@ -506,7 +505,7 @@ class InventoryPage extends StatelessWidget {
                                                 fontSize: 11*ffem,
                                                 fontWeight: FontWeight.w400,
                                                 height: 1.1725*ffem/fem,
-                                                color: Color(0xff6a6a6a),
+                                                color: const Color(0xff6a6a6a),
                                               ),
                                             ),
                                           ),
@@ -523,7 +522,7 @@ class InventoryPage extends StatelessWidget {
                                                 fontSize: 10*ffem,
                                                 fontWeight: FontWeight.w200,
                                                 height: 1.1725*ffem/fem,
-                                                color: Color(0xff919191),
+                                                color: const Color(0xff919191),
                                               ),
                                             ),
                                           ),
@@ -538,7 +537,7 @@ class InventoryPage extends StatelessWidget {
                           SizedBox(
                             height: 15*fem,
                           ),
-                          Container(
+                          SizedBox(
                             // autogroupz7vpoSF (MurjRBARkszW96LwiEZ7VP)
                             width: double.infinity,
                             height: 200*fem,
@@ -552,11 +551,11 @@ class InventoryPage extends StatelessWidget {
                                   width: 155*fem,
                                   height: double.infinity,
                                   decoration: BoxDecoration (
-                                    color: Color(0xffffffff),
+                                    color: const Color(0xffffffff),
                                     borderRadius: BorderRadius.circular(8*fem),
                                     boxShadow: [
                                       BoxShadow(
-                                        color: Color(0x19194837),
+                                        color: const Color(0x19194837),
                                         offset: Offset(0*fem, 0*fem),
                                         blurRadius: 6*fem,
                                       ),
@@ -583,7 +582,7 @@ class InventoryPage extends StatelessWidget {
                                                   child: Container(
                                                     decoration: BoxDecoration (
                                                       borderRadius: BorderRadius.circular(36*fem),
-                                                      image: DecorationImage (
+                                                      image: const DecorationImage (
                                                         fit: BoxFit.cover,
                                                         image: AssetImage (
                                                           'assets/page-1/images/rectangle-17413-bg.png',
@@ -605,7 +604,7 @@ class InventoryPage extends StatelessWidget {
                                                   child: Container(
                                                     decoration: BoxDecoration (
                                                       borderRadius: BorderRadius.circular(43.5*fem),
-                                                      gradient: LinearGradient (
+                                                      gradient: const LinearGradient (
                                                         begin: Alignment(0.011, -0.851),
                                                         end: Alignment(-0, 1),
                                                         colors: <Color>[Color(0x00ffffff), Color(0x87959b8f), Color(0xff343c2c)],
@@ -665,7 +664,7 @@ class InventoryPage extends StatelessWidget {
                                                         fontSize: 20*ffem,
                                                         fontWeight: FontWeight.w500,
                                                         height: 1.5*ffem/fem,
-                                                        color: Color(0xffffffff),
+                                                        color: const Color(0xffffffff),
                                                       ),
                                                     ),
                                                   ),
@@ -687,7 +686,7 @@ class InventoryPage extends StatelessWidget {
                                               fontSize: 14*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.2125*ffem/fem,
-                                              color: Color(0xff47665a),
+                                              color: const Color(0xff47665a),
                                             ),
                                           ),
                                         ),
@@ -704,7 +703,7 @@ class InventoryPage extends StatelessWidget {
                                               fontSize: 11*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.1725*ffem/fem,
-                                              color: Color(0xff6a6a6a),
+                                              color: const Color(0xff6a6a6a),
                                             ),
                                           ),
                                         ),
@@ -719,7 +718,7 @@ class InventoryPage extends StatelessWidget {
                                             fontSize: 10*ffem,
                                             fontWeight: FontWeight.w200,
                                             height: 1.1725*ffem/fem,
-                                            color: Color(0xff919191),
+                                            color: const Color(0xff919191),
                                           ),
                                         ),
                                       ),
@@ -732,11 +731,11 @@ class InventoryPage extends StatelessWidget {
                                   width: 155*fem,
                                   height: double.infinity,
                                   decoration: BoxDecoration (
-                                    color: Color(0xffffffff),
+                                    color: const Color(0xffffffff),
                                     borderRadius: BorderRadius.circular(8*fem),
                                     boxShadow: [
                                       BoxShadow(
-                                        color: Color(0x19194837),
+                                        color: const Color(0x19194837),
                                         offset: Offset(0*fem, 0*fem),
                                         blurRadius: 6*fem,
                                       ),
@@ -781,7 +780,7 @@ class InventoryPage extends StatelessWidget {
                                                   child: Container(
                                                     decoration: BoxDecoration (
                                                       borderRadius: BorderRadius.circular(43.5*fem),
-                                                      gradient: LinearGradient (
+                                                      gradient: const LinearGradient (
                                                         begin: Alignment(0.011, -0.851),
                                                         end: Alignment(-0, 1),
                                                         colors: <Color>[Color(0x00ffffff), Color(0x87959b8f), Color(0xff343c2c)],
@@ -841,7 +840,7 @@ class InventoryPage extends StatelessWidget {
                                                         fontSize: 20*ffem,
                                                         fontWeight: FontWeight.w500,
                                                         height: 1.5*ffem/fem,
-                                                        color: Color(0xffffffff),
+                                                        color: const Color(0xffffffff),
                                                       ),
                                                     ),
                                                   ),
@@ -863,7 +862,7 @@ class InventoryPage extends StatelessWidget {
                                               fontSize: 14*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.2125*ffem/fem,
-                                              color: Color(0xff47665a),
+                                              color: const Color(0xff47665a),
                                             ),
                                           ),
                                         ),
@@ -880,7 +879,7 @@ class InventoryPage extends StatelessWidget {
                                               fontSize: 11*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.1725*ffem/fem,
-                                              color: Color(0xff6a6a6a),
+                                              color: const Color(0xff6a6a6a),
                                             ),
                                           ),
                                         ),
@@ -895,7 +894,7 @@ class InventoryPage extends StatelessWidget {
                                             fontSize: 10*ffem,
                                             fontWeight: FontWeight.w200,
                                             height: 1.1725*ffem/fem,
-                                            color: Color(0xff919191),
+                                            color: const Color(0xff919191),
                                           ),
                                         ),
                                       ),
@@ -913,11 +912,11 @@ class InventoryPage extends StatelessWidget {
                             padding: EdgeInsets.fromLTRB(29.5*fem, 12*fem, 11.93*fem, 11.5*fem),
                             width: 155*fem,
                             decoration: BoxDecoration (
-                              color: Color(0xffffffff),
+                              color: const Color(0xffffffff),
                               borderRadius: BorderRadius.circular(8*fem),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Color(0x19194837),
+                                  color: const Color(0x19194837),
                                   offset: Offset(0*fem, 0*fem),
                                   blurRadius: 6*fem,
                                 ),
@@ -969,7 +968,7 @@ class InventoryPage extends StatelessWidget {
                                                   child: Container(
                                                     decoration: BoxDecoration (
                                                       borderRadius: BorderRadius.circular(43.5*fem),
-                                                      gradient: LinearGradient (
+                                                      gradient: const LinearGradient (
                                                         begin: Alignment(0.011, -0.851),
                                                         end: Alignment(-0, 1),
                                                         colors: <Color>[Color(0x00ffffff), Color(0x87959b8f), Color(0xfcbc6b30), Color(0xff343c2c)],
@@ -1029,7 +1028,7 @@ class InventoryPage extends StatelessWidget {
                                                         fontSize: 20*ffem,
                                                         fontWeight: FontWeight.w500,
                                                         height: 1.5*ffem/fem,
-                                                        color: Color(0xffffffff),
+                                                        color: const Color(0xffffffff),
                                                       ),
                                                     ),
                                                   ),
@@ -1039,7 +1038,7 @@ class InventoryPage extends StatelessWidget {
                                           ],
                                         ),
                                       ),
-                                      Container(
+                                      SizedBox(
                                         // warningoctagonstreamlinecore7K (341:121)
                                         width: 17.07*fem,
                                         height: 17.07*fem,
@@ -1064,7 +1063,7 @@ class InventoryPage extends StatelessWidget {
                                         fontSize: 14*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.2125*ffem/fem,
-                                        color: Color(0xffdd772d),
+                                        color: const Color(0xffdd772d),
                                       ),
                                     ),
                                   ),
@@ -1081,7 +1080,7 @@ class InventoryPage extends StatelessWidget {
                                         fontSize: 11*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.1725*ffem/fem,
-                                        color: Color(0xff6a6a6a),
+                                        color: const Color(0xff6a6a6a),
                                       ),
                                     ),
                                   ),
@@ -1098,7 +1097,7 @@ class InventoryPage extends StatelessWidget {
                                         fontSize: 10*ffem,
                                         fontWeight: FontWeight.w200,
                                         height: 1.1725*ffem/fem,
-                                        color: Color(0xff919191),
+                                        color: const Color(0xff919191),
                                       ),
                                     ),
                                   ),
@@ -1124,11 +1123,11 @@ class InventoryPage extends StatelessWidget {
                         width: 60.22*fem,
                         height: 58*fem,
                         decoration: BoxDecoration (
-                          color: Color(0xff1a7749),
+                          color: const Color(0xff1a7749),
                           borderRadius: BorderRadius.circular(20*fem),
                           boxShadow: [
                             BoxShadow(
-                              color: Color(0x632f5134),
+                              color: const Color(0x632f5134),
                               offset: Offset(2*fem, 2*fem),
                               blurRadius: 3*fem,
                             ),

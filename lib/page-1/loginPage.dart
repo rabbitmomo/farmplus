@@ -1,26 +1,23 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/widgets.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class logIn extends StatelessWidget {
+  const logIn({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         child: Container(
           // loginpagehaoohH (68:177)
           padding: EdgeInsets.fromLTRB(
               20 * fem, 29 * fem, 20 * fem, 13 * fem), //top bar
           width: double.infinity,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Color(0xffffffff),
           ),
           child: SingleChildScrollView(
@@ -55,7 +52,7 @@ class logIn extends StatelessWidget {
                             fontSize: 18 * ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.355 * ffem / fem,
-                            color: Color(0xff014221),
+                            color: const Color(0xff014221),
                           ),
                         ),
                       ),
@@ -73,7 +70,7 @@ class logIn extends StatelessWidget {
                       fontSize: 40 * ffem,
                       fontWeight: FontWeight.w400,
                       height: 1.355 * ffem / fem,
-                      color: Color(0xff014422),
+                      color: const Color(0xff014422),
                     ),
                   ),
                 ),
@@ -86,7 +83,7 @@ class logIn extends StatelessWidget {
                   width: double.infinity,
                   height: 42 * fem, //height of gmail row
                   decoration: BoxDecoration(
-                    color: Color(0xffeaf7e7),
+                    color: const Color(0xffeaf7e7),
                     borderRadius: BorderRadius.circular(20 * fem),
                   ),
                   child: Row(
@@ -118,7 +115,7 @@ class logIn extends StatelessWidget {
                             fontSize: 14 * ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.1725 * ffem / fem,
-                            color: Color(0xffc3cec4),
+                            color: const Color(0xffc3cec4),
                           ),
                         ),
                       ),
@@ -142,7 +139,7 @@ class logIn extends StatelessWidget {
                         width: double.infinity,
                         height: 42 * fem, //row of password row
                         decoration: BoxDecoration(
-                          color: Color(0xffeaf7e7),
+                          color: const Color(0xffeaf7e7),
                           borderRadius: BorderRadius.circular(20 * fem),
                         ),
                         child: Row(
@@ -171,7 +168,7 @@ class logIn extends StatelessWidget {
                                   fontSize: 14 * ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.1725 * ffem / fem,
-                                  color: Color(0xffc3cec4),
+                                  color: const Color(0xffc3cec4),
                                 ),
                               ),
                             ),
@@ -182,7 +179,7 @@ class logIn extends StatelessWidget {
                                 style: TextButton.styleFrom(
                                   padding: EdgeInsets.zero,
                                 ),
-                                child: Container(
+                                child: SizedBox(
                                   width: 20 * fem,
                                   height: 20 * fem,
                                   child: Image.asset(
@@ -227,7 +224,7 @@ class logIn extends StatelessWidget {
                                   fontSize: 10 * ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.1725 * ffem / fem,
-                                  color: Color(0xff8e9eb5),
+                                  color: const Color(0xff8e9eb5),
                                 ),
                               ),
                             ),
@@ -248,7 +245,7 @@ class logIn extends StatelessWidget {
                                     fontSize: 10 * ffem,
                                     fontWeight: FontWeight.w400,
                                     height: 1.1725 * ffem / fem,
-                                    color: Color(0xff9bb58e),
+                                    color: const Color(0xff9bb58e),
                                   ),
                                 ),
                               ),
@@ -266,11 +263,11 @@ class logIn extends StatelessWidget {
                   width: double.infinity,
                   height: 38 * fem,
                   decoration: BoxDecoration(
-                    color: Color(0xff5f9661),
+                    color: const Color(0xff5f9661),
                     borderRadius: BorderRadius.circular(20 * fem),
                     boxShadow: [
                       BoxShadow(
-                        color: Color(0x3f000000),
+                        color: const Color(0x3f000000),
                         offset: Offset(0 * fem, 4 * fem),
                         blurRadius: 2 * fem,
                       ),
@@ -290,7 +287,7 @@ class logIn extends StatelessWidget {
                             fontSize: 16 * ffem,
                             fontWeight: FontWeight.w500,
                             height: 1.1725 * ffem / fem,
-                            color: Color(0xffffffff),
+                            color: const Color(0xffffffff),
                           ),
                         ),
                       ),
@@ -311,7 +308,7 @@ class logIn extends StatelessWidget {
                             0 * fem, 3.65 * fem, 10 * fem, 0 * fem),
                         width: 54 * fem,
                         height: 0.65 * fem,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0x7c3a517e),
                         ),
                       ),
@@ -326,7 +323,7 @@ class logIn extends StatelessWidget {
                             fontSize: 14 * ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.1725 * ffem / fem,
-                            color: Color(0xd68ecc71),
+                            color: const Color(0xd68ecc71),
                           ),
                         ),
                       ),
@@ -336,7 +333,7 @@ class logIn extends StatelessWidget {
                             0 * fem, 3.65 * fem, 0 * fem, 0 * fem),
                         width: 54 * fem,
                         height: 0.65 * fem,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0x7c3a517e),
                         ),
                       ),
@@ -351,7 +348,7 @@ class logIn extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Container(
+                      SizedBox(
                         // phoneRm9 (68:213)
                         width: 50 * fem,
                         height: 50 * fem,
@@ -364,7 +361,7 @@ class logIn extends StatelessWidget {
                       SizedBox(
                         width: 44 * fem,
                       ),
-                      Container(
+                      SizedBox(
                         // googlerbZ (68:206)
                         width: 50 * fem,
                         height: 50 * fem,
@@ -377,7 +374,7 @@ class logIn extends StatelessWidget {
                       SizedBox(
                         width: 44 * fem,
                       ),
-                      Container(
+                      SizedBox(
                         // facebookXSo (68:203)
                         width: 50 * fem,
                         height: 50 * fem,
@@ -411,7 +408,7 @@ class logIn extends StatelessWidget {
                               fontSize: 12 * ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.1725 * ffem / fem,
-                              color: Color(0xff0f0f0f),
+                              color: const Color(0xff0f0f0f),
                             ),
                           ),
                         ),
@@ -430,8 +427,8 @@ class logIn extends StatelessWidget {
                             fontWeight: FontWeight.w400,
                             height: 1.1725 * ffem / fem,
                             decoration: TextDecoration.underline,
-                            color: Color(0xff2b892f),
-                            decorationColor: Color(0xff2b892f),
+                            color: const Color(0xff2b892f),
+                            decorationColor: const Color(0xff2b892f),
                           ),
                         ),
                       ),
