@@ -7,21 +7,21 @@ class Scene extends StatelessWidget {
   Widget build(BuildContext context) {
     double baseWidth = 108;
     double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
+    //double ffem = fem * 0.97;
     return SizedBox(
       width: double.infinity,
       child: SizedBox(
         // rectangle76BLB (262:130)
         width: double.infinity,
-        height: 104*fem,
+        height: 104 * fem,
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(5*fem),
+          borderRadius: BorderRadius.circular(5 * fem),
           child: Image.asset(
             'assets/page-1/images/rectangle-76.png',
             fit: BoxFit.cover,
           ),
         ),
       ),
-          );
+    );
   }
 }
