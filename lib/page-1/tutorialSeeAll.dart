@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/page-1/tutorialHomePage.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/page-1/tutorialChili.dart';
@@ -14,6 +11,8 @@ import 'package:myapp/page-1/tutorialOnion.dart';
 import 'package:myapp/page-1/tutorialPotato.dart';
 
 class seeAll extends StatelessWidget {
+  const seeAll({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
@@ -21,13 +20,13 @@ class seeAll extends StatelessWidget {
     double ffem = fem * 0.97;
     return Scaffold(
       body: SingleChildScrollView(
-        child: Container(
+        child: SizedBox(
           width: double.infinity,
           child: Container(
             // levelupfarmerpaget7W (490:344)
             padding: EdgeInsets.fromLTRB(29*fem, 51*fem, 42*fem, 314*fem),
             width: double.infinity,
-            decoration: BoxDecoration (
+            decoration: const BoxDecoration (
               color: Color(0xffffffff),
             ),
             child: Column(
@@ -45,7 +44,7 @@ class seeAll extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => tutorialHome()),
+                            MaterialPageRoute(builder: (context) => const tutorialHome()),
                           );
                         },
                         child: Container(
@@ -66,8 +65,8 @@ class seeAll extends StatelessWidget {
                         padding: EdgeInsets.fromLTRB(14*fem, 4*fem, 46*fem, 2*fem),
                         height: double.infinity,
                         decoration: BoxDecoration (
-                          border: Border.all(color: Color(0xff767676)),
-                          color: Color(0xffaca9a9),
+                          border: Border.all(color: const Color(0xff767676)),
+                          color: const Color(0xffaca9a9),
                           borderRadius: BorderRadius.circular(11*fem),
                         ),
                         child: Row(
@@ -93,7 +92,7 @@ class seeAll extends StatelessWidget {
                                 fontSize: 14*ffem,
                                 fontWeight: FontWeight.w400,
                                 height: 1.1725*ffem/fem,
-                                color: Color(0xffededed),
+                                color: const Color(0xffededed),
                               ),
                             ),
                           ],
@@ -113,7 +112,7 @@ class seeAll extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                       height: 1.1725*ffem/fem,
                       letterSpacing: 0.8*fem,
-                      color: Color(0xff000000),
+                      color: const Color(0xff000000),
                     ),
                   ),
                 ),
@@ -127,7 +126,7 @@ class seeAll extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => tutorialWheat()),
+                            MaterialPageRoute(builder: (context) => const tutorialWheat()),
                           );
                         },
                         child: Container(
@@ -144,7 +143,7 @@ class seeAll extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => tutorialChili()),
+                            MaterialPageRoute(builder: (context) => const tutorialChili()),
                           );
                         },
                         child: Container(
@@ -161,10 +160,10 @@ class seeAll extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => tutorialCorn()),
+                            MaterialPageRoute(builder: (context) => const tutorialCorn()),
                           );
                         },
-                        child: Container(
+                        child: SizedBox(
                           width: 55 * fem,
                           height: 55 * fem,
                           child: Image.asset(
@@ -194,7 +193,7 @@ class seeAll extends StatelessWidget {
                             fontSize: 15*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.42*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -209,7 +208,7 @@ class seeAll extends StatelessWidget {
                             fontSize: 15*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.42*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -224,7 +223,7 @@ class seeAll extends StatelessWidget {
                             fontSize: 15*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.42*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -242,7 +241,7 @@ class seeAll extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => tutorialCabbage()),
+                            MaterialPageRoute(builder: (context) => const tutorialCabbage()),
                           );
                         },
                         child: Container(
@@ -259,7 +258,7 @@ class seeAll extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => tutorialCarrot()),
+                            MaterialPageRoute(builder: (context) => const tutorialCarrot()),
                           );
                         },
                         child: Container(
@@ -276,10 +275,10 @@ class seeAll extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => tutorialTomato()),
+                            MaterialPageRoute(builder: (context) => const tutorialTomato()),
                           );
                         },
-                        child: Container(
+                        child: SizedBox(
                           width: 50 * fem,
                           height: 50 * fem,
                           child: Image.asset(
@@ -309,7 +308,7 @@ class seeAll extends StatelessWidget {
                             fontSize: 15*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.42*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -324,7 +323,7 @@ class seeAll extends StatelessWidget {
                             fontSize: 15*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.42*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -339,7 +338,7 @@ class seeAll extends StatelessWidget {
                             fontSize: 15*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.42*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -357,7 +356,7 @@ class seeAll extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => tutorialOnion()),
+                            MaterialPageRoute(builder: (context) => const tutorialOnion()),
                           );
                         },
                         child: Container(
@@ -374,10 +373,10 @@ class seeAll extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => tutorialPotato()),
+                            MaterialPageRoute(builder: (context) => const tutorialPotato()),
                           );
                         },
-                        child: Container(
+                        child: SizedBox(
                           width: 55 * fem,
                           height: 55 * fem,
                           child: Image.asset(
@@ -407,7 +406,7 @@ class seeAll extends StatelessWidget {
                             fontSize: 15*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.42*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -420,7 +419,7 @@ class seeAll extends StatelessWidget {
                           fontSize: 15*ffem,
                           fontWeight: FontWeight.w400,
                           height: 1.42*ffem/fem,
-                          color: Color(0xff000000),
+                          color: const Color(0xff000000),
                         ),
                       ),
                     ],

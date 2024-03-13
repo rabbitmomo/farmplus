@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class Scene extends StatelessWidget {
+  const Scene({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // inventorydetailjAX (348:146)
         padding: EdgeInsets.fromLTRB(29*fem, 20*fem, 24*fem, 267*fem),
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xffffffff),
         ),
         child: Column(
@@ -52,7 +51,7 @@ class Scene extends StatelessWidget {
                           fontSize: 20*ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.5*ffem/fem,
-                          color: Color(0xff4c9a2a),
+                          color: const Color(0xff4c9a2a),
                         ),
                       ),
                     ),
@@ -94,7 +93,7 @@ class Scene extends StatelessWidget {
                     fontSize: 14*ffem,
                     fontWeight: FontWeight.w300,
                     height: 1.1725*ffem/fem,
-                    color: Color(0xff939393),
+                    color: const Color(0xff939393),
                   ),
                 ),
               ),
@@ -111,7 +110,7 @@ class Scene extends StatelessWidget {
                     fontSize: 13*ffem,
                     fontWeight: FontWeight.w400,
                     height: 1.1725*ffem/fem,
-                    color: Color(0xff5f5f5f),
+                    color: const Color(0xff5f5f5f),
                   ),
                 ),
               ),
@@ -146,7 +145,7 @@ class Scene extends StatelessWidget {
                           fontSize: 13*ffem,
                           fontWeight: FontWeight.w300,
                           height: 1.1725*ffem/fem,
-                          color: Color(0xff405a2b),
+                          color: const Color(0xff405a2b),
                         ),
                       ),
                     ),
@@ -163,12 +162,12 @@ class Scene extends StatelessWidget {
                           fontSize: 13*ffem,
                           fontWeight: FontWeight.w300,
                           height: 1.1725*ffem/fem,
-                          color: Color(0xff8c8c8c),
+                          color: const Color(0xff8c8c8c),
                         ),
                       ),
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     // group2606haX (355:143)
                     width: 276*fem,
                     height: 28.33*fem,
@@ -194,7 +193,7 @@ class Scene extends StatelessWidget {
                   fontSize: 13*ffem,
                   fontWeight: FontWeight.w400,
                   height: 1.8461538462*ffem/fem,
-                  color: Color(0xff5d5d5d),
+                  color: const Color(0xff5d5d5d),
                 ),
               ),
             ),

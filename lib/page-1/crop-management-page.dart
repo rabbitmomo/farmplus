@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class cropManagement extends StatelessWidget {
+  const cropManagement({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // cropmanagementpagefGb (181:1153)
         padding: EdgeInsets.fromLTRB(20*fem, 20*fem, 20*fem, 92*fem),
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xff0e4531),
         ),
         child: Column(
@@ -51,7 +50,7 @@ class cropManagement extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                         height: 1.5*ffem/fem,
                         letterSpacing: -0.4099999964*fem,
-                        color: Color(0xffffffff),
+                        color: const Color(0xffffffff),
                       ),
                     ),
                   ),
@@ -76,7 +75,7 @@ class cropManagement extends StatelessWidget {
               width: double.infinity,
               height: 118*fem,
               decoration: BoxDecoration (
-                color: Color(0xffffffff),
+                color: const Color(0xffffffff),
                 borderRadius: BorderRadius.circular(20*fem),
               ),
               child: Row(
@@ -149,7 +148,7 @@ class cropManagement extends StatelessWidget {
                               SizedBox(
                                 height: 6*fem,
                               ),
-                              Container(
+                              SizedBox(
                                 // vectori39 (210:1316)
                                 width: 12*fem,
                                 height: 12*fem,
@@ -176,7 +175,7 @@ class cropManagement extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           // autogroupjr7jR5y (MutF8jqbwv842N1q8FjR7j)
                           width: 115*fem,
                           height: double.infinity,
@@ -198,7 +197,7 @@ class cropManagement extends StatelessWidget {
                                         fontWeight: FontWeight.w300,
                                         height: 1.5*ffem/fem,
                                         letterSpacing: -0.4099999964*fem,
-                                        color: Color(0xffadadad),
+                                        color: const Color(0xffadadad),
                                       ),
                                     ),
                                   ),
@@ -220,7 +219,7 @@ class cropManagement extends StatelessWidget {
                                         fontWeight: FontWeight.w300,
                                         height: 1.5*ffem/fem,
                                         letterSpacing: -0.4099999964*fem,
-                                        color: Color(0xffadadad),
+                                        color: const Color(0xffadadad),
                                       ),
                                     ),
                                   ),
@@ -242,7 +241,7 @@ class cropManagement extends StatelessWidget {
                                         fontWeight: FontWeight.w300,
                                         height: 1.5*ffem/fem,
                                         letterSpacing: -0.4099999964*fem,
-                                        color: Color(0xffadadad),
+                                        color: const Color(0xffadadad),
                                       ),
                                     ),
                                   ),
@@ -264,7 +263,7 @@ class cropManagement extends StatelessWidget {
                                         fontWeight: FontWeight.w300,
                                         height: 1.5*ffem/fem,
                                         letterSpacing: -0.4099999964*fem,
-                                        color: Color(0xffadadad),
+                                        color: const Color(0xffadadad),
                                       ),
                                     ),
                                   ),
@@ -286,10 +285,10 @@ class cropManagement extends StatelessWidget {
                                           fontWeight: FontWeight.w300,
                                           height: 1.5*ffem/fem,
                                           letterSpacing: -0.4099999964*fem,
-                                          color: Color(0xffadadad),
+                                          color: const Color(0xffadadad),
                                         ),
                                         children: [
-                                          TextSpan(
+                                          const TextSpan(
                                             text: '10 km',
                                           ),
                                           TextSpan(
@@ -300,7 +299,7 @@ class cropManagement extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xffadadad),
+                                              color: const Color(0xffadadad),
                                             ),
                                           ),
                                         ],
@@ -324,7 +323,7 @@ class cropManagement extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(19*fem, 12.5*fem, 78*fem, 11.5*fem),
               width: double.infinity,
               decoration: BoxDecoration (
-                color: Color(0xffffffff),
+                color: const Color(0xffffffff),
                 borderRadius: BorderRadius.circular(20*fem),
               ),
               child: Row(
@@ -354,7 +353,7 @@ class cropManagement extends StatelessWidget {
                           fontWeight: FontWeight.w300,
                           height: 1.5*ffem/fem,
                           letterSpacing: -0.4099999964*fem,
-                          color: Color(0xff4f4f4f),
+                          color: const Color(0xff4f4f4f),
                         ),
                         children: [
                           TextSpan(
@@ -365,10 +364,10 @@ class cropManagement extends StatelessWidget {
                               fontWeight: FontWeight.w300,
                               height: 1.5*ffem/fem,
                               letterSpacing: -0.4099999964*fem,
-                              color: Color(0xffa4a4a4),
+                              color: const Color(0xffa4a4a4),
                             ),
                           ),
-                          TextSpan(
+                          const TextSpan(
                             text: ' 2/1/2024\n',
                           ),
                           TextSpan(
@@ -379,10 +378,10 @@ class cropManagement extends StatelessWidget {
                               fontWeight: FontWeight.w300,
                               height: 1.5*ffem/fem,
                               letterSpacing: -0.4099999964*fem,
-                              color: Color(0xffa4a4a4),
+                              color: const Color(0xffa4a4a4),
                             ),
                           ),
-                          TextSpan(
+                          const TextSpan(
                             text: ' 15/4/2023\n',
                           ),
                           TextSpan(
@@ -393,10 +392,10 @@ class cropManagement extends StatelessWidget {
                               fontWeight: FontWeight.w300,
                               height: 1.5*ffem/fem,
                               letterSpacing: -0.4099999964*fem,
-                              color: Color(0xffa4a4a4),
+                              color: const Color(0xffa4a4a4),
                             ),
                           ),
-                          TextSpan(
+                          const TextSpan(
                             text: ' 100,000 kg',
                           ),
                         ],
@@ -430,7 +429,7 @@ class cropManagement extends StatelessWidget {
                             width: 152*fem,
                             height: 100*fem,
                             decoration: BoxDecoration (
-                              color: Color(0xffffffff),
+                              color: const Color(0xffffffff),
                               borderRadius: BorderRadius.circular(20*fem),
                             ),
                             child: Align(
@@ -469,7 +468,7 @@ class cropManagement extends StatelessWidget {
                                       fontWeight: FontWeight.w300,
                                       height: 1.5*ffem/fem,
                                       letterSpacing: -0.4099999964*fem,
-                                      color: Color(0xff525252),
+                                      color: const Color(0xff525252),
                                     ),
                                     children: [
                                       TextSpan(
@@ -480,7 +479,7 @@ class cropManagement extends StatelessWidget {
                                           fontWeight: FontWeight.w200,
                                           height: 1.5*ffem/fem,
                                           letterSpacing: -0.4099999964*fem,
-                                          color: Color(0xffc6c6c6),
+                                          color: const Color(0xffc6c6c6),
                                         ),
                                       ),
                                       TextSpan(
@@ -491,7 +490,7 @@ class cropManagement extends StatelessWidget {
                                           fontWeight: FontWeight.w300,
                                           height: 1.5*ffem/fem,
                                           letterSpacing: -0.4099999964*fem,
-                                          color: Color(0xffc6c6c6),
+                                          color: const Color(0xffc6c6c6),
                                         ),
                                       ),
                                       TextSpan(
@@ -502,7 +501,7 @@ class cropManagement extends StatelessWidget {
                                           fontWeight: FontWeight.w400,
                                           height: 1.5*ffem/fem,
                                           letterSpacing: -0.4099999964*fem,
-                                          color: Color(0xff699666),
+                                          color: const Color(0xff699666),
                                         ),
                                       ),
                                       TextSpan(
@@ -513,7 +512,7 @@ class cropManagement extends StatelessWidget {
                                           fontWeight: FontWeight.w300,
                                           height: 1.5*ffem/fem,
                                           letterSpacing: -0.4099999964*fem,
-                                          color: Color(0xff525252),
+                                          color: const Color(0xff525252),
                                         ),
                                       ),
                                       TextSpan(
@@ -524,7 +523,7 @@ class cropManagement extends StatelessWidget {
                                           fontWeight: FontWeight.w200,
                                           height: 1.5*ffem/fem,
                                           letterSpacing: -0.4099999964*fem,
-                                          color: Color(0xffadadad),
+                                          color: const Color(0xffadadad),
                                         ),
                                       ),
                                       TextSpan(
@@ -535,7 +534,7 @@ class cropManagement extends StatelessWidget {
                                           fontWeight: FontWeight.w200,
                                           height: 1.5*ffem/fem,
                                           letterSpacing: -0.4099999964*fem,
-                                          color: Color(0xffc6c6c6),
+                                          color: const Color(0xffc6c6c6),
                                         ),
                                       ),
                                       TextSpan(
@@ -546,7 +545,7 @@ class cropManagement extends StatelessWidget {
                                           fontWeight: FontWeight.w300,
                                           height: 1.5*ffem/fem,
                                           letterSpacing: -0.4099999964*fem,
-                                          color: Color(0xff525252),
+                                          color: const Color(0xff525252),
                                         ),
                                       ),
                                       TextSpan(
@@ -557,7 +556,7 @@ class cropManagement extends StatelessWidget {
                                           fontWeight: FontWeight.w400,
                                           height: 1.5*ffem/fem,
                                           letterSpacing: -0.4099999964*fem,
-                                          color: Color(0xff699666),
+                                          color: const Color(0xff699666),
                                         ),
                                       ),
                                       TextSpan(
@@ -568,7 +567,7 @@ class cropManagement extends StatelessWidget {
                                           fontWeight: FontWeight.w400,
                                           height: 1.5*ffem/fem,
                                           letterSpacing: -0.4099999964*fem,
-                                          color: Color(0xff84b180),
+                                          color: const Color(0xff84b180),
                                         ),
                                       ),
                                       TextSpan(
@@ -579,7 +578,7 @@ class cropManagement extends StatelessWidget {
                                           fontWeight: FontWeight.w300,
                                           height: 1.5*ffem/fem,
                                           letterSpacing: -0.4099999964*fem,
-                                          color: Color(0xffadadad),
+                                          color: const Color(0xffadadad),
                                         ),
                                       ),
                                     ],
@@ -598,10 +597,10 @@ class cropManagement extends StatelessWidget {
                     width: 152*fem,
                     height: double.infinity,
                     decoration: BoxDecoration (
-                      color: Color(0xffffffff),
+                      color: const Color(0xffffffff),
                       borderRadius: BorderRadius.circular(20*fem),
                     ),
-                    child: Container(
+                    child: SizedBox(
                       // weatherlightz1m (210:1345)
                       width: double.infinity,
                       height: double.infinity,
@@ -619,7 +618,7 @@ class cropManagement extends StatelessWidget {
                               height: 38*fem,
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             // autogroupiwvdPpb (MutGYSzTL5ej5NLPm2iwvd)
                             width: double.infinity,
                             height: 40*fem,
@@ -643,7 +642,7 @@ class cropManagement extends StatelessWidget {
                                             fontWeight: FontWeight.w400,
                                             height: 1.5*ffem/fem,
                                             letterSpacing: -0.4099999964*fem,
-                                            color: Color(0xff5d5d5d),
+                                            color: const Color(0xff5d5d5d),
                                           ),
                                         ),
                                       ),
@@ -668,7 +667,7 @@ class cropManagement extends StatelessWidget {
                                             fontWeight: FontWeight.w300,
                                             height: 1.5*ffem/fem,
                                             letterSpacing: -0.4099999964*fem,
-                                            color: Color(0xffa7a7a7),
+                                            color: const Color(0xffa7a7a7),
                                           ),
                                         ),
                                       ),
@@ -685,7 +684,7 @@ class cropManagement extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            SizedBox(
               // group95oQT (224:1540)
               width: double.infinity,
               child: Column(
@@ -708,7 +707,7 @@ class cropManagement extends StatelessWidget {
                               fontSize: 16*ffem,
                               fontWeight: FontWeight.w500,
                               height: 1.6000000238*ffem/fem,
-                              color: Color(0xffffffff),
+                              color: const Color(0xffffffff),
                             ),
                           ),
                         ),
@@ -722,7 +721,7 @@ class cropManagement extends StatelessWidget {
                               fontSize: 15*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.3333333333*ffem/fem,
-                              color: Color(0xff7f9e93),
+                              color: const Color(0xff7f9e93),
                             ),
                           ),
                         ),
@@ -735,17 +734,17 @@ class cropManagement extends StatelessWidget {
                     width: double.infinity,
                     height: 244*fem,
                     decoration: BoxDecoration (
-                      color: Color(0xffffffff),
+                      color: const Color(0xffffffff),
                       borderRadius: BorderRadius.circular(20*fem),
                     ),
-                    child: Container(
+                    child: SizedBox(
                       // frame427319672cej (210:1409)
                       width: double.infinity,
                       height: double.infinity,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Container(
+                          SizedBox(
                             // autogroupqxvmhRH (MutHYAqGz5zoFUQzX6qXvm)
                             width: 88*fem,
                             height: double.infinity,
@@ -758,7 +757,7 @@ class cropManagement extends StatelessWidget {
                                   padding: EdgeInsets.fromLTRB(19*fem, 12*fem, 19*fem, 8*fem),
                                   width: double.infinity,
                                   decoration: BoxDecoration (
-                                    color: Color(0xffdaf2ff),
+                                    color: const Color(0xffdaf2ff),
                                     borderRadius: BorderRadius.circular(18*fem),
                                   ),
                                   child: Column(
@@ -788,7 +787,7 @@ class cropManagement extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xff246183),
+                                              color: const Color(0xff246183),
                                             ),
                                           ),
                                         ),
@@ -801,7 +800,7 @@ class cropManagement extends StatelessWidget {
                                   padding: EdgeInsets.fromLTRB(19*fem, 12*fem, 19*fem, 8*fem),
                                   width: double.infinity,
                                   decoration: BoxDecoration (
-                                    color: Color(0xffdaf2ff),
+                                    color: const Color(0xffdaf2ff),
                                     borderRadius: BorderRadius.circular(18*fem),
                                   ),
                                   child: Column(
@@ -831,7 +830,7 @@ class cropManagement extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xff246183),
+                                              color: const Color(0xff246183),
                                             ),
                                           ),
                                         ),
@@ -845,7 +844,7 @@ class cropManagement extends StatelessWidget {
                           SizedBox(
                             width: 15*fem,
                           ),
-                          Container(
+                          SizedBox(
                             // autogroupkowuRZZ (MutJ5Kc37i679sx1nbkoWu)
                             width: 88*fem,
                             height: double.infinity,
@@ -858,7 +857,7 @@ class cropManagement extends StatelessWidget {
                                   padding: EdgeInsets.fromLTRB(19*fem, 12*fem, 19*fem, 8*fem),
                                   width: double.infinity,
                                   decoration: BoxDecoration (
-                                    color: Color(0xffdaf2ff),
+                                    color: const Color(0xffdaf2ff),
                                     borderRadius: BorderRadius.circular(18*fem),
                                   ),
                                   child: Column(
@@ -888,7 +887,7 @@ class cropManagement extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xff246183),
+                                              color: const Color(0xff246183),
                                             ),
                                           ),
                                         ),
@@ -901,7 +900,7 @@ class cropManagement extends StatelessWidget {
                                   padding: EdgeInsets.fromLTRB(19*fem, 12*fem, 19*fem, 8*fem),
                                   width: double.infinity,
                                   decoration: BoxDecoration (
-                                    color: Color(0xffdaf2ff),
+                                    color: const Color(0xffdaf2ff),
                                     borderRadius: BorderRadius.circular(18*fem),
                                   ),
                                   child: Column(
@@ -931,7 +930,7 @@ class cropManagement extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xff246183),
+                                              color: const Color(0xff246183),
                                             ),
                                           ),
                                         ),
@@ -945,7 +944,7 @@ class cropManagement extends StatelessWidget {
                           SizedBox(
                             width: 15*fem,
                           ),
-                          Container(
+                          SizedBox(
                             // autogroupqag53YK (MutJS9Lg4RtmV6GaadQag5)
                             width: 88*fem,
                             height: double.infinity,
@@ -958,7 +957,7 @@ class cropManagement extends StatelessWidget {
                                   padding: EdgeInsets.fromLTRB(19*fem, 12*fem, 19*fem, 8*fem),
                                   width: double.infinity,
                                   decoration: BoxDecoration (
-                                    color: Color(0xffdaf2ff),
+                                    color: const Color(0xffdaf2ff),
                                     borderRadius: BorderRadius.circular(18*fem),
                                   ),
                                   child: Column(
@@ -988,7 +987,7 @@ class cropManagement extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xff246183),
+                                              color: const Color(0xff246183),
                                             ),
                                           ),
                                         ),
@@ -1001,7 +1000,7 @@ class cropManagement extends StatelessWidget {
                                   padding: EdgeInsets.fromLTRB(19*fem, 12*fem, 19*fem, 8*fem),
                                   width: double.infinity,
                                   decoration: BoxDecoration (
-                                    color: Color(0xffdaf2ff),
+                                    color: const Color(0xffdaf2ff),
                                     borderRadius: BorderRadius.circular(18*fem),
                                   ),
                                   child: Column(
@@ -1031,7 +1030,7 @@ class cropManagement extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xff246183),
+                                              color: const Color(0xff246183),
                                             ),
                                           ),
                                         ),

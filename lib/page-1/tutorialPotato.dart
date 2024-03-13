@@ -1,25 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/tutorialHomePage.dart';
 
 
 class tutorialPotato extends StatelessWidget {
+  const tutorialPotato({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         child: Container(
           // guidancepage2scrollhaojSL (492:503)
           width: double.infinity,
           height: 800*fem,
-          decoration: BoxDecoration (
+          decoration: const BoxDecoration (
             color: Color(0xffffffff),
           ),
           child: Stack(
@@ -40,7 +38,7 @@ class tutorialPotato extends StatelessWidget {
                         fontSize: 30*ffem,
                         fontWeight: FontWeight.w400,
                         height: 1.4825*ffem/fem,
-                        color: Color(0xff000000),
+                        color: const Color(0xff000000),
                       ),
                     ),
                   ),
@@ -62,7 +60,7 @@ class tutorialPotato extends StatelessWidget {
                           fontSize: 12*ffem,
                           fontWeight: FontWeight.w400,
                           height: 1.4825*ffem/fem,
-                          color: Color(0xff405d3d),
+                          color: const Color(0xff405d3d),
                         ),
                         children: [
                           TextSpan(
@@ -72,10 +70,10 @@ class tutorialPotato extends StatelessWidget {
                               fontSize: 12*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.4825*ffem/fem,
-                              color: Color(0xff405d3d),
+                              color: const Color(0xff405d3d),
                             ),
                           ),
-                          TextSpan(
+                          const TextSpan(
                             text: '\nPotatoes need full sun with at least 6 hours of direct sunlight per day. The soil should be loose and well-drained. If the soil stays too wet, the potatoes will quickly rot. ',
                           ),
                         ],
@@ -88,7 +86,7 @@ class tutorialPotato extends StatelessWidget {
                 // autogroup8jqc2bn (85jCqDb1ktC7yuHSpU8JQc)
                 left: 16.1479952335*fem,
                 top: 386.1479492188*fem,
-                child: Container(
+                child: SizedBox(
                   width: 301.85*fem,
                   height: 132.85*fem,
                   child: Row(
@@ -99,7 +97,7 @@ class tutorialPotato extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 41.13*fem, 2.13*fem),
                         width: 130.72*fem,
                         height: 130.72*fem,
-                        decoration: BoxDecoration (
+                        decoration: const BoxDecoration (
                           image: DecorationImage (
                             fit: BoxFit.cover,
                             image: AssetImage (
@@ -120,8 +118,8 @@ class tutorialPotato extends StatelessWidget {
                                   child: Container(
                                     decoration: BoxDecoration (
                                       borderRadius: BorderRadius.circular(32.5*fem),
-                                      border: Border.all(color: Color(0xff000000)),
-                                      color: Color(0xffffffff),
+                                      border: Border.all(color: const Color(0xff000000)),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                 ),
@@ -143,7 +141,7 @@ class tutorialPotato extends StatelessWidget {
                                       fontSize: 10*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4825*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ),
@@ -156,7 +154,7 @@ class tutorialPotato extends StatelessWidget {
                         // autogroupxvrzRGY (85jD83SK5aU1qJEMJNxvRz)
                         width: 130*fem,
                         height: 130*fem,
-                        decoration: BoxDecoration (
+                        decoration: const BoxDecoration (
                           image: DecorationImage (
                             fit: BoxFit.cover,
                             image: AssetImage (
@@ -177,8 +175,8 @@ class tutorialPotato extends StatelessWidget {
                                   child: Container(
                                     decoration: BoxDecoration (
                                       borderRadius: BorderRadius.circular(32.5*fem),
-                                      border: Border.all(color: Color(0xff000000)),
-                                      color: Color(0xffffffff),
+                                      border: Border.all(color: const Color(0xff000000)),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                 ),
@@ -216,7 +214,7 @@ class tutorialPotato extends StatelessWidget {
                                       fontSize: 10*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4825*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ),
@@ -233,7 +231,7 @@ class tutorialPotato extends StatelessWidget {
                 // autogroupty4prFN (85jEM1Q4rYddM3cKqxty4p)
                 left: 70.5*fem,
                 top: 667*fem,
-                child: Container(
+                child: SizedBox(
                   width: 250.5*fem,
                   height: 38*fem,
                   child: Row(
@@ -250,7 +248,7 @@ class tutorialPotato extends StatelessWidget {
                             fontSize: 16*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.4825*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -267,7 +265,7 @@ class tutorialPotato extends StatelessWidget {
                             fontSize: 13*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.4525*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -279,7 +277,7 @@ class tutorialPotato extends StatelessWidget {
                 // autogrouppqmayzC (85jDKCnP74uVLcu51HpQMA)
                 left: 48*fem,
                 top: 565*fem,
-                child: Container(
+                child: SizedBox(
                   width: 295*fem,
                   height: 100*fem,
                   child: Row(
@@ -327,7 +325,7 @@ class tutorialPotato extends StatelessWidget {
                                               fontSize: 12*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.5675*ffem/fem,
-                                              color: Color(0xff000000),
+                                              color: const Color(0xff000000),
                                             ),
                                           ),
                                         ),
@@ -340,7 +338,7 @@ class tutorialPotato extends StatelessWidget {
                                             fontSize: 12*ffem,
                                             fontWeight: FontWeight.w400,
                                             height: 1.5675*ffem/fem,
-                                            color: Color(0xff000000),
+                                            color: const Color(0xff000000),
                                           ),
                                         ),
                                       ],
@@ -353,7 +351,7 @@ class tutorialPotato extends StatelessWidget {
                                     height: 27*fem,
                                     decoration: BoxDecoration (
                                       borderRadius: BorderRadius.circular(12.5*fem),
-                                      gradient: LinearGradient (
+                                      gradient: const LinearGradient (
                                         begin: Alignment(-1, 0),
                                         end: Alignment(1, 0),
                                         colors: <Color>[Color(0xff00ff66), Color(0xffeaff00), Color(0xff0084ff)],
@@ -364,7 +362,7 @@ class tutorialPotato extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Container(
+                            SizedBox(
                               // autogroupayrgxNG (85jDj2S2GJrj2hFP2uaYrg)
                               width: double.infinity,
                               child: Row(
@@ -381,7 +379,7 @@ class tutorialPotato extends StatelessWidget {
                                         fontSize: 12*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.4825*ffem/fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
                                   ),
@@ -396,7 +394,7 @@ class tutorialPotato extends StatelessWidget {
                                         fontSize: 12*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.4825*ffem/fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
                                   ),
@@ -409,7 +407,7 @@ class tutorialPotato extends StatelessWidget {
                                       fontSize: 12*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4825*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ],
@@ -446,7 +444,7 @@ class tutorialPotato extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Container(//wrapped with sizebox to make button bigger but not looked bigger , easily be tapped
+                    child: SizedBox(//wrapped with sizebox to make button bigger but not looked bigger , easily be tapped
                       width: 21 * fem,
                       height: 26.3 * fem,
                       child: Image.asset(

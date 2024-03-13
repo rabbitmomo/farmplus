@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/tutorialHomePage.dart';
 
 class tutorialCorn extends StatelessWidget {
+  const tutorialCorn({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         child: Container(
           // guidancepage2scrollhaos7r (492:393)
           width: double.infinity,
           height: 800*fem,
-          decoration: BoxDecoration (
+          decoration: const BoxDecoration (
             color: Color(0xffffffff),
           ),
           child: Stack(
@@ -39,7 +37,7 @@ class tutorialCorn extends StatelessWidget {
                         fontSize: 30*ffem,
                         fontWeight: FontWeight.w400,
                         height: 1.4825*ffem/fem,
-                        color: Color(0xff000000),
+                        color: const Color(0xff000000),
                       ),
                     ),
                   ),
@@ -61,7 +59,7 @@ class tutorialCorn extends StatelessWidget {
                           fontSize: 12*ffem,
                           fontWeight: FontWeight.w400,
                           height: 1.4825*ffem/fem,
-                          color: Color(0xff405d3d),
+                          color: const Color(0xff405d3d),
                         ),
                         children: [
                           TextSpan(
@@ -71,10 +69,10 @@ class tutorialCorn extends StatelessWidget {
                               fontSize: 12*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.4825*ffem/fem,
-                              color: Color(0xff405d3d),
+                              color: const Color(0xff405d3d),
                             ),
                           ),
-                          TextSpan(
+                          const TextSpan(
                             text: '. ',
                           ),
                           TextSpan(
@@ -84,10 +82,10 @@ class tutorialCorn extends StatelessWidget {
                               fontSize: 12*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.4825*ffem/fem,
-                              color: Color(0xff405d3d),
+                              color: const Color(0xff405d3d),
                             ),
                           ),
-                          TextSpan(
+                          const TextSpan(
                             text: '.\n\nCorn grows best in fertile, well-drained soil. Corn seed germination requires a minimum soil temperature of 50°F. Ideal temperatures for crop development shift during the day and the growing season. ',
                           ),
                         ],
@@ -100,7 +98,7 @@ class tutorialCorn extends StatelessWidget {
                 // autogroupsqbzCDz (85jQHPWLa1wX9xx4DESqbz)
                 left: 8.6283003092*fem,
                 top: 378.6283288002*fem,
-                child: Container(
+                child: SizedBox(
                   width: 309.37*fem,
                   height: 145.76*fem,
                   child: Row(
@@ -111,7 +109,7 @@ class tutorialCorn extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 33.61*fem, 0*fem),
                         width: 145.76*fem,
                         height: double.infinity,
-                        decoration: BoxDecoration (
+                        decoration: const BoxDecoration (
                           image: DecorationImage (
                             fit: BoxFit.cover,
                             image: AssetImage (
@@ -132,8 +130,8 @@ class tutorialCorn extends StatelessWidget {
                                   child: Container(
                                     decoration: BoxDecoration (
                                       borderRadius: BorderRadius.circular(32.5*fem),
-                                      border: Border.all(color: Color(0xff000000)),
-                                      color: Color(0xffffffff),
+                                      border: Border.all(color: const Color(0xff000000)),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                 ),
@@ -155,7 +153,7 @@ class tutorialCorn extends StatelessWidget {
                                       fontSize: 10*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4825*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ),
@@ -169,7 +167,7 @@ class tutorialCorn extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(0*fem, 10.37*fem, 0*fem, 5.39*fem),
                         width: 130*fem,
                         height: double.infinity,
-                        decoration: BoxDecoration (
+                        decoration: const BoxDecoration (
                           image: DecorationImage (
                             fit: BoxFit.cover,
                             image: AssetImage (
@@ -190,8 +188,8 @@ class tutorialCorn extends StatelessWidget {
                                   child: Container(
                                     decoration: BoxDecoration (
                                       borderRadius: BorderRadius.circular(32.5*fem),
-                                      border: Border.all(color: Color(0xff000000)),
-                                      color: Color(0xffffffff),
+                                      border: Border.all(color: const Color(0xff000000)),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                 ),
@@ -229,7 +227,7 @@ class tutorialCorn extends StatelessWidget {
                                       fontSize: 10*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4825*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ),
@@ -246,7 +244,7 @@ class tutorialCorn extends StatelessWidget {
                 // autogroupt6igC2x (85jRUwLnXBeXahFz4Zt6iG)
                 left: 70.5*fem,
                 top: 667*fem,
-                child: Container(
+                child: SizedBox(
                   width: 250.5*fem,
                   height: 38*fem,
                   child: Row(
@@ -263,7 +261,7 @@ class tutorialCorn extends StatelessWidget {
                             fontSize: 16*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.4825*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -280,7 +278,7 @@ class tutorialCorn extends StatelessWidget {
                             fontSize: 13*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.4525*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -292,7 +290,7 @@ class tutorialCorn extends StatelessWidget {
                 // autogroupe9wcjwz (85jQkntLvzM7MnwtwFE9WC)
                 left: 48*fem,
                 top: 565*fem,
-                child: Container(
+                child: SizedBox(
                   width: 288*fem,
                   height: 100*fem,
                   child: Row(
@@ -333,7 +331,7 @@ class tutorialCorn extends StatelessWidget {
                                         fontSize: 12*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.5675*ffem/fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
                                   ),
@@ -346,7 +344,7 @@ class tutorialCorn extends StatelessWidget {
                                       fontSize: 12*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.5675*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ],
@@ -359,7 +357,7 @@ class tutorialCorn extends StatelessWidget {
                               height: 27*fem,
                               decoration: BoxDecoration (
                                 borderRadius: BorderRadius.circular(12.5*fem),
-                                gradient: LinearGradient (
+                                gradient: const LinearGradient (
                                   begin: Alignment(-1, 0),
                                   end: Alignment(1, 0),
                                   colors: <Color>[Color(0xff00ff66), Color(0xffeaff00), Color(0xff0084ff)],
@@ -385,11 +383,11 @@ class tutorialCorn extends StatelessWidget {
                                         fontSize: 12*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.4825*ffem/fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
                                   ),
-                                  Container(
+                                  SizedBox(
                                     // icons8cross1001cRS (495:551)
                                     width: 26*fem,
                                     height: 21*fem,
@@ -432,7 +430,7 @@ class tutorialCorn extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Container(//wrapped with sizebox to make button bigger but not looked bigger , easily be tapped
+                    child: SizedBox(//wrapped with sizebox to make button bigger but not looked bigger , easily be tapped
                       width: 21 * fem,
                       height: 26.3 * fem,
                       child: Image.asset(

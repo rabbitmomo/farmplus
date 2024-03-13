@@ -1,8 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/page-1/tutorialChili.dart';
 import 'package:myapp/page-1/tutorialWheat.dart';
@@ -15,6 +11,8 @@ import 'package:myapp/page-1/tutorialLevelUp.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class tutorialHome extends StatelessWidget {
+  const tutorialHome({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
@@ -22,12 +20,12 @@ class tutorialHome extends StatelessWidget {
     double ffem = fem * 0.97;
     return Scaffold(
       body: SingleChildScrollView(
-        child: Container(
+        child: SizedBox(
           width: double.infinity,
           child: Container(
             // levelupfarmerpageFd6 (268:344)
             width: double.infinity,
-            decoration: BoxDecoration (
+            decoration: const BoxDecoration (
               color: Color(0xffffffff),
             ),
             child: Column(
@@ -39,14 +37,14 @@ class tutorialHome extends StatelessWidget {
                   width: double.infinity,
                   height: 126*fem,
                   decoration: BoxDecoration (
-                    color: Color(0xff0a4b33),
+                    color: const Color(0xff0a4b33),
                     borderRadius: BorderRadius.only (
                       bottomRight: Radius.circular(24*fem),
                       bottomLeft: Radius.circular(24*fem),
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Color(0x3f000000),
+                        color: const Color(0x3f000000),
                         offset: Offset(0*fem, 2*fem),
                         blurRadius: 4*fem,
                       ),
@@ -66,7 +64,7 @@ class tutorialHome extends StatelessWidget {
                           height: 23.3*fem,
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         // group111wPS (484:179)
                         width: 135*fem,
                         height: double.infinity,
@@ -89,7 +87,7 @@ class tutorialHome extends StatelessWidget {
                                         fontSize: 36*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.5*ffem/fem,
-                                        color: Color(0xffffffff),
+                                        color: const Color(0xffffffff),
                                       ),
                                     ),
                                   ),
@@ -111,7 +109,7 @@ class tutorialHome extends StatelessWidget {
                                       fontSize: 16*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.1725*ffem/fem,
-                                      color: Color(0xff99b3a0),
+                                      color: const Color(0xff99b3a0),
                                     ),
                                   ),
                                 ),
@@ -148,7 +146,7 @@ class tutorialHome extends StatelessWidget {
                                   fontWeight: FontWeight.w500,
                                   height: 1.1725*ffem/fem,
                                   letterSpacing: 0.8*fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -156,7 +154,7 @@ class tutorialHome extends StatelessWidget {
                               onTap: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => seeAll()),
+                                  MaterialPageRoute(builder: (context) => const seeAll()),
                                 );
                               },
                               child: Text(
@@ -169,8 +167,8 @@ class tutorialHome extends StatelessWidget {
                                   fontWeight: FontWeight.w400,
                                   height: 1.42*ffem/fem,
                                   decoration: TextDecoration.underline,
-                                  color: Color(0xff2b892f),
-                                  decorationColor: Color(0xff2b892f),
+                                  color: const Color(0xff2b892f),
+                                  decorationColor: const Color(0xff2b892f),
                                 ),
                               ),
                             ),
@@ -188,7 +186,7 @@ class tutorialHome extends StatelessWidget {
                               onTap: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => tutorialWheat()),
+                                  MaterialPageRoute(builder: (context) => const tutorialWheat()),
                                 );
                               },
                               child: Container(
@@ -206,7 +204,7 @@ class tutorialHome extends StatelessWidget {
                               onTap: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => tutorialChili()),
+                                  MaterialPageRoute(builder: (context) => const tutorialChili()),
                                 );
                               },
                               child: Container(
@@ -224,10 +222,10 @@ class tutorialHome extends StatelessWidget {
                               onTap: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => tutorialCorn()),
+                                  MaterialPageRoute(builder: (context) => const tutorialCorn()),
                                 );
                               },
-                              child: Container(
+                              child: SizedBox(
                                 // corn1ttL (485:202)
                                 width: 55*fem,
                                 height: 55*fem,
@@ -258,7 +256,7 @@ class tutorialHome extends StatelessWidget {
                                   fontSize: 15*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.42*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -273,7 +271,7 @@ class tutorialHome extends StatelessWidget {
                                   fontSize: 15*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.42*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -286,7 +284,7 @@ class tutorialHome extends StatelessWidget {
                                 fontSize: 15*ffem,
                                 fontWeight: FontWeight.w400,
                                 height: 1.42*ffem/fem,
-                                color: Color(0xff000000),
+                                color: const Color(0xff000000),
                               ),
                             ),
                           ],
@@ -303,7 +301,7 @@ class tutorialHome extends StatelessWidget {
                               onTap: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => tutorialCabbage()),
+                                  MaterialPageRoute(builder: (context) => const tutorialCabbage()),
                                 );
                               },
                               child: Container(
@@ -321,7 +319,7 @@ class tutorialHome extends StatelessWidget {
                               onTap: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => tutorialCarrot()),
+                                  MaterialPageRoute(builder: (context) => const tutorialCarrot()),
                                 );
                               },
                               child: Container(
@@ -339,10 +337,10 @@ class tutorialHome extends StatelessWidget {
                               onTap: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => tutorialTomato()),
+                                  MaterialPageRoute(builder: (context) => const tutorialTomato()),
                                 );
                               },
-                              child: Container(
+                              child: SizedBox(
                                 // smiley17Y8 (485:211)
                                 width: 50*fem,
                                 height: 50*fem,
@@ -373,7 +371,7 @@ class tutorialHome extends StatelessWidget {
                                   fontSize: 15*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.42*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -388,7 +386,7 @@ class tutorialHome extends StatelessWidget {
                                   fontSize: 15*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.42*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -403,7 +401,7 @@ class tutorialHome extends StatelessWidget {
                                   fontSize: 15*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.42*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -419,8 +417,8 @@ class tutorialHome extends StatelessWidget {
                           enableInfiniteScroll: true,
                           reverse: false,
                           autoPlay: false,
-                          autoPlayInterval: Duration(seconds: 2),
-                          autoPlayAnimationDuration: Duration(milliseconds: 800),
+                          autoPlayInterval: const Duration(seconds: 2),
+                          autoPlayAnimationDuration: const Duration(milliseconds: 800),
                           autoPlayCurve: Curves.fastOutSlowIn,
                           enlargeCenterPage: true,
                           scrollDirection: Axis.horizontal,
@@ -483,7 +481,7 @@ class tutorialHome extends StatelessWidget {
                                         height: 9*fem,
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(4.5*fem),
-                                          color: Color(0xff51806f),
+                                          color: const Color(0xff51806f),
                                         ),
                                       ),
                                       SizedBox(
@@ -495,7 +493,7 @@ class tutorialHome extends StatelessWidget {
                                         height: 9*fem,
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(4.5*fem),
-                                          color: Color(0x7fc4c4c4),
+                                          color: const Color(0x7fc4c4c4),
                                         ),
                                       ),
                                       SizedBox(
@@ -507,7 +505,7 @@ class tutorialHome extends StatelessWidget {
                                         height: 9*fem,
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(4.5*fem),
-                                          color: Color(0x7fc4c4c4),
+                                          color: const Color(0x7fc4c4c4),
                                         ),
                                       ),
                                     ],
@@ -523,7 +521,7 @@ class tutorialHome extends StatelessWidget {
                                       fontSize: 32*ffem,
                                       fontWeight: FontWeight.w500,
                                       height: 1.5*ffem/fem,
-                                      color: Color(0xff0a4b33),
+                                      color: const Color(0xff0a4b33),
                                     ),
                                   ),
                                 ),
@@ -541,7 +539,7 @@ class tutorialHome extends StatelessWidget {
                                       fontSize: 15*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4666666667*ffem/fem,
-                                      color: Color(0xff8f8f8f),
+                                      color: const Color(0xff8f8f8f),
                                     ),
                                   ),
                                 ),
@@ -549,7 +547,7 @@ class tutorialHome extends StatelessWidget {
                                   onTap: () {
                                     Navigator.push(
                                       context,
-                                      MaterialPageRoute(builder: (context) => levelUp()),
+                                      MaterialPageRoute(builder: (context) => const levelUp()),
                                     );
                                   },
                                   child: Container(
@@ -557,11 +555,11 @@ class tutorialHome extends StatelessWidget {
                                     width: double.infinity,
                                     height: 50 * fem,
                                     decoration: BoxDecoration(
-                                      color: Color(0xff0b6236),
+                                      color: const Color(0xff0b6236),
                                       borderRadius: BorderRadius.circular(30 * fem),
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Color(0x19000000),
+                                          color: const Color(0x19000000),
                                           offset: Offset(0 * fem, 0 * fem),
                                           blurRadius: 5 * fem,
                                         ),
@@ -576,7 +574,7 @@ class tutorialHome extends StatelessWidget {
                                           fontSize: 15 * ffem,
                                           fontWeight: FontWeight.w400,
                                           height: 1.5 * ffem / fem,
-                                          color: Color(0xffffffff),
+                                          color: const Color(0xffffffff),
                                         ),
                                       ),
                                     ),
@@ -642,7 +640,7 @@ class tutorialHome extends StatelessWidget {
                                         height: 9*fem,
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(4.5*fem),
-                                          color: Color(0x7fc4c4c4),
+                                          color: const Color(0x7fc4c4c4),
                                         ),
                                       ),
                                       SizedBox(
@@ -654,7 +652,7 @@ class tutorialHome extends StatelessWidget {
                                         height: 9*fem,
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(4.5*fem),
-                                          color: Color(0xff51806f),
+                                          color: const Color(0xff51806f),
                                         ),
                                       ),
                                       SizedBox(
@@ -666,7 +664,7 @@ class tutorialHome extends StatelessWidget {
                                         height: 9*fem,
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(4.5*fem),
-                                          color: Color(0x7fc4c4c4),
+                                          color: const Color(0x7fc4c4c4),
                                         ),
                                       ),
                                     ],
@@ -682,7 +680,7 @@ class tutorialHome extends StatelessWidget {
                                       fontSize: 32*ffem,
                                       fontWeight: FontWeight.w500,
                                       height: 1.5*ffem/fem,
-                                      color: Color(0xff0a4b33),
+                                      color: const Color(0xff0a4b33),
                                     ),
                                   ),
                                 ),
@@ -700,7 +698,7 @@ class tutorialHome extends StatelessWidget {
                                       fontSize: 15*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4666666667*ffem/fem,
-                                      color: Color(0xff8f8f8f),
+                                      color: const Color(0xff8f8f8f),
                                     ),
                                   ),
                                 ),
@@ -710,11 +708,11 @@ class tutorialHome extends StatelessWidget {
                                   width: double.infinity,
                                   height: 50*fem,
                                   decoration: BoxDecoration (
-                                    color: Color(0xffc5c5c5),
+                                    color: const Color(0xffc5c5c5),
                                     borderRadius: BorderRadius.circular(30*fem),
                                     boxShadow: [
                                       BoxShadow(
-                                        color: Color(0x19000000),
+                                        color: const Color(0x19000000),
                                         offset: Offset(0*fem, 0*fem),
                                         blurRadius: 5*fem,
                                       ),
@@ -730,7 +728,7 @@ class tutorialHome extends StatelessWidget {
                                           fontSize: 15*ffem,
                                           fontWeight: FontWeight.w400,
                                           height: 1.5*ffem/fem,
-                                          color: Color(0xff000000),
+                                          color: const Color(0xff000000),
                                         ),
                                       ),
                                     ),
@@ -796,7 +794,7 @@ class tutorialHome extends StatelessWidget {
                                         height: 9*fem,
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(4.5*fem),
-                                          color: Color(0x7fc4c4c4),
+                                          color: const Color(0x7fc4c4c4),
                                         ),
                                       ),
                                       SizedBox(
@@ -808,7 +806,7 @@ class tutorialHome extends StatelessWidget {
                                         height: 9*fem,
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(4.5*fem),
-                                          color: Color(0x7fc4c4c4),
+                                          color: const Color(0x7fc4c4c4),
                                         ),
                                       ),
                                       SizedBox(
@@ -820,7 +818,7 @@ class tutorialHome extends StatelessWidget {
                                         height: 9*fem,
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(4.5*fem),
-                                          color: Color(0xff51806f),
+                                          color: const Color(0xff51806f),
                                         ),
                                       ),
                                     ],
@@ -836,7 +834,7 @@ class tutorialHome extends StatelessWidget {
                                       fontSize: 32*ffem,
                                       fontWeight: FontWeight.w500,
                                       height: 1.5*ffem/fem,
-                                      color: Color(0xff0a4b33),
+                                      color: const Color(0xff0a4b33),
                                     ),
                                   ),
                                 ),
@@ -854,7 +852,7 @@ class tutorialHome extends StatelessWidget {
                                       fontSize: 15*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4666666667*ffem/fem,
-                                      color: Color(0xff8f8f8f),
+                                      color: const Color(0xff8f8f8f),
                                     ),
                                   ),
                                 ),
@@ -864,11 +862,11 @@ class tutorialHome extends StatelessWidget {
                                   width: double.infinity,
                                   height: 50*fem,
                                   decoration: BoxDecoration (
-                                    color: Color(0xffc5c5c5),
+                                    color: const Color(0xffc5c5c5),
                                     borderRadius: BorderRadius.circular(30*fem),
                                     boxShadow: [
                                       BoxShadow(
-                                        color: Color(0x19000000),
+                                        color: const Color(0x19000000),
                                         offset: Offset(0*fem, 0*fem),
                                         blurRadius: 5*fem,
                                       ),
@@ -884,7 +882,7 @@ class tutorialHome extends StatelessWidget {
                                           fontSize: 15*ffem,
                                           fontWeight: FontWeight.w400,
                                           height: 1.5*ffem/fem,
-                                          color: Color(0xff000000),
+                                          color: const Color(0xff000000),
                                         ),
                                       ),
                                     ),

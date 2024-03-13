@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class SelectCropPage extends StatelessWidget {
@@ -10,13 +7,13 @@ class SelectCropPage extends StatelessWidget {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // selectcropfieldpageVAw (181:1130)
         padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 21*fem),
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xffffffff),
         ),
         child: Column(
@@ -55,13 +52,13 @@ class SelectCropPage extends StatelessWidget {
                             fontSize: 20*ffem,
                             fontWeight: FontWeight.w500,
                             height: 1.5*ffem/fem,
-                            color: Color(0xff4c9a2a),
+                            color: const Color(0xff4c9a2a),
                           ),
                         ),
                       ],
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     // autogroupne7f2c7 (Mut8dbLh26R3SynWzWNE7F)
                     width: double.infinity,
                     height: 36*fem,
@@ -74,7 +71,7 @@ class SelectCropPage extends StatelessWidget {
                           padding: EdgeInsets.fromLTRB(15*fem, 8*fem, 128*fem, 8*fem),
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xfff1f1f1),
+                            color: const Color(0xfff1f1f1),
                             borderRadius: BorderRadius.circular(18*fem),
                           ),
                           child: Row(
@@ -104,7 +101,7 @@ class SelectCropPage extends StatelessWidget {
                                       fontWeight: FontWeight.w400,
                                       height: 1.5*ffem/fem,
                                       letterSpacing: -0.4099999964*fem,
-                                      color: Color(0xffadadad),
+                                      color: const Color(0xffadadad),
                                     ),
                                   ),
                                 ),
@@ -135,8 +132,8 @@ class SelectCropPage extends StatelessWidget {
               width: double.infinity,
               height: 140*fem,
               decoration: BoxDecoration (
-                border: Border.all(color: Color(0xffeaeaea)),
-                color: Color(0xffffffff),
+                border: Border.all(color: const Color(0xffeaeaea)),
+                color: const Color(0xffffffff),
               ),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -152,7 +149,7 @@ class SelectCropPage extends StatelessWidget {
                       height: 80*fem,
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     // group77Afh (210:1262)
                     width: 127*fem,
                     height: double.infinity,
@@ -168,10 +165,10 @@ class SelectCropPage extends StatelessWidget {
                             fontWeight: FontWeight.w400,
                             height: 1.5*ffem/fem,
                             letterSpacing: -0.4099999964*fem,
-                            color: Color(0xff366a32),
+                            color: const Color(0xff366a32),
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           // group665w5 (198:1188)
                           width: double.infinity,
                           height: 56*fem,
@@ -189,7 +186,7 @@ class SelectCropPage extends StatelessWidget {
                                   height: 48*fem,
                                 ),
                               ),
-                              Container(
+                              SizedBox(
                                 // autogrouprf6dGVm (MutAE3ge1TJn3F3fiURF6D)
                                 width: 102*fem,
                                 height: double.infinity,
@@ -211,7 +208,7 @@ class SelectCropPage extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xffadadad),
+                                              color: const Color(0xffadadad),
                                             ),
                                           ),
                                         ),
@@ -233,7 +230,7 @@ class SelectCropPage extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xffadadad),
+                                              color: const Color(0xffadadad),
                                             ),
                                           ),
                                         ),
@@ -255,7 +252,7 @@ class SelectCropPage extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xffadadad),
+                                              color: const Color(0xffadadad),
                                             ),
                                           ),
                                         ),
@@ -278,8 +275,8 @@ class SelectCropPage extends StatelessWidget {
               width: double.infinity,
               height: 140*fem,
               decoration: BoxDecoration (
-                border: Border.all(color: Color(0xffeaeaea)),
-                color: Color(0xffffffff),
+                border: Border.all(color: const Color(0xffeaeaea)),
+                color: const Color(0xffffffff),
               ),
               child: Stack(
                 children: [
@@ -310,7 +307,7 @@ class SelectCropPage extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration (
                             borderRadius: BorderRadius.circular(5*fem),
-                            color: Color(0xffff8989),
+                            color: const Color(0xffff8989),
                           ),
                         ),
                       ),
@@ -330,8 +327,8 @@ class SelectCropPage extends StatelessWidget {
                         width: 360*fem,
                         height: 140*fem,
                         decoration: BoxDecoration (
-                          border: Border.all(color: Color(0xffeaeaea)),
-                          color: Color(0xffffffff),
+                          border: Border.all(color: const Color(0xffeaeaea)),
+                          color: const Color(0xffffffff),
                         ),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
@@ -347,7 +344,7 @@ class SelectCropPage extends StatelessWidget {
                                 height: 80*fem,
                               ),
                             ),
-                            Container(
+                            SizedBox(
                               // group76v3q (210:1261)
                               width: 140*fem,
                               height: double.infinity,
@@ -363,10 +360,10 @@ class SelectCropPage extends StatelessWidget {
                                       fontWeight: FontWeight.w400,
                                       height: 1.5*ffem/fem,
                                       letterSpacing: -0.4099999964*fem,
-                                      color: Color(0xff366a32),
+                                      color: const Color(0xff366a32),
                                     ),
                                   ),
-                                  Container(
+                                  SizedBox(
                                     // group67gx7 (198:1190)
                                     width: double.infinity,
                                     height: 56*fem,
@@ -384,7 +381,7 @@ class SelectCropPage extends StatelessWidget {
                                             height: 48*fem,
                                           ),
                                         ),
-                                        Container(
+                                        SizedBox(
                                           // autogroupbjkddks (MutBRM2W7FAjgjX7oBBJkd)
                                           width: 115*fem,
                                           height: double.infinity,
@@ -406,7 +403,7 @@ class SelectCropPage extends StatelessWidget {
                                                         fontWeight: FontWeight.w300,
                                                         height: 1.5*ffem/fem,
                                                         letterSpacing: -0.4099999964*fem,
-                                                        color: Color(0xffadadad),
+                                                        color: const Color(0xffadadad),
                                                       ),
                                                     ),
                                                   ),
@@ -428,7 +425,7 @@ class SelectCropPage extends StatelessWidget {
                                                         fontWeight: FontWeight.w300,
                                                         height: 1.5*ffem/fem,
                                                         letterSpacing: -0.4099999964*fem,
-                                                        color: Color(0xffadadad),
+                                                        color: const Color(0xffadadad),
                                                       ),
                                                     ),
                                                   ),
@@ -450,7 +447,7 @@ class SelectCropPage extends StatelessWidget {
                                                         fontWeight: FontWeight.w300,
                                                         height: 1.5*ffem/fem,
                                                         letterSpacing: -0.4099999964*fem,
-                                                        color: Color(0xffadadad),
+                                                        color: const Color(0xffadadad),
                                                       ),
                                                     ),
                                                   ),
@@ -480,8 +477,8 @@ class SelectCropPage extends StatelessWidget {
               width: double.infinity,
               height: 140*fem,
               decoration: BoxDecoration (
-                border: Border.all(color: Color(0xffeaeaea)),
-                color: Color(0xffffffff),
+                border: Border.all(color: const Color(0xffeaeaea)),
+                color: const Color(0xffffffff),
               ),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -520,7 +517,7 @@ class SelectCropPage extends StatelessWidget {
                               child: Container(
                                 decoration: BoxDecoration (
                                   borderRadius: BorderRadius.circular(7.5*fem),
-                                  color: Color(0xffff8989),
+                                  color: const Color(0xffff8989),
                                 ),
                               ),
                             ),
@@ -529,7 +526,7 @@ class SelectCropPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     // group765yZ (210:1269)
                     width: 140*fem,
                     height: double.infinity,
@@ -545,10 +542,10 @@ class SelectCropPage extends StatelessWidget {
                             fontWeight: FontWeight.w400,
                             height: 1.5*ffem/fem,
                             letterSpacing: -0.4099999964*fem,
-                            color: Color(0xff366a32),
+                            color: const Color(0xff366a32),
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           // group67eQP (210:1271)
                           width: double.infinity,
                           height: 56*fem,
@@ -566,7 +563,7 @@ class SelectCropPage extends StatelessWidget {
                                   height: 48*fem,
                                 ),
                               ),
-                              Container(
+                              SizedBox(
                                 // autogroupguu51PM (MutCme7NrbURQp5oaeGUU5)
                                 width: 115*fem,
                                 height: double.infinity,
@@ -588,7 +585,7 @@ class SelectCropPage extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xffadadad),
+                                              color: const Color(0xffadadad),
                                             ),
                                           ),
                                         ),
@@ -610,7 +607,7 @@ class SelectCropPage extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xffadadad),
+                                              color: const Color(0xffadadad),
                                             ),
                                           ),
                                         ),
@@ -632,7 +629,7 @@ class SelectCropPage extends StatelessWidget {
                                               fontWeight: FontWeight.w300,
                                               height: 1.5*ffem/fem,
                                               letterSpacing: -0.4099999964*fem,
-                                              color: Color(0xffadadad),
+                                              color: const Color(0xffadadad),
                                             ),
                                           ),
                                         ),
@@ -665,10 +662,10 @@ class SelectCropPage extends StatelessWidget {
                     width: 242.97*fem,
                     height: double.infinity,
                     decoration: BoxDecoration (
-                      border: Border.all(color: Color(0xff5e5e5e)),
+                      border: Border.all(color: const Color(0xff5e5e5e)),
                       borderRadius: BorderRadius.circular(20*fem),
                     ),
-                    child: Container(
+                    child: SizedBox(
                       // frame95Wes (224:1539)
                       width: double.infinity,
                       height: double.infinity,
@@ -698,7 +695,7 @@ class SelectCropPage extends StatelessWidget {
                                   fontSize: 13*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.5*ffem/fem,
-                                  color: Color(0xff676767),
+                                  color: const Color(0xff676767),
                                 ),
                               ),
                             ),
@@ -717,11 +714,11 @@ class SelectCropPage extends StatelessWidget {
                       padding: EdgeInsets.fromLTRB(18.69*fem, 18*fem, 18.69*fem, 18*fem),
                       height: double.infinity,
                       decoration: BoxDecoration (
-                        color: Color(0xff1a7749),
+                        color: const Color(0xff1a7749),
                         borderRadius: BorderRadius.circular(20*fem),
                         boxShadow: [
                           BoxShadow(
-                            color: Color(0x632f5134),
+                            color: const Color(0x632f5134),
                             offset: Offset(2*fem, 2*fem),
                             blurRadius: 3*fem,
                           ),

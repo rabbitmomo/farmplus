@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/tutorialHomePage.dart';
 
 class tutorialCabbage extends StatelessWidget {
+  const tutorialCabbage({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360.0000274181;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         child: Container(
           // guidancepage2scrollhao5sA (492:437)
           width: double.infinity,
           height: 800*fem,
-          decoration: BoxDecoration (
+          decoration: const BoxDecoration (
             color: Color(0xffffffff),
           ),
           child: Stack(
@@ -39,7 +37,7 @@ class tutorialCabbage extends StatelessWidget {
                         fontSize: 30*ffem,
                         fontWeight: FontWeight.w400,
                         height: 1.4825*ffem/fem,
-                        color: Color(0xff000000),
+                        color: const Color(0xff000000),
                       ),
                     ),
                   ),
@@ -61,7 +59,7 @@ class tutorialCabbage extends StatelessWidget {
                         fontSize: 12*ffem,
                         fontWeight: FontWeight.w400,
                         height: 1.4825*ffem/fem,
-                        color: Color(0xff405d3d),
+                        color: const Color(0xff405d3d),
                       ),
                     ),
                   ),
@@ -71,7 +69,7 @@ class tutorialCabbage extends StatelessWidget {
                 // autogroupcti8v92 (85jKf2DWFVi3TmFqk6cti8)
                 left: 0*fem,
                 top: 369.9998288155*fem,
-                child: Container(
+                child: SizedBox(
                   width: 318*fem,
                   height: 163.01*fem,
                   child: Row(
@@ -82,7 +80,7 @@ class tutorialCabbage extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 24.99*fem, 0*fem),
                         width: 163.01*fem,
                         height: double.infinity,
-                        decoration: BoxDecoration (
+                        decoration: const BoxDecoration (
                           image: DecorationImage (
                             fit: BoxFit.cover,
                             image: AssetImage (
@@ -103,8 +101,8 @@ class tutorialCabbage extends StatelessWidget {
                                   child: Container(
                                     decoration: BoxDecoration (
                                       borderRadius: BorderRadius.circular(32.5*fem),
-                                      border: Border.all(color: Color(0xff000000)),
-                                      color: Color(0xffffffff),
+                                      border: Border.all(color: const Color(0xff000000)),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                 ),
@@ -126,7 +124,7 @@ class tutorialCabbage extends StatelessWidget {
                                       fontSize: 10*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4825*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ),
@@ -140,7 +138,7 @@ class tutorialCabbage extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(0*fem, 19*fem, 0*fem, 14.01*fem),
                         width: 130*fem,
                         height: double.infinity,
-                        decoration: BoxDecoration (
+                        decoration: const BoxDecoration (
                           image: DecorationImage (
                             fit: BoxFit.cover,
                             image: AssetImage (
@@ -161,8 +159,8 @@ class tutorialCabbage extends StatelessWidget {
                                   child: Container(
                                     decoration: BoxDecoration (
                                       borderRadius: BorderRadius.circular(32.5*fem),
-                                      border: Border.all(color: Color(0xff000000)),
-                                      color: Color(0xffffffff),
+                                      border: Border.all(color: const Color(0xff000000)),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                 ),
@@ -200,7 +198,7 @@ class tutorialCabbage extends StatelessWidget {
                                       fontSize: 10*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4825*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ),
@@ -217,7 +215,7 @@ class tutorialCabbage extends StatelessWidget {
                 // autogroupejncrMS (85jMCj92siJFUQKj17Ejnc)
                 left: 55.0000274181*fem,
                 top: 667*fem,
-                child: Container(
+                child: SizedBox(
                   width: 266*fem,
                   height: 38*fem,
                   child: Row(
@@ -234,7 +232,7 @@ class tutorialCabbage extends StatelessWidget {
                             fontSize: 16*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.4825*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -251,7 +249,7 @@ class tutorialCabbage extends StatelessWidget {
                             fontSize: 13*ffem,
                             fontWeight: FontWeight.w400,
                             height: 1.4525*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                         ),
                       ),
@@ -263,7 +261,7 @@ class tutorialCabbage extends StatelessWidget {
                 // autogroupdnfvPkg (85jLBbAuPuVaDHB5YndNFv)
                 left: 57.0000274181*fem,
                 top: 571*fem,
-                child: Container(
+                child: SizedBox(
                   width: 286*fem,
                   height: 86*fem,
                   child: Row(
@@ -280,7 +278,7 @@ class tutorialCabbage extends StatelessWidget {
                           height: 78*fem,
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         // autogroupa48kbrk (85jLNAhcSBdGZiE1nta48k)
                         width: 169*fem,
                         child: Column(
@@ -311,7 +309,7 @@ class tutorialCabbage extends StatelessWidget {
                                               fontSize: 12*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 1.5675*ffem/fem,
-                                              color: Color(0xff000000),
+                                              color: const Color(0xff000000),
                                             ),
                                           ),
                                         ),
@@ -324,7 +322,7 @@ class tutorialCabbage extends StatelessWidget {
                                             fontSize: 12*ffem,
                                             fontWeight: FontWeight.w400,
                                             height: 1.5675*ffem/fem,
-                                            color: Color(0xff000000),
+                                            color: const Color(0xff000000),
                                           ),
                                         ),
                                       ],
@@ -337,7 +335,7 @@ class tutorialCabbage extends StatelessWidget {
                                     height: 27*fem,
                                     decoration: BoxDecoration (
                                       borderRadius: BorderRadius.circular(12.5*fem),
-                                      gradient: LinearGradient (
+                                      gradient: const LinearGradient (
                                         begin: Alignment(-1, 0),
                                         end: Alignment(1, 0),
                                         colors: <Color>[Color(0xff00ff66), Color(0xffeaff00), Color(0xff0084ff)],
@@ -348,7 +346,7 @@ class tutorialCabbage extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Container(
+                            SizedBox(
                               // autogroupikka8Np (85jLbAKxhmbm87guomiKKa)
                               width: double.infinity,
                               child: Row(
@@ -365,7 +363,7 @@ class tutorialCabbage extends StatelessWidget {
                                         fontSize: 12*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.4825*ffem/fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
                                   ),
@@ -380,7 +378,7 @@ class tutorialCabbage extends StatelessWidget {
                                         fontSize: 12*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.4825*ffem/fem,
-                                        color: Color(0xff000000),
+                                        color: const Color(0xff000000),
                                       ),
                                     ),
                                   ),
@@ -393,7 +391,7 @@ class tutorialCabbage extends StatelessWidget {
                                       fontSize: 12*ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.4825*ffem/fem,
-                                      color: Color(0xff000000),
+                                      color: const Color(0xff000000),
                                     ),
                                   ),
                                 ],
@@ -430,7 +428,7 @@ class tutorialCabbage extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Container(//wrapped with sizebox to make button bigger but not looked bigger , easily be tapped
+                    child: SizedBox(//wrapped with sizebox to make button bigger but not looked bigger , easily be tapped
                       width: 21 * fem,
                       height: 26.3 * fem,
                       child: Image.asset(

@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class Scene extends StatelessWidget {
+  const Scene({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 414;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // donationdraftSqV (313:121)
         width: double.infinity,
         height: 896*fem,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xffffffff),
         ),
         child: Stack(
@@ -37,7 +36,7 @@ class Scene extends StatelessWidget {
                       fontSize: 24*ffem,
                       fontWeight: FontWeight.w500,
                       height: 1.1725*ffem/fem,
-                      color: Color(0xff000000),
+                      color: const Color(0xff000000),
                     ),
                   ),
                 ),
@@ -47,7 +46,7 @@ class Scene extends StatelessWidget {
               // autogroupj7zmqcj (Muv8uFc4V6vbQwTxt9J7zm)
               left: 28*fem,
               top: 92*fem,
-              child: Container(
+              child: SizedBox(
                 width: 279*fem,
                 height: 19*fem,
                 child: Row(
@@ -64,10 +63,10 @@ class Scene extends StatelessWidget {
                             fontSize: 16*ffem,
                             fontWeight: FontWeight.w500,
                             height: 1.1725*ffem/fem,
-                            color: Color(0xff000000),
+                            color: const Color(0xff000000),
                           ),
                           children: [
-                            TextSpan(
+                            const TextSpan(
                               text: 'First Name',
                             ),
                             TextSpan(
@@ -77,7 +76,7 @@ class Scene extends StatelessWidget {
                                 fontSize: 16*ffem,
                                 fontWeight: FontWeight.w500,
                                 height: 1.1725*ffem/fem,
-                                color: Color(0xffff5023),
+                                color: const Color(0xffff5023),
                               ),
                             ),
                           ],
@@ -93,10 +92,10 @@ class Scene extends StatelessWidget {
                           fontSize: 16*ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.1725*ffem/fem,
-                          color: Color(0xff000000),
+                          color: const Color(0xff000000),
                         ),
                         children: [
-                          TextSpan(
+                          const TextSpan(
                             text: 'Last Name',
                           ),
                           TextSpan(
@@ -106,7 +105,7 @@ class Scene extends StatelessWidget {
                               fontSize: 16*ffem,
                               fontWeight: FontWeight.w500,
                               height: 1.1725*ffem/fem,
-                              color: Color(0xffff5023),
+                              color: const Color(0xffff5023),
                             ),
                           ),
                         ],
@@ -120,7 +119,7 @@ class Scene extends StatelessWidget {
               // autogroupegwpgfH (Muv9H5K2qL7Ss78SkhegwP)
               left: 24*fem,
               top: 115*fem,
-              child: Container(
+              child: SizedBox(
                 width: 324*fem,
                 height: 25*fem,
                 child: Row(
@@ -132,7 +131,7 @@ class Scene extends StatelessWidget {
                       padding: EdgeInsets.fromLTRB(4*fem, 3*fem, 4*fem, 3*fem),
                       width: 132*fem,
                       height: double.infinity,
-                      decoration: BoxDecoration (
+                      decoration: const BoxDecoration (
                         color: Color(0xff0c6237),
                       ),
                       child: Text(
@@ -142,7 +141,7 @@ class Scene extends StatelessWidget {
                           fontSize: 16*ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.1725*ffem/fem,
-                          color: Color(0xffffffff),
+                          color: const Color(0xffffffff),
                         ),
                       ),
                     ),
@@ -151,7 +150,7 @@ class Scene extends StatelessWidget {
                       padding: EdgeInsets.fromLTRB(8*fem, 3*fem, 8*fem, 3*fem),
                       width: 132*fem,
                       height: double.infinity,
-                      decoration: BoxDecoration (
+                      decoration: const BoxDecoration (
                         color: Color(0xff0c6237),
                       ),
                       child: Text(
@@ -161,7 +160,7 @@ class Scene extends StatelessWidget {
                           fontSize: 16*ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.1725*ffem/fem,
-                          color: Color(0xffffffff),
+                          color: const Color(0xffffffff),
                         ),
                       ),
                     ),
@@ -177,7 +176,7 @@ class Scene extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(4*fem, 2*fem, 4*fem, 4*fem),
                 width: 324*fem,
                 height: 25*fem,
-                decoration: BoxDecoration (
+                decoration: const BoxDecoration (
                   color: Color(0xff0c6237),
                 ),
                 child: Text(
@@ -187,7 +186,7 @@ class Scene extends StatelessWidget {
                     fontSize: 16*ffem,
                     fontWeight: FontWeight.w500,
                     height: 1.1725*ffem/fem,
-                    color: Color(0xffffffff),
+                    color: const Color(0xffffffff),
                   ),
                 ),
               ),
@@ -200,7 +199,7 @@ class Scene extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(6*fem, 3*fem, 6*fem, 3*fem),
                 width: 185*fem,
                 height: 25*fem,
-                decoration: BoxDecoration (
+                decoration: const BoxDecoration (
                   color: Color(0xff0c6237),
                 ),
                 child: Text(
@@ -210,7 +209,7 @@ class Scene extends StatelessWidget {
                     fontSize: 16*ffem,
                     fontWeight: FontWeight.w500,
                     height: 1.1725*ffem/fem,
-                    color: Color(0xffffffff),
+                    color: const Color(0xffffffff),
                   ),
                 ),
               ),
@@ -223,7 +222,7 @@ class Scene extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(6*fem, 8*fem, 6*fem, 8*fem),
                 width: 326*fem,
                 height: 134*fem,
-                decoration: BoxDecoration (
+                decoration: const BoxDecoration (
                   color: Color(0xff0c6237),
                 ),
                 child: Align(
@@ -241,7 +240,7 @@ class Scene extends StatelessWidget {
                           fontSize: 16*ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.1725*ffem/fem,
-                          color: Color(0xffffffff),
+                          color: const Color(0xffffffff),
                         ),
                       ),
                     ),
@@ -264,10 +263,10 @@ class Scene extends StatelessWidget {
                         fontSize: 16*ffem,
                         fontWeight: FontWeight.w500,
                         height: 1.1725*ffem/fem,
-                        color: Color(0xff000000),
+                        color: const Color(0xff000000),
                       ),
                       children: [
-                        TextSpan(
+                        const TextSpan(
                           text: 'Items to Donate',
                         ),
                         TextSpan(
@@ -277,7 +276,7 @@ class Scene extends StatelessWidget {
                             fontSize: 16*ffem,
                             fontWeight: FontWeight.w500,
                             height: 1.1725*ffem/fem,
-                            color: Color(0xffff5023),
+                            color: const Color(0xffff5023),
                           ),
                         ),
                       ],
@@ -301,10 +300,10 @@ class Scene extends StatelessWidget {
                         fontSize: 16*ffem,
                         fontWeight: FontWeight.w500,
                         height: 1.1725*ffem/fem,
-                        color: Color(0xff000000),
+                        color: const Color(0xff000000),
                       ),
                       children: [
-                        TextSpan(
+                        const TextSpan(
                           text: 'Email Address',
                         ),
                         TextSpan(
@@ -314,7 +313,7 @@ class Scene extends StatelessWidget {
                             fontSize: 16*ffem,
                             fontWeight: FontWeight.w500,
                             height: 1.1725*ffem/fem,
-                            color: Color(0xffff5023),
+                            color: const Color(0xffff5023),
                           ),
                         ),
                       ],
@@ -338,10 +337,10 @@ class Scene extends StatelessWidget {
                         fontSize: 16*ffem,
                         fontWeight: FontWeight.w500,
                         height: 1.1725*ffem/fem,
-                        color: Color(0xff000000),
+                        color: const Color(0xff000000),
                       ),
                       children: [
-                        TextSpan(
+                        const TextSpan(
                           text: 'Contact Number',
                         ),
                         TextSpan(
@@ -351,7 +350,7 @@ class Scene extends StatelessWidget {
                             fontSize: 16*ffem,
                             fontWeight: FontWeight.w500,
                             height: 1.1725*ffem/fem,
-                            color: Color(0xffff5023),
+                            color: const Color(0xffff5023),
                           ),
                         ),
                       ],
@@ -364,7 +363,7 @@ class Scene extends StatelessWidget {
               // autogroupzabxxMD (MuvASTYRQZphs6rtbtZaBX)
               left: 97.5*fem,
               top: 584*fem,
-              child: Container(
+              child: SizedBox(
                 width: 176*fem,
                 height: 199.5*fem,
                 child: Stack(
