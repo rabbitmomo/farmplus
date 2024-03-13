@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
     return Container(
-      padding: EdgeInsets.fromLTRB(5 * fem, 30 * fem, 5 * fem, 0 * fem),
+      padding: EdgeInsets.fromLTRB(20 * fem, 30 * fem, 20 * fem, 0 * fem),
       width: double.infinity,
       decoration: const BoxDecoration(color: Color(0xffffffff)),
       child: Column(children: [
@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
           children: [
             Container(
               // Home Page Logo
-              margin: EdgeInsets.fromLTRB(10 * fem, 0 * fem, 5 * fem, 0 * fem),
+              margin: EdgeInsets.fromLTRB(0* fem, 0 * fem, 0 * fem, 0 * fem),
               width: 128 * fem,
               height: 32 * fem,
               child: Image.asset(
@@ -79,12 +79,11 @@ class HomePage extends StatelessWidget {
           ],
         ),
         Container(
-            //  profile and to do list
+            //  to do list
             ),
         Container(
           // Fast Access Zone
-          padding: EdgeInsets.fromLTRB(20 * fem, 10 * fem, 20 * fem, 10 * fem),
-          margin: EdgeInsets.fromLTRB(10 * fem, 5 * fem, 10 * fem, 5 * fem),
+          padding: EdgeInsets.fromLTRB(26 * fem, 20 * fem, 26 * fem, 20 * fem),
           width: double.infinity,
           decoration: BoxDecoration(
             color: Color.fromRGBO(255, 255, 255, 1),
