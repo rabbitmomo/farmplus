@@ -7,14 +7,14 @@ class Scene extends StatelessWidget {
   Widget build(BuildContext context) {
     double baseWidth = 24;
     double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
+    // double ffem = fem * 0.97;
     return SizedBox(
       width: double.infinity,
       child: SizedBox(
         // clockTFu (167:453)
         width: double.infinity,
-        height: 24*fem,
+        height: 24 * fem,
       ),
-          );
+    );
   }
 }

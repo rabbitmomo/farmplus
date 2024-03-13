@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
+    //double ffem = fem * 0.97;
     return Container(
       padding: EdgeInsets.fromLTRB(20 * fem, 30 * fem, 20 * fem, 0 * fem),
       width: double.infinity,
@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
           children: [
             Container(
               // Home Page Logo
-              margin: EdgeInsets.fromLTRB(0* fem, 0 * fem, 0 * fem, 0 * fem),
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 0 * fem),
               width: 128 * fem,
               height: 32 * fem,
               child: Image.asset(
@@ -114,11 +114,10 @@ class HomePage extends StatelessWidget {
                           width: 30 * fem,
                           height: 33.33 * fem,
                         ),
-                      )
-                      ),
+                      )),
                 ],
               ),
-               Column(
+              Column(
                 // QR Code Icon
                 children: [
                   Container(
@@ -129,7 +128,8 @@ class HomePage extends StatelessWidget {
                       child: TextButton(
                         onPressed: () {
                           // Navigate to supplychain page
-                          Navigator.pushReplacementNamed(context, '/supplychain');
+                          Navigator.pushReplacementNamed(
+                              context, '/supplychain');
                         },
                         style: TextButton.styleFrom(padding: EdgeInsets.zero),
                         child: Image.asset(
@@ -137,11 +137,10 @@ class HomePage extends StatelessWidget {
                           width: 30 * fem,
                           height: 33.33 * fem,
                         ),
-                      )
-                      ),
+                      )),
                 ],
               ),
-               Column(
+              Column(
                 // Community Icon
                 children: [
                   Container(
@@ -160,11 +159,10 @@ class HomePage extends StatelessWidget {
                           width: 30 * fem,
                           height: 33.33 * fem,
                         ),
-                      )
-                      ),
+                      )),
                 ],
               ),
-               Column(
+              Column(
                 // Inventory Icon
                 children: [
                   Container(
@@ -183,8 +181,7 @@ class HomePage extends StatelessWidget {
                           width: 30 * fem,
                           height: 33.33 * fem,
                         ),
-                      )
-                      ),
+                      )),
                 ],
               ),
             ],
