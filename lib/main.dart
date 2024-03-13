@@ -142,7 +142,7 @@ class MyApp extends StatelessWidget {
         '/notification' : (context) => NotificationPage(),
         // '/order' : (context) => ,
         '/crop' : (context) => SelectCropPage(),
-        'profile' : (context) => ProfilePage(),
+        '/profile' : (context) => ProfilePage(),
         // '/tutorial' : (context) => TutorialPage(),
         // '/supplychain' : (context) => ,
         // '/commnunity' : (context) =>,
