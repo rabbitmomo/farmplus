@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
-
+import 'package:crops-suggestion-zXR.dart';
 class Scene extends StatelessWidget {
   const Scene({super.key});
 
@@ -62,25 +62,31 @@ class Scene extends StatelessWidget {
                 color: const Color(0xffeaf5e7),
                 borderRadius: BorderRadius.circular(20*fem),
               ),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Container(
-                    // cabbagelettuce4xMd (254:365)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 47.08*fem, 0*fem),
-                    child: Text(
-                      'Cabbage & Lettuce (4)',
-                      textAlign: TextAlign.center,
-                      style: SafeGoogleFont (
-                        'Roboto',
-                        fontSize: 14*ffem,
-                        fontWeight: FontWeight.w300,
-                        height: 1.5714285714*ffem/fem,
-                        letterSpacing: -0.4099999964*fem,
-                        color: const Color(0xff013220),
-                      ),
-                    ),
-                  ),
+             GestureDetector(
+   onTap: () {
+    // Navigate to the 'crops-suggestion-zXR' screen or file
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const Scene()),
+    );
+  },
+  child: Container(
+    // cabbagelettuce4xMd (254:365)
+    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 47.08*fem, 0*fem),
+    child: Text(
+      'Cabbage & Lettuce (4)',
+      textAlign: TextAlign.center,
+      style: SafeGoogleFont (
+        'Roboto',
+        fontSize: 14*ffem,
+        fontWeight: FontWeight.w300,
+        height: 1.5714285714*ffem/fem,
+        letterSpacing: -0.4099999964*fem,
+        color: const Color(0xff013220),
+      ),
+    ),
+  ),
+),
                   SizedBox(
                     // vectorNgF (254:375)
                     width: 11.96*fem,
