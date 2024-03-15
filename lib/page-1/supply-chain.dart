@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/scanpage.dart'; // Import ScanPage
+// Import ScanPage
 
 class Scene extends StatelessWidget {
-  const Scene({Key? key});
+  const Scene({super.key, Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +68,7 @@ class Scene extends StatelessWidget {
                           margin: EdgeInsets.fromLTRB(16.5 * fem, 0 * fem, 15.5 * fem, 29.5 * fem),
                           width: double.infinity,
                           height: 224 * fem,
-                          child: Stack(
+                          child: const Stack(
                             children: [
                               // Add your stack items here
                             ],
@@ -146,7 +146,7 @@ class Scene extends StatelessWidget {
             Container(
               width: 430 * fem,
               height: 36 * fem,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color(0xffffffff),
               ),
             ),

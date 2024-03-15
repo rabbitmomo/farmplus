@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 
 class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
