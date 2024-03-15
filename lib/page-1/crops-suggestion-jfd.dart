@@ -905,6 +905,14 @@ class Scene extends StatelessWidget {
                                   ),
                                 ),
                               ),
+                        Center(
+                       child: ElevatedButton(
+                       onPressed: () {
+                       Navigator.pop(context); // Go back to the previous screen
+                         },
+                        child: const Text('Go Back'),
+                         ),
+                        )
                               Center(
                                 // rm5001kg7Mh (269:364)
                                 child: Container(
