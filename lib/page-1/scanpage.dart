@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 
 class Scene extends StatelessWidget {
-  const Scene({super.key});
+  const Scene({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -176,20 +176,31 @@ class Scene extends StatelessWidget {
                       // carrotbS7 (169:351)
                       left: 44.0000157943*fem,
                       top: 121.5056293318*fem,
-                      child: Align(
-                        child: SizedBox(
-                          width: 38*fem,
-                          height: 22*fem,
-                          child: Text(
-                            'CARROT',
-                            style: SafeGoogleFont (
-                              'Inter',
-                              fontSize: 10*ffem,
-                              fontWeight: FontWeight.w300,
-                              height: 2.2*ffem/fem,
-                              letterSpacing: -0.4099999964*fem,
-                              fontStyle: FontStyle.italic,
-                              color: const Color(0xfff12121),
+                      child: GestureDetector(
+                        onTap: () {
+                          // Navigate to CarrotInformationPage
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => CarrotInformationPage()),
+                          );
+                       
+
+            },
+                        child: Align(
+                          child: SizedBox(
+                            width: 38*fem,
+                            height: 22*fem,
+                            child: Text(
+                              'CARROT',
+                              style: SafeGoogleFont (
+                                'Inter',
+                                fontSize: 10*ffem,
+                                fontWeight: FontWeight.w300,
+                                height: 2.2*ffem/fem,
+                                letterSpacing: -0.4099999964*fem,
+                                fontStyle: FontStyle.italic,
+                                color: const Color(0xfff12121),
+                              ),
                             ),
                           ),
                         ),
@@ -257,6 +268,6 @@ class Scene extends StatelessWidget {
           ),
         ),
       ),
-          );
+    );
   }
 }
