@@ -827,6 +827,25 @@ class Scene extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Center(
+  child: ElevatedButton(
+    onPressed: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const Scene()),
+      );
+    },
+    child: const Text('Go to Crops Suggestion'),
+  ),
+),
+             Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context); // Go back to the previous screen
+                },
+                child: const Text('Go Back'),
+              ),
+            ),
                   Positioned(
                     // carte55 (262:179)
                     left: 0*fem,
