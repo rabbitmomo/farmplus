@@ -1,10 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/carrot-information-from-qr-code.dart';
-import 'package:myapp/page-1/scanpage.dart';
-import 'package:myapp/page-1/location-service-suggestion.dart';
-import 'package:myapp/page-1/supply-chain.dart';
 // import 'package:myapp/page-1/rectangle-17409.dart';
 // import 'package:myapp/page-1/consultation-page-kx.dart';
 // import 'package:myapp/page-1/consultation-live-chat-page-kx.dart';
@@ -28,7 +24,7 @@ import 'package:myapp/page-1/splash-page-kx.dart';
 import 'package:myapp/page-1/calendar-page-kx.dart';
 // import 'package:myapp/page-1/circle-check-box.dart';
 // import 'package:myapp/page-1/calendar-add-event-page-kx.dart';
- import 'package:myapp/page-1/notification-page-kx.dart';
+import 'package:myapp/page-1/notification-page-kx.dart';
 // import 'package:myapp/page-1/notification-manage-page-kx.dart';
 // import 'package:myapp/page-1/homepage.dart';
 // import 'package:myapp/page-1/billing.dart';
@@ -138,21 +134,18 @@ class MyApp extends StatelessWidget {
       ),
       home: const SplashScreen(), // Set SplashScreen as the home widget
       routes: {
-        '/home': (context) => const HomePage(),
-        '/calendar' : (context) => const CalendarPage(),
-        '/notification' : (context) => const NotificationPage(),
-        '/calendar' : (context) => const CalendarPage(),
-        '/notification' : (context) => const NotificationPage(),
+        '/home': (context) => HomePage(),
+        '/calendar': (context) => const CalendarPage(),
+        '/notification': (context) => const NotificationPage(),
+        '/calendar': (context) => CalendarPage(),
+        '/notification': (context) => NotificationPage(),
         // '/order' : (context) => ,
-        '/crop' : (context) => const SelectCropPage(),
-        '/profile' : (context) => const ProfilePage(),
+        '/crop': (context) => SelectCropPage(),
+        '/profile': (context) => ProfilePage(),
         // '/tutorial' : (context) => TutorialPage(),
-         '/supplychain' : (context) => ,const Scene(),
-        '/carrot-information': (context) => const Scene(), // from carrot-information-from-qr-code.dart
-        '/scan-page': (context) => const Scene(), // from scanpage.dart
-        '/location-suggestion': (context) => const Scene(), // from location-service-suggestion.dart
+        // '/supplychain' : (context) => ,
         // '/commnunity' : (context) =>,
-        '/inventory' : (context) => const InventoryPage(),
+        '/inventory': (context) => const InventoryPage(),
       },
     );
   }
