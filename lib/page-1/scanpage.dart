@@ -6,6 +6,8 @@ class Scene extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Brightness interfaceBrightness = MediaQuery.of(context).platformBrightness;
+    Color sunColor = interfaceBrightness == Brightness.light ? Colors.yellow : Colors.grey; // Adjust color based on brightness
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
