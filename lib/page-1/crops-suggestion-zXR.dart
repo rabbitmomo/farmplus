@@ -467,6 +467,15 @@ class Scene extends StatelessWidget {
                                     ),
                                   ),
                                 ),
+                                // Inside the build method of the Scene widget
+             Center(
+          child: ElevatedButton(
+           onPressed: () {
+      Navigator.pushNamed(context, '/jfd');
+             },
+    child: const Text('Go to next Screen'),
+  ),
+)
                                 Center(
                                   // rm2501kg9wm (418:223)
                                   child: Container(
