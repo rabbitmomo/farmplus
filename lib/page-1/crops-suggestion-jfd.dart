@@ -905,6 +905,17 @@ class Scene extends StatelessWidget {
                                   ),
                                 ),
                               ),
+ Center(
+   child: ElevatedButton(
+    onPressed: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const Scene()),
+      );
+    },
+    child: const Text('Go to Fertilizers'),
+  ),
+),
                         Center(
                        child: ElevatedButton(
                        onPressed: () {
