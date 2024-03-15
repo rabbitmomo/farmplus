@@ -624,6 +624,14 @@ class Scene extends StatelessWidget {
                 ],
               ),
             ),
+             Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context); // Go back to the previous screen
+                },
+                child: const Text('Go Back'),
+              ),
+            ),
             Container(
               // cartYPR (353:149)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 261.89*fem, 0*fem),
