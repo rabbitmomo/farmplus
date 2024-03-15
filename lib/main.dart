@@ -136,14 +136,14 @@ class MyApp extends StatelessWidget {
       ),
       home: const SplashScreen(), // Set SplashScreen as the home widget
       routes: {
-        '/home': (context) => HomePage(),
+        '/home': (context) => const HomePage(),
         '/calendar': (context) => const CalendarPage(),
         '/notification': (context) => const NotificationPage(),
-        '/calendar': (context) => CalendarPage(),
-        '/notification': (context) => NotificationPage(),
+        '/calendar': (context) => const CalendarPage(),
+        '/notification': (context) => const NotificationPage(),
         // '/order' : (context) => ,
-        '/crop': (context) => SelectCropPage(),
-        '/profile': (context) => ProfilePage(),
+        '/crop': (context) => const SelectCropPage(),
+        '/profile': (context) => const ProfilePage(),
         // '/tutorial' : (context) => TutorialPage(),
         // '/supplychain' : (context) => ,
         // '/commnunity' : (context) =>,
@@ -181,6 +181,8 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 }
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
