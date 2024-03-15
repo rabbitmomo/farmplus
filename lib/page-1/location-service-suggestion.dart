@@ -127,108 +127,118 @@ class Scene extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              // group35Uxw (251:287)
-              margin: EdgeInsets.fromLTRB(24*fem, 0*fem, 22*fem, 13*fem),
-              padding: EdgeInsets.fromLTRB(30*fem, 15.25*fem, 54.5*fem, 14.25*fem),
-              width: double.infinity,
-              height: 50*fem,
-              decoration: BoxDecoration (
-                color: const Color(0xff0b6236),
-                borderRadius: BorderRadius.circular(30*fem),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0x19000000),
-                    offset: Offset(0*fem, 0*fem),
-                    blurRadius: 5*fem,
-                  ),
-                ],
-              ),
-              child: SizedBox(
-                // frame99hKu (251:306)
-                width: double.infinity,
-                height: double.infinity,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      // vectorTK5 (251:305)
-                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 24*fem, 0*fem),
-                      width: 19.5*fem,
-                      height: 20.5*fem,
-                      child: Image.asset(
-                        'assets/page-1/images/vector-U3h.png',
-                        width: 19.5*fem,
-                        height: 20.5*fem,
-                      ),
-                    ),
-                    Center(
-                      // noncontactdeliveriesbAP (251:289)
-                      child: Text(
-                        'Non-Contact Deliveries',
-                        textAlign: TextAlign.center,
-                        style: SafeGoogleFont (
-                          'Poppins',
-                          fontSize: 13*ffem,
-                          fontWeight: FontWeight.w400,
-                          height: 1.5*ffem/fem,
-                          color: const Color(0xffffffff),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Container(
-              // group64J4o (251:290)
-              margin: EdgeInsets.fromLTRB(24*fem, 0*fem, 22*fem, 0*fem),
-              padding: EdgeInsets.fromLTRB(29*fem, 14.5*fem, 29*fem, 15.5*fem),
-              width: double.infinity,
-              height: 50*fem,
-              decoration: BoxDecoration (
-                color: const Color(0xffededed),
-                borderRadius: BorderRadius.circular(30*fem),
-              ),
-              child: SizedBox(
-                // frame99Pc3 (251:297)
-                width: 167*fem,
-                height: double.infinity,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      // vectorYE3 (251:296)
-                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 55*fem, 0*fem),
-                      width: 22*fem,
-                      height: 19.65*fem,
-                      child: Image.asset(
-                        'assets/page-1/images/vector-g15.png',
-                        width: 22*fem,
-                        height: 19.65*fem,
-                      ),
-                    ),
-                    Center(
-                      // backtohomeGfq (251:292)
-                      child: Text(
-                        'Back to home',
-                        textAlign: TextAlign.center,
-                        style: SafeGoogleFont (
-                          'Poppins',
-                          fontSize: 13*ffem,
-                          fontWeight: FontWeight.w400,
-                          height: 1.5*ffem/fem,
-                          color: const Color(0xff8a8a8a),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
+        GestureDetector(
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => LocationServiceSuggestionPage()),
+    );
+  },
+  child: Container(
+    // group35Uxw (251:287)
+    margin: EdgeInsets.fromLTRB(24*fem, 0*fem, 22*fem, 13*fem),
+    padding: EdgeInsets.fromLTRB(30*fem, 15.25*fem, 54.5*fem, 14.25*fem),
+    width: double.infinity,
+    height: 50*fem,
+    decoration: BoxDecoration (
+      color: const Color(0xff0b6236),
+      borderRadius: BorderRadius.circular(30*fem),
+      boxShadow: [
+        BoxShadow(
+          color: const Color(0x19000000),
+          offset: Offset(0*fem, 0*fem),
+          blurRadius: 5*fem,
         ),
+      ],
+    ),
+    child: SizedBox(
+      // frame99hKu (251:306)
+      width: double.infinity,
+      height: double.infinity,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            // vectorTK5 (251:305)
+            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 24*fem, 0*fem),
+            width: 19.5*fem,
+            height: 20.5*fem,
+            child: Image.asset(
+              'assets/page-1/images/vector-U3h.png',
+              width: 19.5*fem,
+              height: 20.5*fem,
+            ),
+          ),
+          Center(
+            // noncontactdeliveriesbAP (251:289)
+            child: Text(
+              'Non-Contact Deliveries',
+              textAlign: TextAlign.center,
+              style: SafeGoogleFont (
+                'Poppins',
+                fontSize: 13*ffem,
+                fontWeight: FontWeight.w400,
+                height: 1.5*ffem/fem,
+                color: const Color(0xffffffff),
+              ),
+            ),
+          ),
+        ],
       ),
-          );
-  }
-}
+    ),
+  ),
+),
+GestureDetector(
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => HomePage()),
+    );
+  },
+  child: Container(
+    // group64J4o (251:290)
+    margin: EdgeInsets.fromLTRB(24*fem, 0*fem, 22*fem, 0*fem),
+    padding: EdgeInsets.fromLTRB(29*fem, 14.5*fem, 29*fem, 15.5*fem),
+    width: double.infinity,
+    height: 50*fem,
+    decoration: BoxDecoration (
+      color: const Color(0xffededed),
+      borderRadius: BorderRadius.circular(30*fem),
+    ),
+    child: SizedBox(
+      // frame99Pc3 (251:297)
+      width: 167*fem,
+      height: double.infinity,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            // vectorYE3 (251:296)
+            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 55*fem, 0*fem),
+            width: 22*fem,
+            height: 19.65*fem,
+            child: Image.asset(
+              'assets/page-1/images/vector-g15.png',
+              width: 22*fem,
+              height: 19.65*fem,
+            ),
+          ),
+          Center(
+            // backtohomeGfq (251:292)
+            child: Text(
+              'Back to home',
+              textAlign: TextAlign.center,
+              style: SafeGoogleFont (
+                'Poppins',
+                fontSize: 13*ffem,
+                fontWeight: FontWeight.w400,
+                height: 1.5*ffem/fem,
+                color: const Color(0xff8a8a8a),
+              ),
+            ),
+          ),
+        ],
+      ),
+    ),
+  ),
+),
