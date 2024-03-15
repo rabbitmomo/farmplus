@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
+import 'crops-suggestion.dart'; 
 
 class Scene extends StatelessWidget {
   const Scene({super.key});
@@ -328,21 +329,30 @@ class Scene extends StatelessWidget {
                         child: SizedBox(
                           width: 69*fem,
                           height: 20*fem,
-                          child: Text(
-                            'Order Now',
-                            textAlign: TextAlign.center,
-                            style: SafeGoogleFont (
-                              'Poppins',
-                              fontSize: 13*ffem,
-                              fontWeight: FontWeight.w400,
-                              height: 1.5*ffem/fem,
-                              color: const Color(0xffffffff),
-                            ),
-                          ),
+              child: TextButton(
+                      onPressed: () {
+                        // Navigate to crops-suggestion.dart
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => CropsSuggestion()),
+                        );
+                      },
+                      child: Text(
+                        'Order Now',
+                        textAlign: TextAlign.center,
+                        style: SafeGoogleFont(
+                          'Poppins',
+                          fontSize: 13 * ffem,
+                          fontWeight: FontWeight.w400,
+                          height: 1.5 * ffem / fem,
+                          color: const Color(0xffffffff),
                         ),
                       ),
                     ),
                   ),
+                ),
+              ),
+            ),
                   Positioned(
                     // group1004cF (251:354)
                     left: 33*fem,
