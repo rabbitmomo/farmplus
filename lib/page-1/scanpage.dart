@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
-
+import 'carrot-information-from-qr-code.dart';
 class Scene extends StatelessWidget {
   const Scene({Key? key}) : super(key: key);
 
