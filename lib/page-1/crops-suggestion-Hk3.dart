@@ -615,7 +615,25 @@ class Scene extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
-                        ),
+                        ),Center(
+  child: ElevatedButton(
+    onPressed: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const Scene()),
+      );
+    },
+    child: const Text('Go to Crops Suggestion'),
+  ),
+),
+             Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context); // Go back to the previous screen
+                },
+                child: const Text('Go Back'),
+              ),
+            ),
                         Container(
                           // autogroupgixxRCj (Muuz9qWsjb1vsrpNuQGiXX)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 34*fem, 0*fem),
