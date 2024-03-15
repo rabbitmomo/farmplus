@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
-
+import 'package:myapp/kjx.dart';
 class Scene extends StatelessWidget {
   const Scene({super.key});
 
@@ -623,7 +623,17 @@ class Scene extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
+            ),Center(
+  child: ElevatedButton(
+    onPressed: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const Scene()),
+      );
+    },
+    child: const Text('Go to Crops Suggestion'),
+  ),
+),
              Center(
               child: ElevatedButton(
                 onPressed: () {
