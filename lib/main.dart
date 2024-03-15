@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/page-1/crops-suggestion-zXR.dart';
+import 'package:myapp/page-1/crops-suggestion-jfd.dart';
 // import 'package:myapp/page-1/rectangle-17409.dart';
 // import 'package:myapp/page-1/consultation-page-kx.dart';
 // import 'package:myapp/page-1/consultation-live-chat-page-kx.dart';
@@ -176,5 +178,18 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scene(); // Your existing splash screen widget
+  }
+}
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'My App',
+      initialRoute: '/zXR', // Set the initial route
+      routes: {
+        '/zXR': (context) => const Scene(), // From crops-suggestion-zXR.dart
+        '/jfd': (context) => const Scene(), // From crops-suggestion-jfd.dart
+      },
+    );
   }
 }
