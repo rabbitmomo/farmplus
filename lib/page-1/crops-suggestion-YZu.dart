@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
-
+import 'package:myapp/crops-suggestion-jfd.dart';
 class Scene extends StatelessWidget {
   const Scene({super.key});
 
@@ -567,6 +567,14 @@ class Scene extends StatelessWidget {
                 ],
               ),
             ),
+            Center(
+  child: ElevatedButton(
+    onPressed: () {
+      Navigator.pop(context); // Go back to the previous screen
+    },
+    child: const Text('Go Back'),
+  ),
+),
             Container(
               // cart7NP (257:462)
               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 259*fem, 0*fem),
