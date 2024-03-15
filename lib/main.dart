@@ -1,6 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/page-1/carrot-information-from-qr-code.dart';
+import 'package:myapp/page-1/scanpage.dart';
+import 'package:myapp/page-1/location-service-suggestion.dart';
+import 'package:myapp/page-1/supply-chain.dart';
 // import 'package:myapp/page-1/rectangle-17409.dart';
 // import 'package:myapp/page-1/consultation-page-kx.dart';
 // import 'package:myapp/page-1/consultation-live-chat-page-kx.dart';
@@ -143,7 +147,10 @@ class MyApp extends StatelessWidget {
         '/crop' : (context) => SelectCropPage(),
         '/profile' : (context) => ProfilePage(),
         // '/tutorial' : (context) => TutorialPage(),
-        // '/supplychain' : (context) => ,
+         '/supplychain' : (context) => ,const Scene(),
+        '/carrot-information': (context) => const Scene(), // from carrot-information-from-qr-code.dart
+        '/scan-page': (context) => const Scene(), // from scanpage.dart
+        '/location-suggestion': (context) => const Scene(), // from location-service-suggestion.dart
         // '/commnunity' : (context) =>,
         '/inventory' : (context) => const InventoryPage(),
       },
