@@ -112,25 +112,25 @@ class HomePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Column(
+                  const Column(
                     // welcome message
                     crossAxisAlignment:
                         CrossAxisAlignment.start, // Aligns column to the right
                     children: [
                       DefaultTextStyle(
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 16,
                           fontFamily: 'Poppins',
                           fontWeight: FontWeight.w400, // Poppins Light
                           color:
                               Color.fromARGB(255, 3, 39, 6), // Dark green color
                         ),
-                        child: const Text(
+                        child: Text(
                           'Hello, Jason.',
                           textAlign: TextAlign.right,
                         ),
                       ),
-                      const DefaultTextStyle(
+                      DefaultTextStyle(
                         style: TextStyle(
                           fontSize: 16,
                           fontFamily: 'Poppins',
@@ -154,7 +154,7 @@ class HomePage extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(0 * fem, 2 * fem, 0 * fem, 20 * fem),
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 230, 239, 216),
+                color: const Color.fromARGB(255, 230, 239, 216),
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
                   color: Colors.green[900]!, // Dark green border color
@@ -184,12 +184,12 @@ class HomePage extends StatelessWidget {
                             SizedBox(
                               width: 50 * fem, // Adjust width as needed
                               height: 50 * fem, // Adjust height as needed
-                              child: CircularProgressIndicator(
+                              child: const CircularProgressIndicator(
                                 value: 0.5, // Example value, adjust as needed
-                                backgroundColor: const Color.fromARGB(
+                                backgroundColor: Color.fromARGB(
                                     255, 175, 197, 179), // Background color
                                 valueColor: AlwaysStoppedAnimation<Color>(
-                                  const Color.fromARGB(
+                                  Color.fromARGB(
                                       255, 28, 94, 27), // Progress color
                                 ),
                               ),
@@ -386,7 +386,7 @@ class HomePage extends StatelessWidget {
                       color: Colors.grey.withOpacity(0.5),
                       spreadRadius: 2,
                       blurRadius: 4,
-                      offset: Offset(0, 0), // changes position of shadow
+                      offset: const Offset(0, 0), // changes position of shadow
                     ),
                   ],
                 ),
@@ -412,7 +412,7 @@ class HomePage extends StatelessWidget {
                       color: Colors.grey.withOpacity(0.5),
                       spreadRadius: 2,
                       blurRadius: 4,
-                      offset: Offset(0, 0), // changes position of shadow
+                      offset: const Offset(0, 0), // changes position of shadow
                     ),
                   ],
                 ),
