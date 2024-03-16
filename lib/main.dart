@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:myapp/page-1/tutorialHomePage.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/page-1/crops-suggestion-zXR.dart';
 import 'package:myapp/page-1/crops-suggestion-jfd.dart';
@@ -144,7 +145,7 @@ class MyApp extends StatelessWidget {
         // '/order' : (context) => ,
         '/crop': (context) => const SelectCropPage(),
         '/profile': (context) => const ProfilePage(),
-        // '/tutorial' : (context) => TutorialPage(),
+        '/tutorial' : (context) => tutorialHome(),
         // '/supplychain' : (context) => ,
         // '/commnunity' : (context) =>,
         '/inventory': (context) => const InventoryPage(),
