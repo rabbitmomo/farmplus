@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/components/navbar.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: HomePageBody(), 
+      bottomNavigationBar: Navbar(), 
+    );
+  }
+}
+
+class HomePageBody extends StatelessWidget {
+  const HomePageBody({super.key});
 
   @override
   Widget build(BuildContext context) {
