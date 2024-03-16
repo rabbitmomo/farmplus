@@ -210,7 +210,7 @@ class AddEvent extends StatelessWidget {
                         Container(
                           // dateQxo (160:842)
                           margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 237 * fem, 0 * fem),
+                              0 * fem, 0 * fem, 235 * fem, 0 * fem),
                           child: Text(
                             'Date *',
                             style: SafeGoogleFont(
@@ -377,7 +377,7 @@ class AddEvent extends StatelessWidget {
                   Container(
                     // group48add (160:860)
                     padding: EdgeInsets.fromLTRB(
-                        16 * fem, 11.5 * fem, 19.94 * fem, 10.5 * fem),
+                        16 * fem, 11.5 * fem, 19.94 * fem, 0 * fem),
                     width: double.infinity,
                     decoration: BoxDecoration(
                       border: Border.all(color: const Color(0xffc7c7c7)),
