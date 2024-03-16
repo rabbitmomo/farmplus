@@ -18,13 +18,13 @@ import 'package:myapp/page-1/profile-page.dart';
 // import 'package:myapp/page-1/sign-out-confirmation.dart';
 // import 'package:myapp/page-1/add-farmer-notice.dart';
 // import 'package:myapp/page-1/add-farmer.dart';
-// import 'package:myapp/page-1/inventory-detail-low-stock-level.dart';
-// import 'package:myapp/page-1/inventory-detail-.dart';
-// import 'package:myapp/page-1/new-inventory-item.dart';
+import 'package:myapp/page-1/inventory-detail-low-stock-level.dart';
+import 'package:myapp/page-1/inventory-detail-.dart';
+import 'package:myapp/page-1/new-inventory-item.dart';
 import 'package:myapp/page-1/splash-page-kx.dart';
 import 'package:myapp/page-1/calendar-page-kx.dart';
 // import 'package:myapp/page-1/circle-check-box.dart';
-// import 'package:myapp/page-1/calendar-add-event-page-kx.dart';
+import 'package:myapp/page-1/calendar-add-event-page-kx.dart';
 import 'package:myapp/page-1/notification-page-kx.dart';
 // import 'package:myapp/page-1/notification-manage-page-kx.dart';
 // import 'package:myapp/page-1/homepage.dart';
@@ -137,6 +137,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home': (context) => const HomePage(),
         '/calendar': (context) => const CalendarPage(),
+        '/addEvent' : (context) => const AddEvent(),
         '/notification': (context) => const NotificationPage(),
         // '/order' : (context) => ,
         '/crop': (context) => const SelectCropPage(),
@@ -145,6 +146,10 @@ class MyApp extends StatelessWidget {
         // '/supplychain' : (context) => ,
         // '/commnunity' : (context) =>,
         '/inventory': (context) => const InventoryPage(),
+        '/addInventory' : (context) => const NewInventoryItem(),
+        '/inventoryDetail' : (context) => const InventoryDetail(),
+        '/inventoryDetailLow' : (context) => const InventoryDetailLow(),
+        // '/forgetpassword': (context) => const Scene(),
       },
     );
   }
