@@ -910,7 +910,7 @@ class Scene3 extends StatelessWidget {
     onPressed: () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const Scene()),
+        MaterialPageRoute(builder: (context) => const Scene4()),
       );
     },
     child: const Text('Go to Fertilizers'),
