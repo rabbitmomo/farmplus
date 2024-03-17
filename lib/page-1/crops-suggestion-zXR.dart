@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
+class Scene2 extends StatelessWidget {
   const Scene({super.key});
 
   @override
