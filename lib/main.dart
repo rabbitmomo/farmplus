@@ -35,8 +35,8 @@ import 'package:myapp/page-1/notification-page-kx.dart';
 // import 'package:myapp/page-1/information-page.dart';
 import 'package:myapp/page-1/homePage.dart';
 import 'package:myapp/page-1/select-crop-field-page.dart';
-// import 'package:myapp/page-1/crop-management-page.dart';
-// import 'package:myapp/page-1/add-new-field-page.dart';
+import 'package:myapp/page-1/crop-management-page.dart';
+import 'package:myapp/page-1/add-new-field-page.dart';
 // import 'package:myapp/page-1/color-palette.dart';
 // import 'package:myapp/page-1/sample.dart';
 // import 'package:myapp/page-1/persona.dart';
@@ -141,6 +141,8 @@ class MyApp extends StatelessWidget {
         '/notification': (context) => const NotificationPage(),
         // '/order' : (context) => ,
         '/crop': (context) => const SelectCropPage(),
+        '/addCrop' : (context) => const AddField(),
+        '/manageCrop' : (context) => const ManageCrop(),
         '/profile': (context) => const ProfilePage(),
         '/tutorial' : (context) => const tutorialHome(),
         // '/supplychain' : (context) => ,
