@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 
 class Scene2 extends StatelessWidget {
-  const Scene({super.key});
+  const Scene2({super.key});
 
   @override
   Widget build(BuildContext context) {
