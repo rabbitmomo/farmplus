@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 import 'package:crops-suggestion-zXR.dart';
-class Scene extends StatelessWidget {
+class Scene1 extends StatelessWidget {
   const Scene({super.key});
 
   @override
