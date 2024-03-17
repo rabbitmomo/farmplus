@@ -58,10 +58,15 @@ class tutorialHome extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(0*fem, 2.13*fem, 65*fem, 0*fem),
                         width: 18*fem,
                         height: 23.3*fem,
-                        child: Image.asset(
-                          'assets/page-1/images/vector-H48.png',
-                          width: 18*fem,
-                          height: 23.3*fem,
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                          child: Image.asset(
+                            'assets/page-1/images/vector-H48.png',
+                            width: 18*fem,
+                            height: 23.3*fem,
+                          ),
                         ),
                       ),
                       SizedBox(
