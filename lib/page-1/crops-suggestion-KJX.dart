@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
-  const Scene({super.key});
+class Scene6 extends StatelessWidget {
+  const Scene6({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -765,7 +765,7 @@ class Scene extends StatelessWidget {
     onPressed: () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const Scene()),
+        MaterialPageRoute(builder: (context) => const Scene7()),
       );
     },
     child: const Text('Go to Crops Suggestion'),
