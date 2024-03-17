@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 import 'package:crops-suggestion-zXR.dart';
 class Scene1 extends StatelessWidget {
-  const Scene({super.key});
+  const Scene1({super.key});
 
   @override
   Widget build(BuildContext context) {
