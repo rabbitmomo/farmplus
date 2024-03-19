@@ -52,30 +52,30 @@ class _Navbar extends State<Navbar> {
               break;
           }
         },
-        selectedItemColor: Color.fromARGB(255, 23, 116, 41), // Selected item color
+        selectedItemColor: const Color.fromARGB(255, 23, 116, 41), // Selected item color
         unselectedItemColor: Colors.grey.withOpacity(0.5), // Unselected item color
         items: [
           BottomNavigationBarItem(
             icon: _currentIndex == 0
-                ? Icon(Icons.home) // Normal icon for selected item
+                ? const Icon(Icons.home) // Normal icon for selected item
                 : const Icon(Icons.home_outlined), // Outlined icon for unselected item
             label: "Home",
           ),
           BottomNavigationBarItem(
             icon: _currentIndex == 1
-                ? Icon(Icons.shopping_bag) // Normal icon for selected item
+                ? const Icon(Icons.shopping_bag) // Normal icon for selected item
                 : const Icon(Icons.shopping_bag_outlined), // Outlined icon for unselected item
             label: "Order",
           ),
           BottomNavigationBarItem(
             icon: _currentIndex == 2
-                ? Icon(Icons.grass) // Normal icon for selected item
+                ? const Icon(Icons.grass) // Normal icon for selected item
                 : const Icon(Icons.grass_outlined), // Outlined icon for unselected item
             label: "Crop",
           ),
           BottomNavigationBarItem(
             icon: _currentIndex == 3
-                ? Icon(Icons.account_circle) // Normal icon for selected item
+                ? const Icon(Icons.account_circle) // Normal icon for selected item
                 : const Icon(Icons.account_circle_outlined), // Outlined icon for unselected item
             label: "Profile",
           ),
