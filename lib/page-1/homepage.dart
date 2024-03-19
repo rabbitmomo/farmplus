@@ -55,6 +55,26 @@ class HomePageBody extends StatelessWidget {
                           0 * fem, 0 * fem, 0 * fem, 0 * fem),
                       child: TextButton(
                         onPressed: () {
+                          // Navigate to gallery page
+                          Navigator.pushNamed(context, '/gallery');
+                        },
+                        style: TextButton.styleFrom(
+                          padding: EdgeInsets.zero,
+                        ),
+                        child: Container(
+                          child: Image.asset(
+                            'assets/page-1/images/camera5.png',
+                            width: 20 * fem,
+                            height: 20 * fem,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.fromLTRB(
+                          0 * fem, 0 * fem, 0 * fem, 0 * fem),
+                      child: TextButton(
+                        onPressed: () {
                           // Navigate to calendar page
                           Navigator.pushNamed(context, '/calendar');
                         },
@@ -404,7 +424,7 @@ class HomePageBody extends StatelessWidget {
                   ],
                 ),
                 child: Image.asset(
-                  'assets/page-1/images/file115287-1.png',
+                  'assets/page-1/images/croprotation.png',
                   width: 400 * fem,
                   height: 160 * fem,
                   fit: BoxFit.cover,
@@ -430,7 +450,7 @@ class HomePageBody extends StatelessWidget {
                   ],
                 ),
                 child: Image.asset(
-                  'assets/page-1/images/letter-of-donation-sample-1.png',
+                  'assets/page-1/images/plantdonation.png',
                   width: 400 * fem,
                   height: 160 * fem,
                   fit: BoxFit.cover,

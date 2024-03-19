@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:myapp/page-1/galleryPage.dart';
 import 'package:myapp/page-1/tutorialHomePage.dart';
 import 'package:myapp/utils.dart';
 // import 'package:myapp/page-1/rectangle-17409.dart';
@@ -44,7 +45,6 @@ import 'package:myapp/page-1/add-new-field-page.dart';
 // import 'package:myapp/page-1/level-up-farmer-tutorial-page-step-by-step-page-hao.dart';
 // import 'package:myapp/page-1/level-up-farmer-tutorial-page-step-by-step-page-hao-JbR.dart';
 // import 'package:myapp/page-1/guidance-page-hao.dart';
-// import 'package:myapp/page-1/gallery-page-hao.dart';
 // import 'package:myapp/page-1/guidance-page-2-scroll-hao.dart';
 // import 'package:myapp/page-1/guidance-page-3-scroll-hao.dart';
 // import 'package:myapp/page-1/guidance-page-3-scroll-hao-Qwy.dart';
@@ -151,6 +151,7 @@ class MyApp extends StatelessWidget {
         '/addInventory' : (context) => const NewInventoryItem(),
         '/inventoryDetail' : (context) => const InventoryDetail(),
         '/inventoryDetailLow' : (context) => const InventoryDetailLow(),
+        '/gallery':(context)=> const gallery(),
         // '/forgetpassword': (context) => const Scene(),
       },
     );

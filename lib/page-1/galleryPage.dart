@@ -35,10 +35,16 @@ class gallery extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 82*fem, 0.7*fem),
                         width: 18*fem,
                         height: 23.3*fem,
-                        child: Image.asset(
-                          'assets/page-1/images/vector-Pxs.png',
-                          width: 18*fem,
-                          height: 23.3*fem,
+                        child: GestureDetector(
+                          onTap: () {
+                            // Navigate to the previous page
+                            Navigator.pop(context);
+                          },
+                          child: Image.asset(
+                            'assets/page-1/images/vector-Pxs.png',
+                            width: 18*fem,
+                            height: 23.3*fem,
+                          ),
                         ),
                       ),
                       Text(
