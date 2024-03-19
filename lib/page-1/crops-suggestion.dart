@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 import 'package:crops-suggestion-zXR.dart';
+
 class Scene1 extends StatelessWidget {
   const Scene1({super.key});
 
@@ -13,9 +14,9 @@ class Scene1 extends StatelessWidget {
       width: double.infinity,
       child: Container(
         // cropssuggestion6es (254:355)
-        padding: EdgeInsets.fromLTRB(14*fem, 20*fem, 21*fem, 21*fem),
+        padding: EdgeInsets.fromLTRB(14 * fem, 20 * fem, 21 * fem, 21 * fem),
         width: double.infinity,
-        decoration: const BoxDecoration (
+        decoration: const BoxDecoration(
           color: Color(0xffffffff),
         ),
         child: Column(
@@ -23,30 +24,32 @@ class Scene1 extends StatelessWidget {
           children: [
             Container(
               // autogroupn24dw9h (MuuXPrbsBDfETEQePvn24D)
-              margin: EdgeInsets.fromLTRB(24*fem, 0*fem, 63*fem, 27*fem),
+              margin:
+                  EdgeInsets.fromLTRB(24 * fem, 0 * fem, 63 * fem, 27 * fem),
               width: double.infinity,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
                     // vectorcFq (254:356)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 35*fem, 0*fem),
-                    width: 12*fem,
-                    height: 18*fem,
+                    margin: EdgeInsets.fromLTRB(
+                        0 * fem, 0 * fem, 35 * fem, 0 * fem),
+                    width: 12 * fem,
+                    height: 18 * fem,
                     child: Image.asset(
                       'assets/page-1/images/vector-WAj.png',
-                      width: 12*fem,
-                      height: 18*fem,
+                      width: 12 * fem,
+                      height: 18 * fem,
                     ),
                   ),
                   Text(
                     // cropsandfertilizerTnF (254:357)
                     'Crops and fertilizer',
-                    style: SafeGoogleFont (
+                    style: SafeGoogleFont(
                       'Poppins',
-                      fontSize: 20*ffem,
+                      fontSize: 20 * ffem,
                       fontWeight: FontWeight.w500,
-                      height: 1.5*ffem/fem,
+                      height: 1.5 * ffem / fem,
                       color: const Color(0xff4c9a2a),
                     ),
                   ),
@@ -55,87 +58,92 @@ class Scene1 extends StatelessWidget {
             ),
             Container(
               // group63Lb9 (254:358)
-              margin: EdgeInsets.fromLTRB(6*fem, 0*fem, 0*fem, 14*fem),
-              padding: EdgeInsets.fromLTRB(95.02*fem, 7*fem, 36.94*fem, 7*fem),
+              margin: EdgeInsets.fromLTRB(6 * fem, 0 * fem, 0 * fem, 14 * fem),
+              padding: EdgeInsets.fromLTRB(
+                  95.02 * fem, 7 * fem, 36.94 * fem, 7 * fem),
               width: double.infinity,
-              decoration: BoxDecoration (
+              decoration: BoxDecoration(
                 color: const Color(0xffeaf5e7),
-                borderRadius: BorderRadius.circular(20*fem),
+                borderRadius: BorderRadius.circular(20 * fem),
               ),
-             GestureDetector(
-   onTap: () {
-    // Navigate to the 'crops-suggestion-zXR' screen or file
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const Scene()),
-    );
-  },
-  child: Container(
-    // cabbagelettuce4xMd (254:365)
-    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 47.08*fem, 0*fem),
-    child: Text(
-      'Cabbage & Lettuce (4)',
-      textAlign: TextAlign.center,
-      style: SafeGoogleFont (
-        'Roboto',
-        fontSize: 14*ffem,
-        fontWeight: FontWeight.w300,
-        height: 1.5714285714*ffem/fem,
-        letterSpacing: -0.4099999964*fem,
-        color: const Color(0xff013220),
-      ),
-    ),
-  ),
-),
-                  SizedBox(
-                    // vectorNgF (254:375)
-                    width: 11.96*fem,
-                    height: 6*fem,
-                    child: Image.asset(
-                      'assets/page-1/images/vector-GNb.png',
-                      width: 11.96*fem,
-                      height: 6*fem,
+              child: GestureDetector(
+                onTap: () {
+                  // Navigate to the 'crops-suggestion-zXR' screen or file
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Scene()),
+                  );
+                },
+                child: Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.fromLTRB(
+                          0 * fem, 0 * fem, 47.08 * fem, 0 * fem),
+                      child: Text(
+                        'Cabbage & Lettuce (4)',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontFamily: 'Roboto',
+                          fontSize: 14 * ffem,
+                          fontWeight: FontWeight.w300,
+                          height: 1.5714285714 * ffem / fem,
+                          letterSpacing: -0.4099999964 * fem,
+                          color: const Color(0xff013220),
+                        ),
+                      ),
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      width: 11.96 * fem,
+                      height: 6 * fem,
+                      child: Image.asset(
+                        'assets/page-1/images/vector-GNb.png',
+                        width: 11.96 * fem,
+                        height: 6 * fem,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
             Container(
               // group64H2X (254:371)
-              margin: EdgeInsets.fromLTRB(3*fem, 0*fem, 3*fem, 21*fem),
-              padding: EdgeInsets.fromLTRB(15*fem, 8*fem, 142*fem, 8*fem),
+              margin: EdgeInsets.fromLTRB(3 * fem, 0 * fem, 3 * fem, 21 * fem),
+              padding:
+                  EdgeInsets.fromLTRB(15 * fem, 8 * fem, 142 * fem, 8 * fem),
               width: double.infinity,
-              decoration: BoxDecoration (
+              decoration: BoxDecoration(
                 color: const Color(0xfff1f1f1),
-                borderRadius: BorderRadius.circular(20*fem),
+                borderRadius: BorderRadius.circular(20 * fem),
               ),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
                     // vectorVeP (254:374)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 107*fem, 0*fem),
-                    width: 20*fem,
-                    height: 20*fem,
+                    margin: EdgeInsets.fromLTRB(
+                        0 * fem, 0 * fem, 107 * fem, 0 * fem),
+                    width: 20 * fem,
+                    height: 20 * fem,
                     child: Image.asset(
                       'assets/page-1/images/vector-2pX.png',
-                      width: 20*fem,
-                      height: 20*fem,
+                      width: 20 * fem,
+                      height: 20 * fem,
                     ),
                   ),
                   Center(
                     // searchAVd (254:373)
                     child: Container(
-                      margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 0*fem),
+                      margin: EdgeInsets.fromLTRB(
+                          0 * fem, 1 * fem, 0 * fem, 0 * fem),
                       child: Text(
                         'Search',
                         textAlign: TextAlign.center,
-                        style: SafeGoogleFont (
+                        style: SafeGoogleFont(
                           'Roboto Flex',
-                          fontSize: 12*ffem,
+                          fontSize: 12 * ffem,
                           fontWeight: FontWeight.w400,
-                          height: 1.5*ffem/fem,
-                          letterSpacing: -0.4099999964*fem,
+                          height: 1.5 * ffem / fem,
+                          letterSpacing: -0.4099999964 * fem,
                           color: const Color(0xffadadad),
                         ),
                       ),
@@ -146,33 +154,36 @@ class Scene1 extends StatelessWidget {
             ),
             Container(
               // frame427319674p4P (257:465)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 115*fem),
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 115 * fem),
               width: double.infinity,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
                     // autogroup1xkvhts (MuuY8qNFc17UcGAzkh1xkV)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 15*fem),
+                    margin: EdgeInsets.fromLTRB(
+                        0 * fem, 0 * fem, 0 * fem, 15 * fem),
                     width: double.infinity,
-                    height: 200*fem,
+                    height: 200 * fem,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
                           // group101bUT (257:466)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 15*fem, 0*fem),
-                          padding: EdgeInsets.fromLTRB(27.5*fem, 18*fem, 26.5*fem, 11*fem),
-                          width: 155*fem,
+                          margin: EdgeInsets.fromLTRB(
+                              0 * fem, 0 * fem, 15 * fem, 0 * fem),
+                          padding: EdgeInsets.fromLTRB(
+                              27.5 * fem, 18 * fem, 26.5 * fem, 11 * fem),
+                          width: 155 * fem,
                           height: double.infinity,
-                          decoration: BoxDecoration (
+                          decoration: BoxDecoration(
                             color: const Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(8*fem),
+                            borderRadius: BorderRadius.circular(8 * fem),
                             boxShadow: [
                               BoxShadow(
                                 color: const Color(0x19194837),
-                                offset: Offset(0*fem, 0*fem),
-                                blurRadius: 6*fem,
+                                offset: Offset(0 * fem, 0 * fem),
+                                blurRadius: 6 * fem,
                               ),
                             ],
                           ),
@@ -181,11 +192,12 @@ class Scene1 extends StatelessWidget {
                             children: [
                               Container(
                                 // rectangle69arB (257:468)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 11*fem),
-                                width: 101*fem,
-                                height: 97*fem,
+                                margin: EdgeInsets.fromLTRB(
+                                    0 * fem, 0 * fem, 0 * fem, 11 * fem),
+                                width: 101 * fem,
+                                height: 97 * fem,
                                 child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(5*fem),
+                                  borderRadius: BorderRadius.circular(5 * fem),
                                   child: Image.asset(
                                     'assets/page-1/images/rectangle-69-575.png',
                                     fit: BoxFit.cover,
@@ -194,29 +206,32 @@ class Scene1 extends StatelessWidget {
                               ),
                               Container(
                                 // autogroup7mhweLF (MuuYSk25cfPFB2QeEg7mhw)
-                                margin: EdgeInsets.fromLTRB(2.5*fem, 0*fem, 1.5*fem, 0*fem),
+                                margin: EdgeInsets.fromLTRB(
+                                    2.5 * fem, 0 * fem, 1.5 * fem, 0 * fem),
                                 width: double.infinity,
-                                height: 41*fem,
+                                height: 41 * fem,
                                 child: Stack(
                                   children: [
                                     Positioned(
                                       // bostonlettuceYAj (257:469)
-                                      left: 0*fem,
-                                      top: 0*fem,
+                                      left: 0 * fem,
+                                      top: 0 * fem,
                                       child: Center(
                                         child: Align(
                                           child: SizedBox(
-                                            width: 97*fem,
-                                            height: 22*fem,
+                                            width: 97 * fem,
+                                            height: 22 * fem,
                                             child: Text(
                                               'Boston Lettuce',
                                               textAlign: TextAlign.center,
-                                              style: SafeGoogleFont (
+                                              style: SafeGoogleFont(
                                                 'Poppins',
-                                                fontSize: 14*ffem,
+                                                fontSize: 14 * ffem,
                                                 fontWeight: FontWeight.w400,
-                                                height: 1.5714285714*ffem/fem,
-                                                letterSpacing: -0.4099999964*fem,
+                                                height:
+                                                    1.5714285714 * ffem / fem,
+                                                letterSpacing:
+                                                    -0.4099999964 * fem,
                                                 color: const Color(0xff5c6a65),
                                               ),
                                             ),
@@ -226,21 +241,22 @@ class Scene1 extends StatelessWidget {
                                     ),
                                     Positioned(
                                       // lettuceZbd (257:524)
-                                      left: 25.5199203491*fem,
-                                      top: 19*fem,
+                                      left: 25.5199203491 * fem,
+                                      top: 19 * fem,
                                       child: Align(
                                         child: SizedBox(
-                                          width: 43*fem,
-                                          height: 22*fem,
+                                          width: 43 * fem,
+                                          height: 22 * fem,
                                           child: Text(
                                             'Lettuce',
                                             textAlign: TextAlign.center,
-                                            style: SafeGoogleFont (
+                                            style: SafeGoogleFont(
                                               'Roboto',
-                                              fontSize: 14*ffem,
+                                              fontSize: 14 * ffem,
                                               fontWeight: FontWeight.w300,
-                                              height: 1.5714285714*ffem/fem,
-                                              letterSpacing: -0.4099999964*fem,
+                                              height: 1.5714285714 * ffem / fem,
+                                              letterSpacing:
+                                                  -0.4099999964 * fem,
                                               color: const Color(0xffb8b8b8),
                                             ),
                                           ),
@@ -253,49 +269,50 @@ class Scene1 extends StatelessWidget {
                               Center(
                                 // rm5301kgmxb (257:470)
                                 child: Container(
-                                  margin: EdgeInsets.fromLTRB(1*fem, 0*fem, 0*fem, 0*fem),
+                                  margin: EdgeInsets.fromLTRB(
+                                      1 * fem, 0 * fem, 0 * fem, 0 * fem),
                                   child: RichText(
                                     textAlign: TextAlign.center,
                                     text: TextSpan(
-                                      style: SafeGoogleFont (
+                                      style: SafeGoogleFont(
                                         'Poppins',
-                                        fontSize: 14*ffem,
+                                        fontSize: 14 * ffem,
                                         fontWeight: FontWeight.w400,
-                                        height: 1.5714285714*ffem/fem,
-                                        letterSpacing: -0.4099999964*fem,
+                                        height: 1.5714285714 * ffem / fem,
+                                        letterSpacing: -0.4099999964 * fem,
                                         color: const Color(0xff5c6a65),
                                       ),
                                       children: [
                                         TextSpan(
                                           text: 'RM 5.30',
-                                          style: SafeGoogleFont (
+                                          style: SafeGoogleFont(
                                             'Poppins',
-                                            fontSize: 14*ffem,
+                                            fontSize: 14 * ffem,
                                             fontWeight: FontWeight.w500,
-                                            height: 1.5714285714*ffem/fem,
-                                            letterSpacing: -0.4099999964*fem,
+                                            height: 1.5714285714 * ffem / fem,
+                                            letterSpacing: -0.4099999964 * fem,
                                             color: const Color(0xff50a04a),
                                           ),
                                         ),
                                         TextSpan(
                                           text: ' ',
-                                          style: SafeGoogleFont (
+                                          style: SafeGoogleFont(
                                             'Poppins',
-                                            fontSize: 14*ffem,
+                                            fontSize: 14 * ffem,
                                             fontWeight: FontWeight.w500,
-                                            height: 1.5714285714*ffem/fem,
-                                            letterSpacing: -0.4099999964*fem,
+                                            height: 1.5714285714 * ffem / fem,
+                                            letterSpacing: -0.4099999964 * fem,
                                             color: const Color(0xff5c6a65),
                                           ),
                                         ),
                                         TextSpan(
                                           text: '/1kg',
-                                          style: SafeGoogleFont (
+                                          style: SafeGoogleFont(
                                             'Poppins',
-                                            fontSize: 14*ffem,
+                                            fontSize: 14 * ffem,
                                             fontWeight: FontWeight.w300,
-                                            height: 1.5714285714*ffem/fem,
-                                            letterSpacing: -0.4099999964*fem,
+                                            height: 1.5714285714 * ffem / fem,
+                                            letterSpacing: -0.4099999964 * fem,
                                             color: const Color(0xffb6b6b6),
                                           ),
                                         ),
@@ -309,17 +326,18 @@ class Scene1 extends StatelessWidget {
                         ),
                         Container(
                           // group102hv7 (257:525)
-                          padding: EdgeInsets.fromLTRB(18*fem, 18*fem, 28*fem, 11*fem),
-                          width: 155*fem,
+                          padding: EdgeInsets.fromLTRB(
+                              18 * fem, 18 * fem, 28 * fem, 11 * fem),
+                          width: 155 * fem,
                           height: double.infinity,
-                          decoration: BoxDecoration (
+                          decoration: BoxDecoration(
                             color: const Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(8*fem),
+                            borderRadius: BorderRadius.circular(8 * fem),
                             boxShadow: [
                               BoxShadow(
                                 color: const Color(0x19194837),
-                                offset: Offset(0*fem, 0*fem),
-                                blurRadius: 6*fem,
+                                offset: Offset(0 * fem, 0 * fem),
+                                blurRadius: 6 * fem,
                               ),
                             ],
                           ),
@@ -328,11 +346,12 @@ class Scene1 extends StatelessWidget {
                             children: [
                               Container(
                                 // rectangle71X8T (262:125)
-                                margin: EdgeInsets.fromLTRB(10*fem, 0*fem, 0*fem, 19*fem),
-                                width: 99*fem,
-                                height: 89*fem,
+                                margin: EdgeInsets.fromLTRB(
+                                    10 * fem, 0 * fem, 0 * fem, 19 * fem),
+                                width: 99 * fem,
+                                height: 89 * fem,
                                 child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(5*fem),
+                                  borderRadius: BorderRadius.circular(5 * fem),
                                   child: Image.asset(
                                     'assets/page-1/images/rectangle-71.png',
                                     fit: BoxFit.cover,
@@ -341,29 +360,32 @@ class Scene1 extends StatelessWidget {
                               ),
                               Container(
                                 // autogroupskn5N95 (MuuYreVv4MxATWhnBqSKN5)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 0*fem),
-                                width: 108*fem,
-                                height: 41*fem,
+                                margin: EdgeInsets.fromLTRB(
+                                    0 * fem, 0 * fem, 1 * fem, 0 * fem),
+                                width: 108 * fem,
+                                height: 41 * fem,
                                 child: Stack(
                                   children: [
                                     Positioned(
                                       // savoycabbagerK9 (257:528)
-                                      left: 0*fem,
-                                      top: 0*fem,
+                                      left: 0 * fem,
+                                      top: 0 * fem,
                                       child: Center(
                                         child: Align(
                                           child: SizedBox(
-                                            width: 108*fem,
-                                            height: 22*fem,
+                                            width: 108 * fem,
+                                            height: 22 * fem,
                                             child: Text(
                                               'Savoy Cabbage',
                                               textAlign: TextAlign.center,
-                                              style: SafeGoogleFont (
+                                              style: SafeGoogleFont(
                                                 'Poppins',
-                                                fontSize: 14*ffem,
+                                                fontSize: 14 * ffem,
                                                 fontWeight: FontWeight.w400,
-                                                height: 1.5714285714*ffem/fem,
-                                                letterSpacing: -0.4099999964*fem,
+                                                height:
+                                                    1.5714285714 * ffem / fem,
+                                                letterSpacing:
+                                                    -0.4099999964 * fem,
                                                 color: const Color(0xff5c6b66),
                                               ),
                                             ),
@@ -373,21 +395,22 @@ class Scene1 extends StatelessWidget {
                                     ),
                                     Positioned(
                                       // cabbageTpj (257:530)
-                                      left: 33.0199203491*fem,
-                                      top: 19*fem,
+                                      left: 33.0199203491 * fem,
+                                      top: 19 * fem,
                                       child: Align(
                                         child: SizedBox(
-                                          width: 52*fem,
-                                          height: 22*fem,
+                                          width: 52 * fem,
+                                          height: 22 * fem,
                                           child: Text(
                                             'Cabbage',
                                             textAlign: TextAlign.center,
-                                            style: SafeGoogleFont (
+                                            style: SafeGoogleFont(
                                               'Roboto',
-                                              fontSize: 14*ffem,
+                                              fontSize: 14 * ffem,
                                               fontWeight: FontWeight.w300,
-                                              height: 1.5714285714*ffem/fem,
-                                              letterSpacing: -0.4099999964*fem,
+                                              height: 1.5714285714 * ffem / fem,
+                                              letterSpacing:
+                                                  -0.4099999964 * fem,
                                               color: const Color(0xffb8b8b8),
                                             ),
                                           ),
@@ -400,49 +423,50 @@ class Scene1 extends StatelessWidget {
                               Center(
                                 // rm3001kg6co (257:529)
                                 child: Container(
-                                  margin: EdgeInsets.fromLTRB(12*fem, 0*fem, 0*fem, 0*fem),
+                                  margin: EdgeInsets.fromLTRB(
+                                      12 * fem, 0 * fem, 0 * fem, 0 * fem),
                                   child: RichText(
                                     textAlign: TextAlign.center,
                                     text: TextSpan(
-                                      style: SafeGoogleFont (
+                                      style: SafeGoogleFont(
                                         'Poppins',
-                                        fontSize: 14*ffem,
+                                        fontSize: 14 * ffem,
                                         fontWeight: FontWeight.w400,
-                                        height: 1.5714285714*ffem/fem,
-                                        letterSpacing: -0.4099999964*fem,
+                                        height: 1.5714285714 * ffem / fem,
+                                        letterSpacing: -0.4099999964 * fem,
                                         color: const Color(0xff5c6a65),
                                       ),
                                       children: [
                                         TextSpan(
                                           text: 'RM 3.00',
-                                          style: SafeGoogleFont (
+                                          style: SafeGoogleFont(
                                             'Poppins',
-                                            fontSize: 14*ffem,
+                                            fontSize: 14 * ffem,
                                             fontWeight: FontWeight.w500,
-                                            height: 1.5714285714*ffem/fem,
-                                            letterSpacing: -0.4099999964*fem,
+                                            height: 1.5714285714 * ffem / fem,
+                                            letterSpacing: -0.4099999964 * fem,
                                             color: const Color(0xff50a04a),
                                           ),
                                         ),
                                         TextSpan(
                                           text: ' ',
-                                          style: SafeGoogleFont (
+                                          style: SafeGoogleFont(
                                             'Poppins',
-                                            fontSize: 14*ffem,
+                                            fontSize: 14 * ffem,
                                             fontWeight: FontWeight.w500,
-                                            height: 1.5714285714*ffem/fem,
-                                            letterSpacing: -0.4099999964*fem,
+                                            height: 1.5714285714 * ffem / fem,
+                                            letterSpacing: -0.4099999964 * fem,
                                             color: const Color(0xff5c6a65),
                                           ),
                                         ),
                                         TextSpan(
                                           text: '/1kg',
-                                          style: SafeGoogleFont (
+                                          style: SafeGoogleFont(
                                             'Poppins',
-                                            fontSize: 14*ffem,
+                                            fontSize: 14 * ffem,
                                             fontWeight: FontWeight.w300,
-                                            height: 1.5714285714*ffem/fem,
-                                            letterSpacing: -0.4099999964*fem,
+                                            height: 1.5714285714 * ffem / fem,
+                                            letterSpacing: -0.4099999964 * fem,
                                             color: const Color(0xffb6b6b6),
                                           ),
                                         ),
@@ -460,24 +484,26 @@ class Scene1 extends StatelessWidget {
                   SizedBox(
                     // autogroup3mjsg79 (MuuZ6Jmpbcr7mDjHb53mjs)
                     width: double.infinity,
-                    height: 200*fem,
+                    height: 200 * fem,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
                           // group103nAB (257:531)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 15*fem, 0*fem),
-                          padding: EdgeInsets.fromLTRB(22.5*fem, 129*fem, 13.5*fem, 11*fem),
-                          width: 155*fem,
+                          margin: EdgeInsets.fromLTRB(
+                              0 * fem, 0 * fem, 15 * fem, 0 * fem),
+                          padding: EdgeInsets.fromLTRB(
+                              22.5 * fem, 129 * fem, 13.5 * fem, 11 * fem),
+                          width: 155 * fem,
                           height: double.infinity,
-                          decoration: BoxDecoration (
+                          decoration: BoxDecoration(
                             color: const Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(8*fem),
+                            borderRadius: BorderRadius.circular(8 * fem),
                             boxShadow: [
                               BoxShadow(
                                 color: const Color(0x19194837),
-                                offset: Offset(0*fem, 0*fem),
-                                blurRadius: 6*fem,
+                                offset: Offset(0 * fem, 0 * fem),
+                                blurRadius: 6 * fem,
                               ),
                             ],
                           ),
@@ -487,27 +513,29 @@ class Scene1 extends StatelessWidget {
                               SizedBox(
                                 // autogroupa1edMMh (MuuZMPB2xgCg9wpqgZA1eD)
                                 width: double.infinity,
-                                height: 38*fem,
+                                height: 38 * fem,
                                 child: Stack(
                                   children: [
                                     Positioned(
                                       // purplecauliflower4G7 (257:534)
-                                      left: 0*fem,
-                                      top: 0*fem,
+                                      left: 0 * fem,
+                                      top: 0 * fem,
                                       child: Center(
                                         child: Align(
                                           child: SizedBox(
-                                            width: 119*fem,
-                                            height: 22*fem,
+                                            width: 119 * fem,
+                                            height: 22 * fem,
                                             child: Text(
                                               'Purple Cauliflower',
                                               textAlign: TextAlign.center,
-                                              style: SafeGoogleFont (
+                                              style: SafeGoogleFont(
                                                 'Poppins',
-                                                fontSize: 14*ffem,
+                                                fontSize: 14 * ffem,
                                                 fontWeight: FontWeight.w400,
-                                                height: 1.5714285714*ffem/fem,
-                                                letterSpacing: -0.4099999964*fem,
+                                                height:
+                                                    1.5714285714 * ffem / fem,
+                                                letterSpacing:
+                                                    -0.4099999964 * fem,
                                                 color: const Color(0xff5c6b66),
                                               ),
                                             ),
@@ -517,21 +545,22 @@ class Scene1 extends StatelessWidget {
                                     ),
                                     Positioned(
                                       // cabbage5BD (257:536)
-                                      left: 28.5199203491*fem,
-                                      top: 16*fem,
+                                      left: 28.5199203491 * fem,
+                                      top: 16 * fem,
                                       child: Align(
                                         child: SizedBox(
-                                          width: 52*fem,
-                                          height: 22*fem,
+                                          width: 52 * fem,
+                                          height: 22 * fem,
                                           child: Text(
                                             'Cabbage',
                                             textAlign: TextAlign.center,
-                                            style: SafeGoogleFont (
+                                            style: SafeGoogleFont(
                                               'Roboto',
-                                              fontSize: 14*ffem,
+                                              fontSize: 14 * ffem,
                                               fontWeight: FontWeight.w300,
-                                              height: 1.5714285714*ffem/fem,
-                                              letterSpacing: -0.4099999964*fem,
+                                              height: 1.5714285714 * ffem / fem,
+                                              letterSpacing:
+                                                  -0.4099999964 * fem,
                                               color: const Color(0xffb8b8b8),
                                             ),
                                           ),
@@ -544,49 +573,50 @@ class Scene1 extends StatelessWidget {
                               Center(
                                 // rm5001kgJZm (257:535)
                                 child: Container(
-                                  margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 7*fem, 0*fem),
+                                  margin: EdgeInsets.fromLTRB(
+                                      0 * fem, 0 * fem, 7 * fem, 0 * fem),
                                   child: RichText(
                                     textAlign: TextAlign.center,
                                     text: TextSpan(
-                                      style: SafeGoogleFont (
+                                      style: SafeGoogleFont(
                                         'Poppins',
-                                        fontSize: 14*ffem,
+                                        fontSize: 14 * ffem,
                                         fontWeight: FontWeight.w400,
-                                        height: 1.5714285714*ffem/fem,
-                                        letterSpacing: -0.4099999964*fem,
+                                        height: 1.5714285714 * ffem / fem,
+                                        letterSpacing: -0.4099999964 * fem,
                                         color: const Color(0xff5c6a65),
                                       ),
                                       children: [
                                         TextSpan(
                                           text: 'RM 5.00',
-                                          style: SafeGoogleFont (
+                                          style: SafeGoogleFont(
                                             'Poppins',
-                                            fontSize: 14*ffem,
+                                            fontSize: 14 * ffem,
                                             fontWeight: FontWeight.w500,
-                                            height: 1.5714285714*ffem/fem,
-                                            letterSpacing: -0.4099999964*fem,
+                                            height: 1.5714285714 * ffem / fem,
+                                            letterSpacing: -0.4099999964 * fem,
                                             color: const Color(0xff50a04a),
                                           ),
                                         ),
                                         TextSpan(
                                           text: ' ',
-                                          style: SafeGoogleFont (
+                                          style: SafeGoogleFont(
                                             'Poppins',
-                                            fontSize: 14*ffem,
+                                            fontSize: 14 * ffem,
                                             fontWeight: FontWeight.w500,
-                                            height: 1.5714285714*ffem/fem,
-                                            letterSpacing: -0.4099999964*fem,
+                                            height: 1.5714285714 * ffem / fem,
+                                            letterSpacing: -0.4099999964 * fem,
                                             color: const Color(0xff5c6a65),
                                           ),
                                         ),
                                         TextSpan(
                                           text: '/1kg',
-                                          style: SafeGoogleFont (
+                                          style: SafeGoogleFont(
                                             'Poppins',
-                                            fontSize: 14*ffem,
+                                            fontSize: 14 * ffem,
                                             fontWeight: FontWeight.w300,
-                                            height: 1.5714285714*ffem/fem,
-                                            letterSpacing: -0.4099999964*fem,
+                                            height: 1.5714285714 * ffem / fem,
+                                            letterSpacing: -0.4099999964 * fem,
                                             color: const Color(0xffb6b6b6),
                                           ),
                                         ),
@@ -600,17 +630,18 @@ class Scene1 extends StatelessWidget {
                         ),
                         Container(
                           // group104rWj (257:537)
-                          padding: EdgeInsets.fromLTRB(28*fem, 26*fem, 17*fem, 11*fem),
-                          width: 155*fem,
+                          padding: EdgeInsets.fromLTRB(
+                              28 * fem, 26 * fem, 17 * fem, 11 * fem),
+                          width: 155 * fem,
                           height: double.infinity,
-                          decoration: BoxDecoration (
+                          decoration: BoxDecoration(
                             color: const Color(0xffffffff),
-                            borderRadius: BorderRadius.circular(8*fem),
+                            borderRadius: BorderRadius.circular(8 * fem),
                             boxShadow: [
                               BoxShadow(
                                 color: const Color(0x19194837),
-                                offset: Offset(0*fem, 0*fem),
-                                blurRadius: 6*fem,
+                                offset: Offset(0 * fem, 0 * fem),
+                                blurRadius: 6 * fem,
                               ),
                             ],
                           ),
@@ -619,11 +650,12 @@ class Scene1 extends StatelessWidget {
                             children: [
                               Container(
                                 // rectangle17412fj5 (262:133)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 10*fem, 7*fem),
-                                width: 100*fem,
-                                height: 93*fem,
+                                margin: EdgeInsets.fromLTRB(
+                                    0 * fem, 0 * fem, 10 * fem, 7 * fem),
+                                width: 100 * fem,
+                                height: 93 * fem,
                                 child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(5*fem),
+                                  borderRadius: BorderRadius.circular(5 * fem),
                                   child: Image.asset(
                                     'assets/page-1/images/rectangle-17412.png',
                                     fit: BoxFit.cover,
@@ -632,29 +664,32 @@ class Scene1 extends StatelessWidget {
                               ),
                               Container(
                                 // autogroup7jwqXFV (MuuZrTAvzpuvE2jCsT7JWq)
-                                margin: EdgeInsets.fromLTRB(1*fem, 0*fem, 0*fem, 0*fem),
-                                width: 109*fem,
-                                height: 41*fem,
+                                margin: EdgeInsets.fromLTRB(
+                                    1 * fem, 0 * fem, 0 * fem, 0 * fem),
+                                width: 109 * fem,
+                                height: 41 * fem,
                                 child: Stack(
                                   children: [
                                     Positioned(
                                       // purplecabbagepEb (257:540)
-                                      left: 0*fem,
-                                      top: 0*fem,
+                                      left: 0 * fem,
+                                      top: 0 * fem,
                                       child: Center(
                                         child: Align(
                                           child: SizedBox(
-                                            width: 109*fem,
-                                            height: 22*fem,
+                                            width: 109 * fem,
+                                            height: 22 * fem,
                                             child: Text(
                                               'Purple Cabbage',
                                               textAlign: TextAlign.center,
-                                              style: SafeGoogleFont (
+                                              style: SafeGoogleFont(
                                                 'Poppins',
-                                                fontSize: 14*ffem,
+                                                fontSize: 14 * ffem,
                                                 fontWeight: FontWeight.w400,
-                                                height: 1.5714285714*ffem/fem,
-                                                letterSpacing: -0.4099999964*fem,
+                                                height:
+                                                    1.5714285714 * ffem / fem,
+                                                letterSpacing:
+                                                    -0.4099999964 * fem,
                                                 color: const Color(0xff5c6b66),
                                               ),
                                             ),
@@ -664,21 +699,22 @@ class Scene1 extends StatelessWidget {
                                     ),
                                     Positioned(
                                       // cabbage37M (257:542)
-                                      left: 22.0199203491*fem,
-                                      top: 19*fem,
+                                      left: 22.0199203491 * fem,
+                                      top: 19 * fem,
                                       child: Align(
                                         child: SizedBox(
-                                          width: 52*fem,
-                                          height: 22*fem,
+                                          width: 52 * fem,
+                                          height: 22 * fem,
                                           child: Text(
                                             'Cabbage',
                                             textAlign: TextAlign.center,
-                                            style: SafeGoogleFont (
+                                            style: SafeGoogleFont(
                                               'Roboto',
-                                              fontSize: 14*ffem,
+                                              fontSize: 14 * ffem,
                                               fontWeight: FontWeight.w300,
-                                              height: 1.5714285714*ffem/fem,
-                                              letterSpacing: -0.4099999964*fem,
+                                              height: 1.5714285714 * ffem / fem,
+                                              letterSpacing:
+                                                  -0.4099999964 * fem,
                                               color: const Color(0xffb8b8b8),
                                             ),
                                           ),
@@ -691,49 +727,50 @@ class Scene1 extends StatelessWidget {
                               Center(
                                 // rm3001kgUTZ (257:541)
                                 child: Container(
-                                  margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
+                                  margin: EdgeInsets.fromLTRB(
+                                      0 * fem, 0 * fem, 9 * fem, 0 * fem),
                                   child: RichText(
                                     textAlign: TextAlign.center,
                                     text: TextSpan(
-                                      style: SafeGoogleFont (
+                                      style: SafeGoogleFont(
                                         'Poppins',
-                                        fontSize: 14*ffem,
+                                        fontSize: 14 * ffem,
                                         fontWeight: FontWeight.w400,
-                                        height: 1.5714285714*ffem/fem,
-                                        letterSpacing: -0.4099999964*fem,
+                                        height: 1.5714285714 * ffem / fem,
+                                        letterSpacing: -0.4099999964 * fem,
                                         color: const Color(0xff5c6a65),
                                       ),
                                       children: [
                                         TextSpan(
                                           text: 'RM 3.00',
-                                          style: SafeGoogleFont (
+                                          style: SafeGoogleFont(
                                             'Poppins',
-                                            fontSize: 14*ffem,
+                                            fontSize: 14 * ffem,
                                             fontWeight: FontWeight.w500,
-                                            height: 1.5714285714*ffem/fem,
-                                            letterSpacing: -0.4099999964*fem,
+                                            height: 1.5714285714 * ffem / fem,
+                                            letterSpacing: -0.4099999964 * fem,
                                             color: const Color(0xff50a04a),
                                           ),
                                         ),
                                         TextSpan(
                                           text: ' ',
-                                          style: SafeGoogleFont (
+                                          style: SafeGoogleFont(
                                             'Poppins',
-                                            fontSize: 14*ffem,
+                                            fontSize: 14 * ffem,
                                             fontWeight: FontWeight.w500,
-                                            height: 1.5714285714*ffem/fem,
-                                            letterSpacing: -0.4099999964*fem,
+                                            height: 1.5714285714 * ffem / fem,
+                                            letterSpacing: -0.4099999964 * fem,
                                             color: const Color(0xff5c6a65),
                                           ),
                                         ),
                                         TextSpan(
                                           text: '/1kg',
-                                          style: SafeGoogleFont (
+                                          style: SafeGoogleFont(
                                             'Poppins',
-                                            fontSize: 14*ffem,
+                                            fontSize: 14 * ffem,
                                             fontWeight: FontWeight.w300,
-                                            height: 1.5714285714*ffem/fem,
-                                            letterSpacing: -0.4099999964*fem,
+                                            height: 1.5714285714 * ffem / fem,
+                                            letterSpacing: -0.4099999964 * fem,
                                             color: const Color(0xffb6b6b6),
                                           ),
                                         ),
@@ -753,28 +790,29 @@ class Scene1 extends StatelessWidget {
             ),
             Container(
               // cartsGj (257:461)
-              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 252*fem, 0*fem),
-              padding: EdgeInsets.fromLTRB(19*fem, 18*fem, 18*fem, 18.54*fem),
-              decoration: BoxDecoration (
+              margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 252 * fem, 0 * fem),
+              padding: EdgeInsets.fromLTRB(
+                  19 * fem, 18 * fem, 18 * fem, 18.54 * fem),
+              decoration: BoxDecoration(
                 color: const Color(0xff10533a),
-                borderRadius: BorderRadius.circular(32.5*fem),
+                borderRadius: BorderRadius.circular(32.5 * fem),
                 boxShadow: [
                   BoxShadow(
                     color: const Color(0x3f000000),
-                    offset: Offset(0*fem, 4*fem),
-                    blurRadius: 2*fem,
+                    offset: Offset(0 * fem, 4 * fem),
+                    blurRadius: 2 * fem,
                   ),
                 ],
               ),
               child: Center(
                 // vectorV3D (257:460)
                 child: SizedBox(
-                  width: 28*fem,
-                  height: 28.46*fem,
+                  width: 28 * fem,
+                  height: 28.46 * fem,
                   child: Image.asset(
                     'assets/page-1/images/vector-Ss9.png',
-                    width: 28*fem,
-                    height: 28.46*fem,
+                    width: 28 * fem,
+                    height: 28.46 * fem,
                   ),
                 ),
               ),
@@ -782,6 +820,6 @@ class Scene1 extends StatelessWidget {
           ],
         ),
       ),
-          )
+    );
   }
 }
