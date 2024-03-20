@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/page-1/marketing.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/components/navbar.dart';
 
@@ -229,55 +230,57 @@ class ProfilePageBody extends StatelessWidget {
                                             3 * fem, 95 * fem, 3 * fem),
                                         width: 112 * fem,
                                         height: double.infinity,
-                                        child: Stack(
-                                          children: [
-                                            Positioned(
-                                              // aboutfarmplusHr7 (449:197)
-                                              left: 0 * fem,
-                                              top: 0 * fem,
-                                              child: Align(
-                                                child: SizedBox(
-                                                  width: 109 * fem,
-                                                  height: 17 * fem,
-                                                  child: Text(
-                                                    'About FarmPlus+',
-                                                    style: SafeGoogleFont(
-                                                      'Fredoka',
-                                                      fontSize: 14 * ffem,
-                                                      fontWeight:
-                                                          FontWeight.w400,
-                                                      height: 1.21 * ffem / fem,
-                                                      color: const Color(
-                                                          0xff5e5e5e),
+                                        child: GestureDetector(
+                                          onTap: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(builder: (context) => marketing()),
+                                            );
+                                          },
+                                          child: Stack(
+                                            children: [
+                                              Positioned(
+                                                left: 0 * fem,
+                                                top: 0 * fem,
+                                                child: Align(
+                                                  child: SizedBox(
+                                                    width: 109 * fem,
+                                                    height: 17 * fem,
+                                                    child: Text(
+                                                      'About FarmPlus+',
+                                                      style: SafeGoogleFont(
+                                                        'Fredoka',
+                                                        fontSize: 14 * ffem,
+                                                        fontWeight: FontWeight.w400,
+                                                        height: 1.21 * ffem / fem,
+                                                        color: const Color(0xff5e5e5e),
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
                                               ),
-                                            ),
-                                            Positioned(
-                                              // informationaboutus97d (449:198)
-                                              left: 0 * fem,
-                                              top: 15 * fem,
-                                              child: Align(
-                                                child: SizedBox(
-                                                  width: 112 * fem,
-                                                  height: 15 * fem,
-                                                  child: Text(
-                                                    'Information about us',
-                                                    style: SafeGoogleFont(
-                                                      'Fredoka',
-                                                      fontSize: 12 * ffem,
-                                                      fontWeight:
-                                                          FontWeight.w300,
-                                                      height: 1.21 * ffem / fem,
-                                                      color: const Color(
-                                                          0xff8c8c8c),
+                                              Positioned(
+                                                left: 0 * fem,
+                                                top: 15 * fem,
+                                                child: Align(
+                                                  child: SizedBox(
+                                                    width: 112 * fem,
+                                                    height: 15 * fem,
+                                                    child: Text(
+                                                      'Information about us',
+                                                      style: SafeGoogleFont(
+                                                        'Fredoka',
+                                                        fontSize: 12 * ffem,
+                                                        fontWeight: FontWeight.w300,
+                                                        height: 1.21 * ffem / fem,
+                                                        color: const Color(0xff8c8c8c),
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
                                               ),
-                                            ),
-                                          ],
+                                            ],
+                                          ),
                                         ),
                                       ),
                                       SizedBox(

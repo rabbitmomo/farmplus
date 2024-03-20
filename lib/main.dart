@@ -91,7 +91,7 @@ import 'package:myapp/page-1/loginPage.dart';
 // import 'package:myapp/page-1/icon-gallery-add.dart';
 // import 'package:myapp/page-1/subscription-draft.dart';
 // import 'package:myapp/page-1/donation-draft.dart';
-// import 'package:myapp/page-1/groups-community.dart';
+import 'package:myapp/page-1/groups-community.dart';
 // import 'package:myapp/page-1/order-list-and-delivery-draft.dart';
 // import 'package:myapp/page-1/line-32.dart';
 // import 'package:myapp/page-1/crops-suggestion-Uhm.dart';
@@ -147,7 +147,7 @@ class MyApp extends StatelessWidget {
         '/profile': (context) => const ProfilePage(),
         '/tutorial' : (context) => const tutorialHome(),
         '/supplychain' : (context) => const SupplyChain(),
-        '/community' : (context) => const InventoryPage(),
+        '/community' : (context) => const community(),
         '/inventory': (context) => const InventoryPage(),
         '/addInventory' : (context) => const NewInventoryItem(),
         '/inventoryDetail' : (context) => const InventoryDetail(),
