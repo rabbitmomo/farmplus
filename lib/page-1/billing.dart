@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/page-1/home-page.dart';
 import 'package:myapp/page-1/thankyou.dart';
 import 'package:myapp/utils.dart';
 

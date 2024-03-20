@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/page-1/carrot-information-from-qr-code.dart';
-import 'package:myapp/utils.dart';
 class ScanPage extends StatelessWidget {
   const ScanPage({Key? key}) : super(key: key);
 
@@ -38,9 +37,9 @@ class ScanPage extends StatelessWidget {
                 padding: const EdgeInsets.all(20.0),
                 child: TextButton(onPressed: () {
                   Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => CarrotInformationPage()),
+                    MaterialPageRoute(builder: (context) => const CarrotInformationPage()),
                   );
-                  }, child: Text("Click Me")
+                  }, child: const Text("Click Me")
                 ),
               ),
             //   Container(

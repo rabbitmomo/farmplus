@@ -345,7 +345,7 @@ class LocationServiceSuggestionPage extends StatelessWidget {
                         // Navigate to crops-suggestion.dart
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => CropsSuggestion()),
+                          MaterialPageRoute(builder: (context) => const CropsSuggestion()),
                         );
                       },
                       child: Text(

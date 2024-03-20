@@ -100,7 +100,7 @@ class SupplyChain extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => ScanPage()),
+                        MaterialPageRoute(builder: (context) => const ScanPage()),
                       );
                     },
                     child: Container(

@@ -10,7 +10,6 @@ import 'package:myapp/page-1/crops-suggestion-jfd.dart';
 import 'package:myapp/page-1/crops-suggestion-Hw5.dart';
 import 'package:myapp/page-1/crops-suggestion-Hk3.dart';
 import 'package:myapp/page-1/crops-suggestion-9kT.dart';
-import 'package:myapp/page-1/crops-suggestion.dart';
 
 class CropsSuggestion extends StatelessWidget {
   const CropsSuggestion({super.key});
@@ -94,116 +93,111 @@ Container(
           ),
         ),
       ),
+  
       // Adding DropdownButton
-      DropdownButton<String>(
-        value: dropdownValue,
-        onChanged: (String? newValue) {
-          setState(() {
-            dropdownValue = newValue!;
-          });
-          // Navigate to a different scene based on the selected crop
-          switch (newValue) {
-            case 'cabbage':
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => CropsSuggestion()),
-              );
-              break;
-            case 'pepper':
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Scene10()),
-              );
-              break;
-            case 'sugarcane':
-            case 'banana':
-            case 'pineapple':
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Scene3()),
-              );
-              break;
+   DropdownButton<String>(
+  value: dropdownValue,
+  onChanged: (String? newValue) {
+    if (newValue != null) {
+      setState(() {
+        dropdownValue = newValue;
+      });
 
-              case 'soil':
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Scene2()),
-              );
-              break;
-              
-              case 'fertilizer and data sensor':
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Scene4()),
-              );
-              break;
-
-               case 'pesticides':
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Scene5()),
-              );
-              break;
-
-               case 'Oilseed':
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Scene6()),
-              );
-              break;
-
-              case 'Root Vegetables':
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Scene7()),
-              );
-              break;
-
-               case 'cucumber & tomato':
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Scene8()),
-              );
-              break;
-              
-               case 'cereal':
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Scene9()),
-              );
-              break;
-            // Add cases for other crops as needed
-            // case 'other_crop':
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(builder: (context) => OtherCropScene()),
-            //   );
-            //   break;
-          }
-        },
-        items: <String>[
-          'cabbage',
-          'pepper',
-          'fertilizer and data sensor',
-          'cereal',
-          'sugarcane',
-          'banana',
-          'pineapple',
-          'cucumber & tomato',
-          'Root Vegetables',
-          'Oilseed',
-          'pesticides',
-          'soil'
-        ].map<DropdownMenuItem<String>>((String value) {
-          return DropdownMenuItem<String>(
-            value: value,
-            child: Text(value),
+      // Navigate to a different scene based on the selected crop
+      switch (newValue) {
+        case 'cabbage':
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const CropsSuggestion()),
           );
-        }).toList(),
-      ),
-    ],
-  ),
+          break;
+        case 'pepper':
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Scene10()),
+          );
+          break;
+        case 'sugarcane':
+        case 'banana':
+        case 'pineapple':
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Scene3()),
+          );
+          break;
+        case 'soil':
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Scene2()),
+          );
+          break;
+        case 'fertilizer and data sensor':
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Scene4()),
+          );
+          break;
+        case 'pesticides':
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Scene5()),
+          );
+          break;
+        case 'Oilseed':
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Scene6()),
+          );
+          break;
+        case 'Root Vegetables':
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Scene7()),
+          );
+          break;
+        case 'cucumber & tomato':
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Scene8()),
+          );
+          break;
+        case 'cereal':
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Scene9()),
+          );
+          break;
+        // Add cases for other crops as needed
+        // case 'other_crop':
+        //   Navigator.push(
+        //     context,
+        //     MaterialPageRoute(builder: (context) => OtherCropScene()),
+        //   );
+        //   break;
+      }
+    }
+  },
+  items: <String>[
+    'cabbage',
+    'pepper',
+    'fertilizer and data sensor',
+    'cereal',
+    'sugarcane',
+    'banana',
+    'pineapple',
+    'cucumber & tomato',
+    'Root Vegetables',
+    'Oilseed',
+    'pesticides',
+    'soil'
+  ].map<DropdownMenuItem<String>>((String value) {
+    return DropdownMenuItem<String>(
+      value: value,
+      child: Text(value),
+    );
+  }).toList(),
 ),
+
 
                       SizedBox(
                         width: 11.96 * fem,
@@ -942,6 +936,6 @@ Container(
           ),
         ),
       ),
-    );
+    )
   }
 }

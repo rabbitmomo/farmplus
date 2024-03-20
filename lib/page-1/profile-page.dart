@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/page-1/marketing.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/components/navbar.dart';
 

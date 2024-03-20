@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/page-1/crops-suggestion.dart';
-import 'package:myapp/page-1/home-page.dart';
 import 'package:myapp/page-1/homepage.dart';
-import 'package:myapp/page-1/location-service-suggestion-NMm.dart';
 import 'package:myapp/utils.dart';
 // import 'location_service_suggestion_NMm.dart';
 class LocationServiceSuggestion extends StatelessWidget {
@@ -148,7 +146,7 @@ class LocationServiceSuggestion extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) =>
-                            CropsSuggestion()),
+                            const CropsSuggestion()),
                       );
                     },
                     child: Container(
@@ -212,7 +210,7 @@ class LocationServiceSuggestion extends StatelessWidget {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => HomePage()),
+                        MaterialPageRoute(builder: (context) => const HomePage()),
                       );
                     },
                     child: Container(
