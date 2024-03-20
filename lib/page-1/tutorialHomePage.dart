@@ -43,7 +43,7 @@ class tutorialHome extends StatelessWidget {
                       bottomLeft: Radius.circular(24*fem),
                     ),
                     boxShadow: [
-                      BoxShadow(//0168884726
+                      BoxShadow(
                         color: const Color(0x3f000000),
                         offset: Offset(0*fem, 2*fem),
                         blurRadius: 4*fem,
@@ -58,16 +58,16 @@ class tutorialHome extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(0*fem, 2.13*fem, 65*fem, 0*fem),
                         width: 18*fem,
                         height: 23.3*fem,
-                          child: GestureDetector(
-                            onTap: () {
-                              Navigator.pushNamed(context, '/home');
-                            },
-                            child: Image.asset(
-                              'assets/page-1/images/vector-H48.png',
-                              width: 18*fem,
-                              height: 23.3*fem,
-                            ),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                          child: Image.asset(
+                            'assets/page-1/images/vector-H48.png',
+                            width: 18*fem,
+                            height: 23.3*fem,
                           ),
+                        ),
                       ),
                       SizedBox(
                         // group111wPS (484:179)

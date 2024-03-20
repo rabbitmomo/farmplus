@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/page-1/crops-suggestion.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
-  const Scene({super.key});
+class LocationServiceSuggestionPage extends StatelessWidget {
+  const LocationServiceSuggestionPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -125,7 +126,7 @@ class Scene extends StatelessWidget {
             SizedBox(
               // autogrouprgcmLKZ (Mus1NDb5MEbwcCdQVARgCm)
               width: double.infinity,
-              height: 637*fem,
+              height: 437*fem,
               child: Stack(
                 children: [
                   Positioned(
@@ -195,6 +196,17 @@ class Scene extends StatelessWidget {
                                   height: 1.5*ffem/fem,
                                   color: const Color(0xffffffff),
                                 ),
+                              ),
+                            ),
+                            Text(
+                              'Order Now',
+                              textAlign: TextAlign.center,
+                              style: SafeGoogleFont(
+                                'Poppins',
+                                fontSize: 13 * ffem,
+                                fontWeight: FontWeight.w400,
+                                height: 1.5 * ffem / fem,
+                                color: const Color(0xffffffff),
                               ),
                             ),
                           ],
@@ -302,7 +314,7 @@ class Scene extends StatelessWidget {
                     child: Align(
                       child: SizedBox(
                         width: 280*fem,
-                        height: 50*fem,
+                        height: 20*fem,
                         child: Container(
                           decoration: BoxDecoration (
                             borderRadius: BorderRadius.circular(30*fem),
@@ -328,7 +340,7 @@ class Scene extends StatelessWidget {
                         child: SizedBox(
                           width: 69*fem,
                           height: 20*fem,
-              child: TextButton(
+                    child: TextButton(
                       onPressed: () {
                         // Navigate to crops-suggestion.dart
                         Navigator.push(

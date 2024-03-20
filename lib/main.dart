@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:myapp/page-1/galleryPage.dart';
+import 'package:myapp/page-1/location-service-suggestion.dart';
 import 'package:myapp/page-1/tutorialHomePage.dart';
 import 'package:myapp/utils.dart';
 // import 'package:myapp/page-1/rectangle-17409.dart';
@@ -45,6 +45,7 @@ import 'package:myapp/page-1/add-new-field-page.dart';
 // import 'package:myapp/page-1/level-up-farmer-tutorial-page-step-by-step-page-hao.dart';
 // import 'package:myapp/page-1/level-up-farmer-tutorial-page-step-by-step-page-hao-JbR.dart';
 // import 'package:myapp/page-1/guidance-page-hao.dart';
+// import 'package:myapp/page-1/gallery-page-hao.dart';
 // import 'package:myapp/page-1/guidance-page-2-scroll-hao.dart';
 // import 'package:myapp/page-1/guidance-page-3-scroll-hao.dart';
 // import 'package:myapp/page-1/guidance-page-3-scroll-hao-Qwy.dart';
@@ -88,20 +89,22 @@ import 'package:myapp/page-1/loginPage.dart';
 // import 'package:myapp/page-1/crops-suggestion-Hk3.dart';
 // import 'package:myapp/page-1/crops-suggestion-KJX.dart';
 // import 'package:myapp/page-1/icon-gallery-add.dart';
-import 'package:myapp/page-1/groups-community.dart';
+// import 'package:myapp/page-1/subscription-draft.dart';
+// import 'package:myapp/page-1/donation-draft.dart';
+// import 'package:myapp/page-1/groups-community.dart';
 // import 'package:myapp/page-1/order-list-and-delivery-draft.dart';
 // import 'package:myapp/page-1/line-32.dart';
 // import 'package:myapp/page-1/crops-suggestion-Uhm.dart';
 // import 'package:myapp/page-1/communityextra.dart';
-import 'package:myapp/page-1/donation.dart';
-import 'package:myapp/page-1/order-list-and-delivery.dart';
-import 'package:myapp/page-1/subscription.dart';
+// import 'package:myapp/page-1/donation.dart';
+// import 'package:myapp/page-1/order-list-and-delivery.dart';
+// import 'package:myapp/page-1/subscription.dart';
 // import 'package:myapp/page-1/communityextra-vH5.dart';
-import 'package:myapp/page-1/review.dart';
+// import 'package:myapp/page-1/review.dart';
 // import 'package:myapp/page-1/marketing.dart';
 // import 'package:myapp/page-1/review-FyH.dart';
 // import 'package:myapp/page-1/crops-suggestion-zXR.dart';
-// import 'package:myapp/page-1/supply-chain.dart';
+import 'package:myapp/page-1/supply-chain.dart';
 // import 'package:myapp/page-1/iphone-14-15-pro-max-1.dart';
 import 'package:flutter/services.dart';
 
@@ -137,24 +140,19 @@ class MyApp extends StatelessWidget {
         '/calendar': (context) => const CalendarPage(),
         '/addEvent' : (context) => const AddEvent(),
         '/notification': (context) => const NotificationPage(),
-        // '/order' : (context) => ,
+        '/order' : (context) => const LocationServiceSuggestion() ,
         '/crop': (context) => const SelectCropPage(),
         '/addCrop' : (context) => const AddField(),
         '/manageCrop' : (context) => const ManageCrop(),
         '/profile': (context) => const ProfilePage(),
         '/tutorial' : (context) => const tutorialHome(),
-        // '/supplychain' : (context) => ,
-        // '/commnunity' : (context) =>,
+        '/supplychain' : (context) => const SupplyChain(),
+        '/community' : (context) => const InventoryPage(),
         '/inventory': (context) => const InventoryPage(),
         '/addInventory' : (context) => const NewInventoryItem(),
         '/inventoryDetail' : (context) => const InventoryDetail(),
         '/inventoryDetailLow' : (context) => const InventoryDetailLow(),
-        '/gallery':(context)=> const gallery(),
         // '/forgetpassword': (context) => const Scene(),
-        '/donation':(context) => const Donation(),
-        '/review':(context) => const Review(),
-        '/subscription':(context) => Subsription(),
-        '/orderListandDelivery':(context) => OrderListandDelivery(),
       },
     );
   }

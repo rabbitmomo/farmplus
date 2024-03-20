@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/page-1/scanpage.dart';
+
 // Import ScanPage
 
-class Scene extends StatelessWidget {
-  const Scene({super.key, Key? key});
+class SupplyChain extends StatelessWidget {
+  const SupplyChain({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -67,7 +69,7 @@ class Scene extends StatelessWidget {
                         Container(
                           margin: EdgeInsets.fromLTRB(16.5 * fem, 0 * fem, 15.5 * fem, 29.5 * fem),
                           width: double.infinity,
-                          height: 224 * fem,
+                          height: 50 * fem,
                           child: const Stack(
                             children: [
                               // Add your stack items here
@@ -110,7 +112,7 @@ class Scene extends StatelessWidget {
                           Container(
                             margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 0 * fem, 18.5 * fem),
                             width: 51 * fem,
-                            height: 51 * fem,
+                            height: 20 * fem,
                             child: Image.asset(
                               'assets/page-1/images/bi-qr-code-scan.png',
                               width: 51 * fem,
@@ -154,8 +156,5 @@ class Scene extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
   }
 }

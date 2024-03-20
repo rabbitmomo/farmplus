@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/page-1/homePage.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
-  const Scene({super.key});
+class CarrotInformationPage extends StatelessWidget {
+  const CarrotInformationPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,7 @@ class Scene extends StatelessWidget {
               // autogroupy6ooVbV (Mut1hdDoXXNc4ZrykcY6oo)
               padding: EdgeInsets.fromLTRB(29*fem, 21.5*fem, 29*fem, 37.5*fem),
               width: 367*fem,
-              height: 103*fem,
+              height: 3*fem,
               decoration: const BoxDecoration (
                 color: Color(0xffffffff),
               ),
@@ -276,17 +277,26 @@ class Scene extends StatelessWidget {
                             color: Color(0xff5f9662),
                           ),
                           child: Center(
-                            child: Text(
-                              'SCAN NEXT OBJECT',
-                              style: SafeGoogleFont (
-                                'Roboto',
-                                fontSize: 10*ffem,
-                                fontWeight: FontWeight.w600,
-                                height: 2.2*ffem/fem,
-                                letterSpacing: -0.4099999964*fem,
-                                color: const Color(0xff000000),
-                              ),
-                            ),
+                            child: ElevatedButton(
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => HomePage()),
+                                  );
+                                },
+                                  child: const Text('SCAN NEXT OBJECT'),
+                            )
+                            // Text(
+                            //   'SCAN NEXT OBJECT',
+                            //   style: SafeGoogleFont (
+                            //     'Roboto',
+                            //     fontSize: 10*ffem,
+                            //     fontWeight: FontWeight.w600,
+                            //     height: 2.2*ffem/fem,
+                            //     letterSpacing: -0.4099999964*fem,
+                            //     color: const Color(0xff000000),
+                            //   ),
+                            // ),
                           ),
                         ),
                       ],
