@@ -151,6 +151,10 @@ class MyApp extends StatelessWidget {
         '/inventoryDetailLow' : (context) => const InventoryDetailLow(),
         '/gallery':(context)=> const gallery(),
         // '/forgetpassword': (context) => const Scene(),
+        '/donation':(context) => const Donation(),
+        '/review':(context) => const Review(),
+        '/subscription':(context) => Subsription(),
+        '/orderListandDelivery':(context) => OrderListandDelivery(),
       },
     );
   }
