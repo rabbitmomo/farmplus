@@ -60,42 +60,94 @@ class CropsSuggestion extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
-                // group63Lb9 (254:358)
-                margin: EdgeInsets.fromLTRB(6 * fem, 0 * fem, 0 * fem, 14 * fem),
-                padding: EdgeInsets.fromLTRB(
-                    95.02 * fem, 7 * fem, 36.94 * fem, 7 * fem),
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  color: const Color(0xffeaf5e7),
-                  borderRadius: BorderRadius.circular(20 * fem),
-                ),
-                child: GestureDetector(
-                  onTap: () {
-                    // Navigate to the 'crops-suggestion-zXR' screen or file
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const Scene2()),
-                    );
-                  },
-                  child: Row(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.fromLTRB(
-                            0 * fem, 0 * fem, 47.08 * fem, 0 * fem),
-                        child: Text(
-                          'Cabbage & Lettuce (4)',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontFamily: 'Roboto',
-                            fontSize: 14 * ffem,
-                            fontWeight: FontWeight.w300,
-                            height: 1.5714285714 * ffem / fem,
-                            letterSpacing: -0.4099999964 * fem,
-                            color: const Color(0xff013220),
-                          ),
-                        ),
-                      ),
+Container(
+  // group63Lb9 (254:358)
+  margin: EdgeInsets.fromLTRB(6 * fem, 0 * fem, 0 * fem, 14 * fem),
+  padding: EdgeInsets.fromLTRB(95.02 * fem, 7 * fem, 36.94 * fem, 7 * fem),
+  width: double.infinity,
+  decoration: BoxDecoration(
+    color: const Color(0xffeaf5e7),
+    borderRadius: BorderRadius.circular(20 * fem),
+  ),
+  child: Row(
+    children: [
+      Container(
+        margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 47.08 * fem, 0 * fem),
+        child: Text(
+          'Cabbage & Lettuce (4)',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontFamily: 'Roboto',
+            fontSize: 14 * ffem,
+            fontWeight: FontWeight.w300,
+            height: 1.5714285714 * ffem / fem,
+            letterSpacing: -0.4099999964 * fem,
+            color: const Color(0xff013220),
+          ),
+        ),
+      ),
+      // Adding DropdownButton
+      DropdownButton<String>(
+        value: dropdownValue,
+        onChanged: (String? newValue) {
+          setState(() {
+            dropdownValue = newValue!;
+          });
+          // Navigate to a different scene based on the selected crop
+          switch (newValue) {
+            case 'cabbage':
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CabbageScene()),
+              );
+              break;
+            case 'pepper':
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => PepperScene()),
+              );
+              break;
+            case 'sugarcane':
+            case 'banana':
+            case 'pineapple':
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SugarcaneBananaPineappleScene()),
+              );
+              break;
+            // Add cases for other crops as needed
+            // case 'other_crop':
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(builder: (context) => OtherCropScene()),
+            //   );
+            //   break;
+          }
+        },
+        items: <String>[
+          'cabbage',
+          'pepper',
+          'fertilizer',
+          'cereal',
+          'sugarcane',
+          'banana',
+          'pineapple',
+          'cucumber & tomato',
+          'Root Vegetables',
+          'Oilseed',
+          'pesticides',
+          'soil'
+        ].map<DropdownMenuItem<String>>((String value) {
+          return DropdownMenuItem<String>(
+            value: value,
+            child: Text(value),
+          );
+        }).toList(),
+      ),
+    ],
+  ),
+),
+
                       SizedBox(
                         width: 11.96 * fem,
                         height: 6 * fem,
