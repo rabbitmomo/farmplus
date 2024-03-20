@@ -2,7 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:myapp/page-1/about-item.dart';
 import 'package:myapp/page-1/crops-suggestion-zXR.dart';
 import 'package:myapp/utils.dart';
-// import 'package:crops-suggestion-zXR.dart';
+import 'package:myapp/page-1/crops-suggestion-Yzu.dart';
+import 'package:myapp/page-1/crops-suggestion-Uhm.dart';
+import 'package:myapp/page-1/crops-suggestion-KJX.dart';
+import 'package:myapp/page-1/crops-suggestion-KCT.dart';
+import 'package:myapp/page-1/crops-suggestion-jfd.dart';
+import 'package:myapp/page-1/crops-suggestion-Hw5.dart';
+import 'package:myapp/page-1/crops-suggestion-Hk3.dart';
+import 'package:myapp/page-1/crops-suggestion-9kT.dart';
+import 'package:myapp/page-1/crops-suggestion.dart';
 
 class CropsSuggestion extends StatelessWidget {
   const CropsSuggestion({super.key});
@@ -98,13 +106,13 @@ Container(
             case 'cabbage':
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => CabbageScene()),
+                MaterialPageRoute(builder: (context) => CropsSuggestion()),
               );
               break;
             case 'pepper':
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => PepperScene()),
+                MaterialPageRoute(builder: (context) => Scene10()),
               );
               break;
             case 'sugarcane':
@@ -112,7 +120,56 @@ Container(
             case 'pineapple':
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => SugarcaneBananaPineappleScene()),
+                MaterialPageRoute(builder: (context) => Scene3()),
+              );
+              break;
+
+              case 'soil':
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Scene2()),
+              );
+              break;
+              
+              case 'fertilizer and data sensor':
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Scene4()),
+              );
+              break;
+
+               case 'pesticides':
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Scene5()),
+              );
+              break;
+
+               case 'Oilseed':
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Scene6()),
+              );
+              break;
+
+              case 'Root Vegetables':
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Scene7()),
+              );
+              break;
+
+               case 'cucumber & tomato':
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Scene8()),
+              );
+              break;
+              
+               case 'cereal':
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Scene9()),
               );
               break;
             // Add cases for other crops as needed
@@ -127,7 +184,7 @@ Container(
         items: <String>[
           'cabbage',
           'pepper',
-          'fertilizer',
+          'fertilizer and data sensor',
           'cereal',
           'sugarcane',
           'banana',
