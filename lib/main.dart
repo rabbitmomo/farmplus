@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:myapp/page-1/galleryPage.dart';
 import 'package:myapp/page-1/location-service-suggestion.dart';
 import 'package:myapp/page-1/tutorialHomePage.dart';
 import 'package:myapp/utils.dart';
@@ -152,6 +153,7 @@ class MyApp extends StatelessWidget {
         '/addInventory' : (context) => const NewInventoryItem(),
         '/inventoryDetail' : (context) => const InventoryDetail(),
         '/inventoryDetailLow' : (context) => const InventoryDetailLow(),
+        '/gallery': (context) => const gallery(),
         // '/forgetpassword': (context) => const Scene(),
       },
     );

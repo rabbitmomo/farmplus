@@ -35,7 +35,7 @@ class tutorialHome extends StatelessWidget {
                   // topn7E (484:177)
                   padding: EdgeInsets.fromLTRB(29*fem, 26.5*fem, 113*fem, 29.33*fem),
                   width: double.infinity,
-                  height: 126*fem,
+                  height: 127*fem,
                   decoration: BoxDecoration (
                     color: const Color(0xff0a4b33),
                     borderRadius: BorderRadius.only (
@@ -60,7 +60,7 @@ class tutorialHome extends StatelessWidget {
                         height: 23.3*fem,
                         child: GestureDetector(
                           onTap: () {
-                            Navigator.pop(context);
+                            Navigator.pushNamed(context, '/home');
                           },
                           child: Image.asset(
                             'assets/page-1/images/vector-H48.png',
@@ -537,7 +537,7 @@ class tutorialHome extends StatelessWidget {
                                     maxWidth: 263*fem,
                                   ),
                                   child: Text(
-                                    'This is a video tutorial for beginner....It consists of  various video explaining the uses of fertilizer, water, and the types of crops',
+                                    'This tutorial guides beginners through the process of planting and nurturing their first crop, with emphasis on watering and fertilization for optimal growth.',
                                     textAlign: TextAlign.center,
                                     style: SafeGoogleFont (
                                       'Roboto Flex',
@@ -696,7 +696,7 @@ class tutorialHome extends StatelessWidget {
                                     maxWidth: 263*fem,
                                   ),
                                   child: Text(
-                                    'This is a video tutorial for beginner....It consists of  various video explaining the uses of fertilizer, water, and the types of crops',
+                                    'This tutorial guides intermediates through the process of planting and nurturing their first crop, with emphasis on watering and fertilization for optimal growth.',
                                     textAlign: TextAlign.center,
                                     style: SafeGoogleFont (
                                       'Roboto Flex',
@@ -850,7 +850,7 @@ class tutorialHome extends StatelessWidget {
                                     maxWidth: 263*fem,
                                   ),
                                   child: Text(
-                                    'This is a video tutorial for beginner....It consists of  various video explaining the uses of fertilizer, water, and the types of crops',
+                                    'This tutorial guides experts through the process of planting and nurturing their first crop, with emphasis on watering and fertilization for optimal growth.',
                                     textAlign: TextAlign.center,
                                     style: SafeGoogleFont (
                                       'Roboto Flex',

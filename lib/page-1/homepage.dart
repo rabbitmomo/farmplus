@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/components/navbar.dart';
 
+
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: HomePageBody(), 
-      bottomNavigationBar: Navbar(), 
+      body: HomePageBody(),
+      bottomNavigationBar: Navbar(),
     );
   }
 }
@@ -28,7 +29,7 @@ class HomePageBody extends StatelessWidget {
       ),
       child: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.fromLTRB(20 * fem, 30 * fem, 20 * fem, 0 * fem),
+          padding: EdgeInsets.fromLTRB(20 * fem, 30 * fem, 20 * fem, 30 * fem),
           width: double.infinity,
           decoration: const BoxDecoration(color: Color(0xffffffff)),
           child: Column(children: [
@@ -50,6 +51,26 @@ class HomePageBody extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
+                    Container(
+                      margin: EdgeInsets.fromLTRB(
+                          0 * fem, 0 * fem, 0 * fem, 0 * fem),
+                      child: TextButton(
+                        onPressed: () {
+                          // Navigate to gallery page
+                          Navigator.pushNamed(context, '/gallery');
+                        },
+                        style: TextButton.styleFrom(
+                          padding: EdgeInsets.zero,
+                        ),
+                        child: Container(
+                          child: Image.asset(
+                            'assets/page-1/images/camera5.png',
+                            width: 20 * fem,
+                            height: 20 * fem,
+                          ),
+                        ),
+                      ),
+                    ),
                     Container(
                       margin: EdgeInsets.fromLTRB(
                           0 * fem, 0 * fem, 0 * fem, 0 * fem),
@@ -406,7 +427,7 @@ class HomePageBody extends StatelessWidget {
                   ],
                 ),
                 child: Image.asset(
-                  'assets/page-1/images/file115287-1.png',
+                  'assets/page-1/images/croprotation.png',
                   width: 400 * fem,
                   height: 160 * fem,
                   fit: BoxFit.cover,
@@ -432,7 +453,7 @@ class HomePageBody extends StatelessWidget {
                   ],
                 ),
                 child: Image.asset(
-                  'assets/page-1/images/letter-of-donation-sample-1.png',
+                  'assets/page-1/images/plantdonation.png',
                   width: 400 * fem,
                   height: 160 * fem,
                   fit: BoxFit.cover,
