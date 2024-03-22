@@ -1,16 +1,11 @@
-# test
+# teammember introduction
 
-A new Flutter project.
 
-## Getting Started
+## Introduction: 
+ 
+Welcome to the presentation of Farmplus, an impact agro-tech startup aimed at bridging the gap between small-scale farmers and available agro sponsors. Our online platform revolutionizes agriculture by enabling global sponsorship of crop farming and livestock projects, thereby increasing food production, promoting youth participation in agribusiness, and empowering farmers worldwide. Today, we are excited to introduce our innovative solution developed during this hackathon, as we present our team, delve into our chosen case study, and outline our business model. 
 
-This project is a starting point for a Flutter application.
+## Reason for Choosing Case 5: 
+ 
+We chose Case Study 5 based on Sustainable Development Goals 1 and 2: No Poverty and Zero Hunger. As an impact agro-tech startup, addressing poverty and food security challenges aligns closely with our mission and values. Case 5 provides us with an opportunity to leverage technology to tackle significant challenges faced by smallholder farmers worldwide, such as lack of access to finance, agronomic information, market data, and modern equipment. By developing a mobile app that connects farmers with local markets, facilitates consultations with agronomists, and integrates IoT sensors for crop monitoring, we believe we can make a meaningful impact on agricultural sustainability and livelihoods. Our solution complements our existing business model by enhancing access to markets and information for farmers, empowering them to improve productivity and profitability. Through Case 5, we aim to contribute towards achieving No Poverty and Zero Hunger by empowering farmers, strengthening food security, and promoting sustainable agriculture practices.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
