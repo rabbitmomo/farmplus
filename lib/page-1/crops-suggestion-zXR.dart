@@ -71,16 +71,6 @@ class Scene2 extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
-                        // autogroupolmkkAK (Muw6eZtDJV58hMJcb6oLmK)
-                        width: 58.89 * fem,
-                        height: 60 * fem,
-                        child: Image.asset(
-                          'assets/page-1/images/auto-group-olmk.png',
-                          width: 58.89 * fem,
-                          height: 60 * fem,
-                        ),
-                      ),
                     ],
                   ),
                 ),
@@ -600,14 +590,6 @@ class Scene2 extends StatelessWidget {
                         ),
                       ),
                     ],
-                  ),
-                ),
-                Center(
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/jfd');
-                    },
-                    child: const Text('Go to next Screen'),
                   ),
                 ),
                 Container(

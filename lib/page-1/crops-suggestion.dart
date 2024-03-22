@@ -2,16 +2,44 @@ import 'package:flutter/material.dart';
 import 'package:myapp/page-1/about-item.dart';
 import 'package:myapp/page-1/crops-suggestion-zXR.dart';
 import 'package:myapp/utils.dart';
-// import 'package:crops-suggestion-zXR.dart';
+import 'package:myapp/page-1/crops-suggestion-Yzu.dart';
+import 'package:myapp/page-1/crops-suggestion-Uhm.dart';
+import 'package:myapp/page-1/crops-suggestion-KJX.dart';
+import 'package:myapp/page-1/crops-suggestion-KCT.dart';
+import 'package:myapp/page-1/crops-suggestion-jfd.dart';
+import 'package:myapp/page-1/crops-suggestion-Hw5.dart';
+import 'package:myapp/page-1/crops-suggestion-Hk3.dart';
+import 'package:myapp/page-1/crops-suggestion-9kT.dart';
 
-class CropsSuggestion extends StatelessWidget {
+class CropsSuggestion extends StatefulWidget {
   const CropsSuggestion({super.key});
 
+  @override
+  State<CropsSuggestion> createState() => _CropsSuggestionState();
+}
+
+class _CropsSuggestionState extends State<CropsSuggestion> {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.87;
+    const List<String> list = <String>[
+      'cabbage',
+      'pepper',
+      'fertilizer and data sensor',
+      'cereal',
+      'sugarcane',
+      'banana',
+      'pineapple',
+      'cucumber & tomato',
+      'Root Vegetables',
+      'Oilseed',
+      'pesticides',
+      'soil'
+    ];
+    String dropdownValue = list.first;
+
     return Scaffold(
       body: SizedBox(
         width: double.infinity,
@@ -45,10 +73,14 @@ class CropsSuggestion extends StatelessWidget {
                           onTap: () {
                             Navigator.pop(context);
                           },
-                          child: Image.asset(
-                            'assets/page-1/images/vector-H48.png',
-                            width: 18*fem,
-                            height: 23.3*fem,
+                          child: SizedBox(//wrapped with sizebox to make button bigger but not looked bigger , easily be tapped
+                            width: 21 * fem,
+                            height: 26.3 * fem,
+                            child: Image.asset(
+                              'assets/page-1/images/top-gyi.png',
+                              width: 18 * fem,
+                              height: 23.3 * fem,
+                            ),
                           ),
                         ),
                       ),
@@ -69,50 +101,130 @@ class CropsSuggestion extends StatelessWidget {
                 Container(
                   // group63Lb9 (254:358)
                   margin: EdgeInsets.fromLTRB(6 * fem, 0 * fem, 0 * fem, 14 * fem),
-                  padding: EdgeInsets.fromLTRB(
-                      95.02 * fem, 7 * fem, 36.94 * fem, 7 * fem),
+                  padding: EdgeInsets.fromLTRB(95.02 * fem, 7 * fem, 36.94 * fem, 7 * fem),
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: const Color(0xffeaf5e7),
                     borderRadius: BorderRadius.circular(20 * fem),
                   ),
-                  child: GestureDetector(
-                    onTap: () {
-                      // Navigate to the 'crops-suggestion-zXR' screen or file
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const Scene2()),
-                      );
-                    },
-                    child: Row(
-                      children: [
-                        Container(
-                          margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 47.08 * fem, 0 * fem),
-                          child: Text(
-                            'Cabbage & Lettuce (4)',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontFamily: 'Roboto',
-                              fontSize: 14 * ffem,
-                              fontWeight: FontWeight.w300,
-                              height: 1.5714285714 * ffem / fem,
-                              letterSpacing: -0.4099999964 * fem,
-                              color: const Color(0xff013220),
-                            ),
+                  child: Row(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 47.08 * fem, 0 * fem),
+                        child: Text(
+                          'Cabbage & Lettuce (4)',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontFamily: 'Roboto',
+                            fontSize: 14 * ffem,
+                            fontWeight: FontWeight.w300,
+                            height: 1.5714285714 * ffem / fem,
+                            letterSpacing: -0.4099999964 * fem,
+                            color: const Color(0xff013220),
                           ),
                         ),
-                        SizedBox(
+                      ),
+                      SizedBox(
+                        width: 11.96 * fem,
+                        height: 6 * fem,
+                        child: Image.asset(
+                          'assets/page-1/images/vector-GNb.png',
                           width: 11.96 * fem,
                           height: 6 * fem,
-                          child: Image.asset(
-                            'assets/page-1/images/vector-GNb.png',
-                            width: 11.96 * fem,
-                            height: 6 * fem,
-                          ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
+                  ),
+                ),
+                Material(
+                  child: DropdownButton<String>(
+                    value: dropdownValue,
+                    onChanged: (String? newValue) {
+                      if (newValue != null) {
+                        setState(() {
+                          dropdownValue = newValue;
+                        });
+                      }
+
+                      // Navigate to a different scene based on the selected crop
+                      switch (newValue) {
+                        case 'cabbage':
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const CropsSuggestion()),
+                          );
+                          break;
+                        case 'pepper':
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const Scene10()),
+                          );
+                          break;
+                        case 'sugarcane':
+                        case 'banana':
+                        case 'pineapple':
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const Scene3()),
+                          );
+                          break;
+                        case 'soil':
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const Scene2()),
+                          );
+                          break;
+                        case 'fertilizer and data sensor':
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const Scene4()),
+                          );
+                          break;
+                        case 'pesticides':
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const Scene5()),
+                          );
+                          break;
+                        case 'Oilseed':
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const Scene6()),
+                          );
+                          break;
+                        case 'Root Vegetables':
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const Scene7()),
+                          );
+                          break;
+                        case 'cucumber & tomato':
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const Scene8()),
+                          );
+                          break;
+                        case 'cereal':
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const Scene9()),
+                          );
+                          break;
+                      // Add cases for other crops as needed
+                      // case 'other_crop':
+                      //   Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(builder: (context) => OtherCropScene()),
+                      //   );
+                      //   break;
+                      }
+                    },
+                    items: list.map<DropdownMenuItem<String>>((String value) {
+                      return DropdownMenuItem<String>(
+                        value: value,
+                        child: Text(value),
+                      );
+                    }).toList(),
                   ),
                 ),
                 Container(
