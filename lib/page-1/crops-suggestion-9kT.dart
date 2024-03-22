@@ -36,10 +36,19 @@ class Scene10 extends StatelessWidget {
                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 35*fem, 0*fem),
                         width: 12*fem,
                         height: 18*fem,
-                        child: Image.asset(
-                          'assets/page-1/images/vector-AKZ.png',
-                          width: 12*fem,
-                          height: 18*fem,
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                          child: SizedBox(//wrapped with sizebox to make button bigger but not looked bigger , easily be tapped
+                            width: 21 * fem,
+                            height: 26.3 * fem,
+                            child: Image.asset(
+                              'assets/page-1/images/top-gyi.png',
+                              width: 18 * fem,
+                              height: 23.3 * fem,
+                            ),
+                          ),
                         ),
                       ),
                       Text(
