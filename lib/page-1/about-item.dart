@@ -182,16 +182,25 @@ class Scene11 extends StatelessWidget {
                 ),
                 Positioned(
                   // vectorjD9 (257:508)
-                  left: 20*fem,
-                  top: 50*fem,
+                  left:32*fem,
+                  top: 45*fem,
                   child: Align(
                     child: SizedBox(
-                      width: 6*fem,
-                      height: 12*fem,
-                      child: Image.asset(
-                        'assets/page-1/images/vector-iFH.png',
-                        width: 6*fem,
-                        height: 12*fem,
+                      width: 18*fem,
+                      height: 18*fem,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        child: SizedBox(//wrapped with sizebox to make button bigger but not looked bigger , easily be tapped
+                          width: 18 * fem,
+                          height: 18.3 * fem,
+                          child: Image.asset(
+                            'assets/page-1/images/top-gyi.png',
+                            width: 18 * fem,
+                            height: 23.3 * fem,
+                          ),
+                        ),
                       ),
                     ),
                   ),
