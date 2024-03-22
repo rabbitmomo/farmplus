@@ -460,7 +460,7 @@ class CalendarPage extends StatelessWidget {
                                     ),
                                     Container(
                                       // autogroupyynvNdm (MusNccBc4sNLSizmmsYyNV)
-                                      margin: EdgeInsets.fromLTRB(203.16 * fem,
+                                      margin: EdgeInsets.fromLTRB(199.16 * fem,
                                           0 * fem, 0 * fem, 7.84 * fem),
                                       width: 16.16 * fem,
                                       height: 4.16 * fem,
@@ -1178,7 +1178,7 @@ class CalendarPage extends StatelessWidget {
                             ),
                             Positioned(
                               // autogroupfxv7wDZ (MusSuV2uz1e5JKVeDgfXV7)
-                              left: 207 * fem,
+                              left: 205 * fem,
                               top: 192 * fem,
                               child: Align(
                                 child: SizedBox(
