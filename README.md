@@ -3,7 +3,8 @@
 
 ## Introduction: 
  
-Welcome to the presentation of Farmplus, an impact agro-tech startup aimed at bridging the gap between small-scale farmers and available agro sponsors. Our online platform revolutionizes agriculture by enabling global sponsorship of crop farming and livestock projects, thereby increasing food production, promoting youth participation in agribusiness, and empowering farmers worldwide. Today, we are excited to introduce our innovative solution developed during this hackathon, as we present our team, delve into our chosen case study, and outline our business model. 
+Welcome to the presentation of Farmplus, an impact agro-tech startup aimed at bridging the gap between small-scale farmers and available agro sponsors.In 2019, the global Agri-tech Market commanded a valuation of $17,442.7 million, with projections indicating a growth trajectory to reach $41,172.5 million by 2027.Our online platform revolutionizes agriculture by enabling global sponsorship of crop farming and livestock projects, thereby increasing food production, promoting youth participation in agribusiness, and empowering farmers worldwide. Today, we are excited to introduce our innovative solution developed during this hackathon, as we present our team, delve into our chosen case study, and outline our business model. By the year 2050, the global population is projected to reach 9.1 billion, with approximately 80% residing in urban areas. This begs the question: who will be responsible for feeding this rapidly growing population? We believe that both direct and indirect involvement in agriculture is crucial. Hence, there is a pressing need for innovative methods to develop scalable and efficient agricultural practices.
+
 
 ## Reason for Choosing Case 5: 
  
